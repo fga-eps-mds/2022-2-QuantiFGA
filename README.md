@@ -6,7 +6,9 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<p align="center">
+  <img max-height="100px" src="https://i.imgur.com/ffRw0Ns.png" alt="QuantiFGA">
+</p>
 
 > Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
 
