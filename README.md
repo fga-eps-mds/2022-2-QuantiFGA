@@ -135,9 +135,9 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/fga-eps-mds/2022-2-Squad9/blob/main/LICENSE) para mais detalhes.
 
-[⬆ Voltar ao topo](#fga-eps-mds/2022-2-Squad9)<br>
+[⬆ Voltar ao topo](https://github.com/fga-eps-mds/2022-2-Squad9)<br>
 
 <!--
     Esse README foi montado a partir do template:
