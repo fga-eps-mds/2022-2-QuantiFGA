@@ -3,7 +3,7 @@ XX/XX/XX - Fulano <DATA>
 **O que eu fiz ontem?**
   - Nenhuma atividade 
   
-**O que eu planejo fazer?** 
+**O que eu planejo faz?** 
   - Issue #9 - Referente ao crud de usuário
   - Issue #10 - Referente a capacitação em python
   
