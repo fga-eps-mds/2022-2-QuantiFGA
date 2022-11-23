@@ -76,6 +76,14 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 <table>
   <tr>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/69125218?v=4" width="100px;" alt="Foto da Júlia no GitHub"/><br>
+        <sub>
+          <b><a href="https://github.com/edilbertocantuaria">Edilberto Cantuaria</a></b>
+        </sub>
+      </a>
+    </td>
   <td align="center">
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/107002722?v=4" width="100px;" alt="Foto Felipe"/><br>
@@ -89,14 +97,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         <img src="https://avatars.githubusercontent.com/u/88348513?v=4" width="100px;" alt="Foto Gabriel"/><br>
         <sub>
           <b><a href="https://github.com/GabrielMS00">Gabriel Marques </a></b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/69125218?v=4" width="100px;" alt="Foto da Júlia no GitHub"/><br>
-        <sub>
-          <b><a href="https://github.com/edilbertocantuaria">Edilberto Cantuaria</a></b>
         </sub>
       </a>
     </td>
