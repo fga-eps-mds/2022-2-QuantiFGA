@@ -1,17 +1,11 @@
 # Review da Sprint 1
 
-## Histórico de revisão
-
-| Data       | Autor                                        | Modificações                      | Versão |
-| ---------- | -------------------------------------------- | --------------------------------- | ------ |
-| 23/11/2022 | [Raquel Eucaria](https://github.com/raqueleucaria) | Adiciona documentação da sprint 1 | 1.0    |
-| 23/11/2022 | [Raquel Eucaria](https://github.com/raqueleucaria) | Adiciona documentação da sprint 1 | 2.0    |
-
 ## Visão Geral
 
-|        Duração da sprint        |  Membros ausentes |
-| :-----------------------------: |  :--------------: |
-| **22/11/2022** a **29/11/2022** |      Nenhum      |
+|        Duração da sprint        |  Membros ausentes | Scrum Master |
+| :-----------------------------: |  :--------------: | :--------------: |
+| **22/11/2022** a **29/11/2022** |      Nenhum      | Raquel |
+
 
 ## Tarefas Realizadas
 
@@ -39,6 +33,8 @@
 - Definir critérios de aceitação das issues
 - Equilibrar as divisões de tarefas entre os membros
 - Evitar a dependência de outros membros para fechar a issue
+- Todos da equipe precisam estar atualizados a todo o tempo, quanto a tarefas q precisam ser feitas e prazos de entrega
+- Precisamos adaptar o git de acordo com o método ágil, quanto a templates, política de commit, comprovação de realização das tarefas
 
 ## Observações
 - Precisamos definir os requisitos para poder definir a arquitetura
