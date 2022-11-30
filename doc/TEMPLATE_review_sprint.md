@@ -1,16 +1,12 @@
 # Review da sprint x
 
-## Histórico de revisão
-
-| Data       | Autor                                        | Modificações                      | Versão |
-| ---------- | -------------------------------------------- | --------------------------------- | ------ |
-| xx/xx/xxxx | [nome](https://github.com/nomeusuario) | Adiciona documentação da sprint 0 | 1.0    |
-
 ## Visão Geral
 
 |        Duração da sprint        |  Membros ausentes |
 | :-----------------------------: |  :--------------: |
 | **xx/xx/xxxx** a **xx/xx/xxxx** |      Nenhum      |
+
+## Objetivos
 
 ## Tarefas Realizadas
 
@@ -26,6 +22,7 @@
 
 
 ## Pontos de melhoria
+-
 
 
 ## Observações
