@@ -1,4 +1,5 @@
-# QuantiFGA
+# 📊 QuantiFGA
+>Obs.: Esse README ainda está em construção.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
@@ -10,65 +11,73 @@
   <img max-height="100px" src="https://i.imgur.com/ffRw0Ns.png" alt="QuantiFGA">
 </p>
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> Saiba o percentual de ocupação da sua disciplina ou sala, aplicando filtros por dia da semana ou horários. 
 
-<!--
+## Sobre
 
-### Ajustes e melhorias
+Já imaginou 
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+## 💻 Tecnologias
 
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [ ] Tarefa 4
-- [ ] Tarefa 5
+<table>
+<tr>
+<td valign="top"><img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" height="80" width="auto"/></td>
+<td valign="top"><img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="CSS" height="80" width="auto"/></td>
+<td valign="top"><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="JavaScript" height="80" width="auto"/></td>
+<td valign="top"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png" alt="Python" height="80" width="auto"/></td>
+<td valign="top"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="Selenium" height="80" width="auto"/></td>
+<td valign="top"><img src="https://coffops.com/wp-content/uploads/2022/07/mdb.png" alt="mongoBD" height="80" width="auto"/></td>
+<td valign="top"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" alt="git" height="80" width="auto"/></td>
+<td valign="top"><img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" alt="VSCode" height="80" width="auto"/></td>
+<td valign="top"><img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-part-azure-sql-database-with-azure-active-directory-17.png" alt="SQL" height="80" width="auto"/></td>
+</tr>
+</table>
 
-## 💻 Pré-requisitos
+### ⚙️Como rodar
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário
-* Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
+### Backlog 
 
-## 🚀 Instalando QuantiFGA
+O Backlog é uma coleção de funcionalidades desejáveis para o produto, definidas pelo product owner. Ele é construído gradativamente ao longo do desenvolvimento, não precisando estar pronto no início do projeto. Podendo então, assim, iniciar com um conteúdo mais geral e ser agregado conforme se obtém mais conhecimento e informações acerca do produto. O Backlog em relação a aplicação visa detalhar as tarefas de forma que as histórias de usuários sejam mais facilmente entregáveis. [(SEDANO; RALPH; Pé-RAIRE, 2019)](https://ieeexplore.ieee.org/document/8812076)
 
-Para instalar o QuantiFGA, siga estas etapas:
+Ainda nesse contexto, foi utilizado épicos. Épico é uma história de usuário que ainda não foi detalhada (ou ainda é incerta ou muito grande) e por isso não pode ser transformada em incremento do produto. O épico então é separado em histórias de usuário menores.
 
-Linux e macOS:
-```
-<comando_de_instalação>
-```
+#### Épico e Backlog do Produto
+| **Épicos** | **Descrição**                       |
+| ------ | ------------------------------- |
+| E01    | Área de Usuário  |
 
-Windows:
-```
-<comando_de_instalação>
-```
+| **Épico** | **Funcionalidade** | **US** | **Descrição**                                                                                                     |
+| --------- | ----------- | ------ | ----------------------------------------------------------------------------------------------------------------- |
+| E01       | Visualização de dados das turmas        | US01   | Como usuário (secretaria/coordenação), desejo visualizar os dados registrados relacionados à ocupação do espaço físico da sala                                   |
+| E01       | Visualização de dados das disciplinas        | US02   | Como usuário (secretaria/coordenação), desejo visualizar os dados registrados relacionados à matricula em determinada disciplina                                   |
+| E01       | Possibilidade de acessar informações por horário        | US03   | Como usuário (secretaria/coordenação), desejo poder acessar os dados das sala de aula filtrados por um horário específico                |
+| E01       | Possibilidade de acessar informações por dia        | US04   | Como usuário (secretaria/coordenação), desejo poder acessar os dados da sala de aula filtrados pelos dias da semana                |
 
-## ☕ Usando QuantiFGA
+Critérios de Aceitação do Épico:
 
-Para usar QuantiFGA, siga estas etapas:
+- US01:
 
-```
-<exemplo_de_uso>
-```
+ Deve haver um gráfico que compare a taxa de **ocupação do espaço físico** na tela principal da aplicação;
 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
+ 
+- US02:
 
-## 📫 Contribuindo para QuantiFGA
-Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado
-Para contribuir com QuantiFGA, siga estas etapas:
+Deve haver um gráfico que compare a taxa de ocupação da **quantidade de vagas ofertadas** na tela principal da aplicação;
 
-1. Bifurque este repositório.
-2. Crie um branch: `git checkout -b <nome_branch>`.
-3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
-4. Envie para o branch original: `git push origin QuantiFGA / <local>`
-5. Crie a solicitação de pull.
 
-Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+- US03:
 
--->
+Deve haver um filtro que dá a possibilidade de acompanhar a taxa de ocupação das salas em relação a um determinado horário ;
+
+O detalhamento de cada filtro será feito em uma nova tela;
+
+
+- US04:
+
+Deve haver um filtro que dá a possibilidade de acompanhar a taxa de ocupação da sala em relação aos dias da semana;
+
+O detalhamento de cada filtro será feito em uma nova tela;
+
 
 ## 🤝 Colaboradores
 
@@ -143,19 +152,8 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   </tr>
 </table>
 
-<!--
-## 😄 Seja um dos contribuidores<br>
-
-Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
--->
-
 ## 📝 Licença
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/fga-eps-mds/2022-2-Squad9/blob/main/LICENSE) para mais detalhes.
 
 [⬆ Voltar ao topo](https://github.com/fga-eps-mds/2022-2-Squad9)<br>
-
-<!--
-    Esse README foi montado a partir do template:
-      https://github.com/iuricode/readme-template/blob/main/repository/repository.md 
--->
