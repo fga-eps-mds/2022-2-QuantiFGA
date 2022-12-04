@@ -15,9 +15,13 @@
 
 ## Sobre
 
-Já imaginou 
+Já imaginou um software com a funcionalidade de mostrar as salas cadastradas no SIGAA e mostrar os dados da sua taxa de ocupação, professor da turma, quantidade de alunos cadastrados na matéria e o horário e por essas informações e colocar em um gráfico? 
+O software proposto é uma página web que possui um robozinho que pega essas informações no portal do SIGAA e gera um gráfico para facilitar a coordenação na análise de locação de turmas no semestre.
+
 
 ## 💻 Tecnologias
+  
+  //Vai ser defenida após a elaboração da arquitetura do software!
 
 <table>
 <tr>
