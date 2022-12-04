@@ -39,6 +39,8 @@ O software proposto é uma página web que possui um robozinho que pega essas in
 
 ### ⚙️Como rodar
 
+>Obs. : Vai ser adicionado após a elaboração da arquitetura do software
+
 ### Backlog 
 
 O Backlog é uma coleção de funcionalidades desejáveis para o produto, definidas pelo product owner. Ele é construído gradativamente ao longo do desenvolvimento, não precisando estar pronto no início do projeto. Podendo então, assim, iniciar com um conteúdo mais geral e ser agregado conforme se obtém mais conhecimento e informações acerca do produto. O Backlog em relação a aplicação visa detalhar as tarefas de forma que as histórias de usuários sejam mais facilmente entregáveis. [(SEDANO; RALPH; Pé-RAIRE, 2019)](https://ieeexplore.ieee.org/document/8812076)
