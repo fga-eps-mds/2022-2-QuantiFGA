@@ -27,13 +27,9 @@ O software proposto é uma página web que possui um robozinho que pega essas in
 <tr>
 <td valign="top"><img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" height="80" width="auto"/></td>
 <td valign="top"><img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="CSS" height="80" width="auto"/></td>
-<td valign="top"><img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="JavaScript" height="80" width="auto"/></td>
 <td valign="top"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Python_logo_01.svg/800px-Python_logo_01.svg.png" alt="Python" height="80" width="auto"/></td>
 <td valign="top"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="Selenium" height="80" width="auto"/></td>
 <td valign="top"><img src="https://coffops.com/wp-content/uploads/2022/07/mdb.png" alt="mongoBD" height="80" width="auto"/></td>
-<td valign="top"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png" alt="git" height="80" width="auto"/></td>
-<td valign="top"><img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" alt="VSCode" height="80" width="auto"/></td>
-<td valign="top"><img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-part-azure-sql-database-with-azure-active-directory-17.png" alt="SQL" height="80" width="auto"/></td>
 </tr>
 </table>
 
