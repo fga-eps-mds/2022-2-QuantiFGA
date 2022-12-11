@@ -1,4 +1,8 @@
 # Protótipo de baixa fidelidade
+- Este arquivo contém o protótipo de baixa fideliade
+- Baseado nas discussões e conclusões dos integrantes
+- Feito a mão para auxiliar nos próximos passos de elaboração
+- Ele considera funcionalidades bácicas (MVP) e incrementos a serem feitos no decorrer
 
 ## QuantiFGA MVP
 
@@ -8,7 +12,7 @@
 - Informações da sala
 ![sala](https://raw.githubusercontent.com/fga-eps-mds/2022-2-Squad9/prototipo-baixa/doc/prot%C3%B3tipos/imagens/PB2.jpg)
 
-## Incrementos
+## Quanti FGA Incrementos
 
 - Simulador PDF 
 Permite criar uma simulação e salvar um arquivo PDF com as informações
