@@ -7,9 +7,9 @@ pessoas como você possam nos ajudar a desenvolver um software de qualidade.
 
 Você achou um bug no nosso projeto?
 
-* Sugestões para melhorias são rastreadas através das [_issues_](https://github.com/fga-eps-mds/2022-2-Squad9/blob/guias_e_templates/.github/ISSUE_TEMPLATE/issue_template.md)
+* Sugestões para melhorias são rastreadas através das [_issues_](https://github.com/fga-eps-mds/2022-2-Squad9/issues).
 
-* Fique atento também ao nosso template de [_Pull Request_](https://github.com/fga-eps-mds/2022-2-Squad9/blob/guias_e_templates/.github/ISSUE_TEMPLATE/pull_request_template.md)
+* Fique atento também ao nossos templates de [_issues_](https://github.com/fga-eps-mds/2022-2-Squad9/blob/guias_e_templates/.github/ISSUE_TEMPLATE/issue_template.md) e [_Pull Requests_](https://github.com/fga-eps-mds/2022-2-Squad9/blob/guias_e_templates/.github/ISSUE_TEMPLATE/pull_request_template.md)
 
 * Verifique se nenhum Pull Request já foi criado por outra pessoa referente ao mesmo bug.
 
