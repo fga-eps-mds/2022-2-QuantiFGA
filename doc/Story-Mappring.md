@@ -8,7 +8,7 @@
 - Com ele criamos um entendimento geral sobre o produto e estabelecemos inicialmente nossos épicos e features. Como mostra a imagem:
 ![lean-inception](https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/QuantiFGA_2022-12-12_23-16-23.png)
 
-# Mapeamendo as histórias
+# Mapeando as histórias
 
 - Tentando entender a experiência do usuário com o software, como o produto resolve a sua dor, quais os fluxos e qual o mínimo que pode ser feito para entregar valor (MVP)... E Também pensando em incrementos a serem feitos, criamos as duas tabelas:
 
