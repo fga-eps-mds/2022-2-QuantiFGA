@@ -1,32 +1,21 @@
+# Documento de Protótipos
+
+# Sumário
+   
+   1. [Baixa fidelidade](#Baixa)
+   2. [Alta fidelidade](#Alta)
+
+<div id='Baixa'/>
+
 # Protótipo de baixa fidelidade
-- Este arquivo contém o protótipo de baixa fideliade
-- Baseado nas discussões e conclusões dos integrantes
-- Feito a mão para auxiliar nos próximos passos de elaboração
-- Ele considera funcionalidades bácicas (MVP) e incrementos a serem feitos no decorrer
+![MVP](https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/mvp1.png)
+![INCREMENTO-1](https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/incremento1.1.png)
+![INCREMENTO-2](https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/incremento1.2.png)
+<div id='Alta'/>
 
-## QuantiFGA MVP
+# Protótipo de alta fidelidade 
+- Link para o protótipo completo no [figma](https://www.figma.com/file/jdr3RD3aA4HuqoHlAmQOsC/MDS---Squad-09?node-id=0%3A1&t=II5jZIfMHhFk5Vk3-1)
 
-- Página incial
-![Página inicial](https://raw.githubusercontent.com/fga-eps-mds/2022-2-Squad9/prototipo-baixa/doc/prot%C3%B3tipos/imagens/PB1.jpg)
-
-- Informações da sala
-![sala](https://raw.githubusercontent.com/fga-eps-mds/2022-2-Squad9/prototipo-baixa/doc/prot%C3%B3tipos/imagens/PB2.jpg)
-
-## Quanti FGA Incrementos
-
-- Simulador PDF 
-Permite criar uma simulação e salvar um arquivo PDF com as informações
-![SimuladorPDF](https://raw.githubusercontent.com/fga-eps-mds/2022-2-Squad9/prototipo-baixa/doc/prot%C3%B3tipos/imagens/PB3.jpg)
+![Alta-fidelidade](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/docs/img/prototipo_alta.png?raw=true)
 
 
-- Login e barra de opções
-![Login](https://raw.githubusercontent.com/fga-eps-mds/2022-2-Squad9/prototipo-baixa/doc/prot%C3%B3tipos/imagens/PB4.jpg)
-
-
-- Simulador com conta Coordenador
-Permite fazer o CRUD completo de trocas, além de enviar link para avaliação do professor
-![SimuladorLOGIN](https://raw.githubusercontent.com/fga-eps-mds/2022-2-Squad9/prototipo-baixa/doc/prot%C3%B3tipos/imagens/PB5.jpg)
-
-
-- Horários Gerais + botão de opções
-![HorariosGerais](https://raw.githubusercontent.com/fga-eps-mds/2022-2-Squad9/prototipo-baixa/doc/prot%C3%B3tipos/imagens/PB6.jpg)
