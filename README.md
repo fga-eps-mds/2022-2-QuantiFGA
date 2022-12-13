@@ -40,17 +40,18 @@ O software possibilita disponibiliza olhar a grade de horários de uma sala, o d
 
 ## 🛠️ Guia de Instalação
 
+
 ## Pré-Requisitos
 
 Para rodar o projeto é necessário ter o [Metabese](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/docs/Metabase%20-%20Getting%20Started.md) e o [Mongo](https://www.mongodb.com/try/download/community) instalado, é importante ter o java para rodar o Metabase e o [ChromeDriver](https://chromedriver.chromium.org/downloads) para funcionar o Selenium no Google Chrome, e o [Selenium](https://www.selenium.dev/downloads/) com o [Python](https://www.python.org/downloads/) para poder pegar os dados presentes no SIGAA. 
 O tutorial de como instalar o Mongo e o Metabase e fazê-los funcionarem juntos está no seguinte [vídeo](https://www.youtube.com/watch?v=H5GFGJrVnqQ&t=371s).
+
 
 ## 📁 Acesso ao Projeto
 
 Para acessar o código fonte do projeto está anexado o [frontend](https://github.com/fga-eps-mds/2022-2-QuantiFGA/tree/main/frontend) e o [backend](https://github.com/fga-eps-mds/2022-2-QuantiFGA/tree/main/backend) do projeto.
 
 * `git clone https://github.com/fga-eps-mds/2022-2-QuantiFGA.git`
-
 
 
 ## 💻 Tecnologias
@@ -65,6 +66,7 @@ Para acessar o código fonte do projeto está anexado o [frontend](https://githu
 <td valign="top"><img src="https://coffops.com/wp-content/uploads/2022/07/mdb.png" alt="mongoBD" height="80" width="auto"/></td>
 </tr>
 </table>
+
 
 ## 🤝 Colaboradores e Desenvolvidores do Projeto
 
@@ -139,12 +141,15 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   </tr>
 </table>
 
+
 ## 📋 Código de Conduta
 
 Esse projeto possui um código de conduta, Veja o arquivo [Código_de_Conduta](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/código%20de%20conduta.md) para ver mais informações.
 
+
 ## 📝 Licença
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/fga-eps-mds/2022-2-Squad9/blob/main/LICENSE) para mais detalhes.
+
 
 [⬆ Voltar ao topo](https://github.com/fga-eps-mds/2022-2-Squad9)<br>
