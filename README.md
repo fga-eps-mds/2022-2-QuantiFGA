@@ -33,40 +33,15 @@ O software proposto é uma página web que possui um robozinho que pega essas in
 
 ## 🔨 Funcionalidades
 
-Funcionalidade 1: Possibilita ver as turmas e suas respectivas salas
- 
-Funcionalidade 2: Disponibiliza a Grade de Horários da Sala 
-
-Funcionalidade 3: Possibilita ver a Grade de Horários Geral 
-
-Funcionalidade 4: Possibilita fazer o CRUD do Coordenador 
-
-Funcionalidade 5: Possibilita fazer o CRUD de Troca de Turmas, Horários e Salas
-
-Funcionalidade 6: Possibilita filtrar sala por maior/menor ocupação 
-
-Funcionalidade 7: Possibilita filtrar sala por horário/dia 
-
-Funcionalidade 8: Possibilita filtrar sala por departamento 
-
-Funcionalidade 9: Possibilita filtrar sala por maior/menor lista de espera 
-
-Funcionalidade 10: Possibilita buscar por sala em Grade de Horário 
-
-Funcionalidade 11: Possibilita realizar login como Coordenador 
-
-Funcionalidade 12: Possibilita que o coordenador envie uma Troca 
-
-Funcionalidade 13:  O software deve possuir um conjunto de dados vindos do SIGAA turmas 
-
+O software possibilita disponibiliza olhar a grade de horários de uma sala, o departamento, professor e ocupação da sala, disponibilizar gráficos com esses dados,  além de ter a opção de troca em relação as aulas, salas e horários por partedo coordenador além de ter a opção de login
 
 ## 📁 Acesso ao Projeto
 
-  Ainda o código está em produção, quando estiver disponível será disponibilizado o código fonte do projeto.
+Para acessar o código fonte do projeto está anexado o [frontend](https://github.com/fga-eps-mds/2022-2-QuantiFGA/tree/main/frontend) e o [backend](https://github.com/fga-eps-mds/2022-2-QuantiFGA/tree/main/backend) do projeto.
 
 ## 🛠️ Abrir e Rodar o Projeto
 
-  Para rodar o projeto é necessário baixar o Selenium (https://www.selenium.dev/documentation/webdriver/getting_started/install_library/) e o Python (https://www.python.org/downloads/) em sua máquina, o Selenium é uma biblioteca que permite com que o Python abra no navegador para executar comandos e será se extrama importância para conectar com o Sigaa. Também precisa baixar o Chromedriver(https://chromedriver.chromium.org/downloads), que é uma recurso utilizado por pacotes de programação com o Selenium no Google Chrome, para utilizar em outros navegadores é preciso de equivalentes para utilizar o Selenium. Utilizando as tecnologias citadas anteriormente vai ser possível gerar um arquivo CSV que disponibiliza uma planilha e com o Mongo (https://www.mongodb.com/try/download/community) que está conectado com o Metabase (https://www.mongodb.com/try/download/community) gera os gráficos que vai aparecer no FrontEnd do projeto QuantiFGA. Para rodar o Metabase é preciso estar instalado na máquina Java(https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR), nesse vídeo mostra o tutorial de como configurar o Mongo e o Database (https://www.youtube.com/watch?v=H5GFGJrVnqQ).
+Para rodar o projeto é necessário ter o Metabese e o Mongo instalado, é importante ter o java para rodar o Metabase, e o Selenium com o Python para poder pegar os dados presentes no SIGAA. 
 
 
 ## 💻 Tecnologias
@@ -155,6 +130,10 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
   </tr>
 </table>
+
+## 📋 Código de Conduta
+
+Esse projeto possui um código de conduta, Veja o arquivo [Código_de_Conduta](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/código%20de%20conduta.md) para ver mais informações.
 
 ## 📝 Licença
 
