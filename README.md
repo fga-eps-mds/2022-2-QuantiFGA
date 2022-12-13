@@ -146,6 +146,10 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 Esse projeto possui um código de conduta, Veja o arquivo [Código_de_Conduta](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/código%20de%20conduta.md) para ver mais informações.
 
+## Contribuição
+
+Sua ajuda é mais que bem-vinda em nosso projeto, se atente ao nosso [_Guia de Contribuição_](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/docs/guia_de_contribui%C3%A7%C3%B5es.md). Leia atentamente cada tópico para que possamos fazer um bom trabalho juntos!
+
 
 ## 📝 Licença
 
@@ -153,3 +157,4 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/fg
 
 
 [⬆ Voltar ao topo](https://github.com/fga-eps-mds/2022-2-Squad9)<br>
+
