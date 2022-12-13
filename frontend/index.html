@@ -1,1 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
 
+     <!---Relizando o resset-->
+     <link rel="stylesheet" href="reset.css" />
+   
+     <!-- Invoca para que possa editar o css em outra "aba" dentro do projeto -->
+    <link rel="stylesheet" href="style.css" />
+   
+    <!--Importando as fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Coloca o ícone na aba-->
+    <link rel="icon" href="img/engrenagem.png" />
+
+    <title>QuantiFGA</title>
+</head>
+<body>
+
+<header>
+    <img class="louros" src="img/Prantinea.svg" alt="borda dos louros"/>
+        <div>
+            <img class="quantiFGA" src="img/quantiFGA-removebg-preview.png" alt="logo do projeto"/>
+        </div>
+        <img class="louros rotacionarLouro" src="img/Prantinea.svg" alt="borda dos louros"/>
+</header>
+
+<main>
+    <article>
+        <div class="dptoOrdenacao">
+            <input class="buscaDpto" type="text"placeholder="Departamento"/>
+            <div class="lupinha">
+                <ion-icon name="search"></ion-icon>
+            </div>     
+        </div>
+        <div class="dptoOrdenacao">
+            <div class="Ordenacao">ORDENAÇÃO</div>
+            <div class="filtros">
+                <div class="filtro">
+                    <div class="nomeFiltro">LISTA DE ESPERA</div>
+                    <div class="espacamento"></div>
+                    <div class="divisaoFiltro"></div>
+                    <div class="removerFiltro"><ion-icon name="close"></ion-icon></div>
+                </div>
+
+                <div class="filtro">
+                    <div class="nomeFiltro">OCUPAÇÃO</div>
+                    <div class="espacamento"></div>
+                    <div class="divisaoFiltro"></div>
+                    <div class="removerFiltro"><ion-icon name="close"></ion-icon></div>
+                </div>
+            </div>
+            <div class="adicionarFiltro">
+                <ion-icon name="add"></ion-icon>
+            </div>
+             </div>
+
+        <div class ="predio">
+            <div class="tituloPredio">UED</div>
+            <div class="salasAulas">
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I01</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">
+                            <div class="taxaOcupacao">0%</div>
+                        </div>
+                        <div class="meiaPorta inferior">
+                            <div class="taxaOcupacao">95%</div>
+                        </div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I02</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior sup_azul">30%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I03</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I04</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I05</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑 </div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I06</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑 </div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I07</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I08</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I09</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">I10</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S01</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S02</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div>
+                    <div class="capacidadeSala">123🪑</div>  
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S03</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S04</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S05</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S06</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+                
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S07</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+                
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S08</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+                
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S09</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+                
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">S10</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">Anf</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+                
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">Mult</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+                
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">Ante I10</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">95%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class ="predio">
+            <div class="tituloPredio">UAC</div>
+            <div class="salasAulas">
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">ELET</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">ELETR</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">FÍSICA</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">MAT</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">MOCAP</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">NEI</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">NEI2</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">OND</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">SS</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">SHS</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">TERM</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">TERMF</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+            </div>
+        </div>
+    <section>
+        <div class ="predio">
+            <div class="tituloPredio">Conteiner</div>
+            <div class="salasAulas">
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">04</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">17</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+            </div>
+        </div>
+
+        <div class ="predio">
+            <div class="tituloPredio">LDTEA</div>
+            <div class="salasAulas">
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">02</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+
+                <div class="sala" onclick="infoSala(this)">
+                    <div class="numSala">03</div>
+                    <div class="porta">
+                        <div class="meiaPorta superior">0%</div>
+                        <div class="meiaPorta inferior">0%</div>
+                    </div> 
+                    <div class="capacidadeSala">123🪑</div> 
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+        <div class="horario">
+            ALGUM CALENDÁRIO AQUI
+        </div>
+    </article>
+    
+    <aside>
+        <button class="loginButton">
+            LOGIN
+        </button>
+        
+        <div class="horario_asside">
+            ALGUMA TABELA DE HORÁRIOS AQUI
+        </div>
+        
+        <div class ="simulacaoMudancaHorario">
+            <div class="linhaSimulacao"> </div>
+            SIMULAR  MUDANÇA DE HORÁRIOS
+            <div class="linhaSimulacao"> </div>
+        </div>
+
+    </aside>
+</main>
+
+<footer>
+DESENVOLVIDO POR:
+</footer>
+
+
+<script src="script.js"></script>
+<script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+
+</body>
+</html>
