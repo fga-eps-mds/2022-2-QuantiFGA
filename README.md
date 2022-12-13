@@ -83,6 +83,11 @@ Funcionalidade 13:  O software deve possuir um conjunto de dados vindos do SIGAA
 </tr>
 </table>
 
+## Contribuição
+
+Sua ajuda é mais que bem-vinda em nosso projeto, se atente ao nosso [_Guia de Contribuição_](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/docs/guia_de_contribui%C3%A7%C3%B5es.md). Leia atentamente cada tópico para que possamos fazer um bom trabalho juntos!
+
+
 ## 🤝 Colaboradores e Desenvolvidores do Projeto
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
@@ -161,3 +166,4 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](https://github.com/fga-eps-mds/2022-2-Squad9/blob/main/LICENSE) para mais detalhes.
 
 [⬆ Voltar ao topo](https://github.com/fga-eps-mds/2022-2-Squad9)<br>
+
