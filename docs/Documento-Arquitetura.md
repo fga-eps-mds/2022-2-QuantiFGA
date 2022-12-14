@@ -4,7 +4,8 @@
 
 | Data       | Versão | Descrição| Autor(es)|
 | :----------: | :------: | :------: | :------: |
-| 09/12/2022 | 0.1    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
+| 09/12/2022 | 1.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
+| 13/12/2022 | 2.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
 
 
 
@@ -33,13 +34,16 @@
 
 # Representação da arquitetura
 
-![Reperesentação da arquitetura](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/Arquitetura3.png)
+![Reperesentação da arquitetura](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/documenta%C3%A7%C3%A3o/arquitetura.png?raw=true)
 
 
 
 ## Front-end
-### Flask
- - o Flask é um micro-framework destinado principalmente a pequenas aplicações com requisitos mais simples, como por exemplo, a criação de um site básico. Possuir apenas o necessário para o desenvolvimento de uma aplicação,os projetos escritos em Flask tendem a ser menores e mais leves se comparados a frameworks maiores.
+### HTML
+ - linguagem de marcação utilizada para estruturar os elementos da página, como parágrafos, links, títulos, tabelas, imagens e até vídeos.
+
+### CSS
+- linguagem de estilos utilizada para definir cores, fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página.
 
 ## Back-end
 
@@ -63,5 +67,5 @@
 
 ## Diagrama de Pacotes
 
-![Diagrama de Pacotes](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/Diagrama%20de%20Pacotes.jpeg)
+![Diagrama de Pacotes](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/documenta%C3%A7%C3%A3o/Group%207.png?raw=true)
 
