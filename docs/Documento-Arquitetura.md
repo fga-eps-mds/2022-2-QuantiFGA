@@ -34,7 +34,7 @@
 
 # Representação da arquitetura
 
-![Reperesentação da arquitetura](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/documenta%C3%A7%C3%A3o/arquitetura.png?raw=true)
+![Reperesentação da arquitetura](https://user-images.githubusercontent.com/78980796/207649786-bb807fd4-0a20-49a5-93f6-6d3dadf088d1.png)
 
 
 
