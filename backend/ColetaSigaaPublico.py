@@ -1,4 +1,5 @@
-import csv
+import csv  # biblioteca utilizada para ler e escrever arquivos csv
+import pandas as pd  # biblioteca utilizada para arquivos em dataframe
 from datetime import datetime
 import time
 from selenium import webdriver
@@ -10,12 +11,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 dados = []
 
 # csv com dados da FGA
-with open('./csvDadosColetados.csv', 'w', newline='') as csvDadosColetados:
+with open('./csvDadosColetados.csv', 'w', newline='', encoding="utf-8") as csvDadosColetados:
     csv.writer(csvDadosColetados, delimiter=';').writerow(['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
                                                            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local'])
     csvDadosColetados.close()
 # csv com dados que nao sao da FGA - so para conferencia
-with open('./csvDadosDesprezados.csv', 'w', newline='') as csvDadosDesprezados:
+with open('./csvDadosDesprezados.csv', 'w', newline='', encoding="utf-8") as csvDadosDesprezados:
     csv.writer(csvDadosDesprezados, delimiter=';').writerow(['codigoNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
                                                              'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local'])
     csvDadosDesprezados.close()
@@ -128,15 +129,36 @@ def capturarDados(navegador):
             # armazena a quantidade de vagas ocupadas como string
             vagasOcupadas = listaVagasOcupadas[indLinhaAcumulada].get_attribute(
                 'innerHTML')
-            # dados.append([codigoNomeMateria.encode('utf-8'), codigoTurma.encode('utf-8'), ano.encode('utf-8'), semestre.encode('utf-8'),
-            #              professor.encode('utf-8'), cargahoraria.encode('utf-8'), horario.encode('utf-8'), vagasOfertadas.encode('utf-8'), vagasOcupadas.encode('utf-8'), local.encode('utf-8')])
             # armazena os dados em uma lista
+            # dados.append([codigoNomeMateria.encode('utf-8'), codigoTurma, ano, semestre, professor.encode('utf-8'),
             dados.append([codigoNomeMateria, codigoTurma, ano, semestre,
                           professor, cargahoraria, horario, vagasOfertadas, vagasOcupadas, local])
+            # print(codigoNomeMateria, codigoTurma, ano, semestre,
+            #      professor, cargahoraria, horario, vagasOfertadas, vagasOcupadas, local)
             # incrementa o indice que percorre a lista de elementos coletados
             indLinhaAcumulada += 1
 
     return dados
+
+def separaSalasCompostas(dfSigaa):
+	# comandos
+	# retorna para a main
+    return(dfSigaa)
+
+def preencheLotacaoSalas(dfSigaa):
+	# comandos
+	# retorna para a main
+    return (dfSigaa)
+
+def separaHorario(dfSigaa):
+	# comandos
+	# retorna para a main
+    return (dfSigaa)
+
+def calculaPorcentagens(dfSigaa):
+	# comandos
+	# retorna para a main
+    return (dfSigaa)
 
 
 # main
@@ -144,7 +166,7 @@ if __name__ == '__main__':
 
     # imprime a hora de inicio para checar o tempo de coleta
     print(datetime.now())
-
+    
     # gera a consulta preeenchendo os campos e clicando em buscar
     # e ja chama a funcao de capturar dados
     # coleta dados de seis departamentos
@@ -160,7 +182,7 @@ if __name__ == '__main__':
 
     # salva no arquivo csv verificando se sao disciplinas da FGA ou nao
     # salva somente as que tem 'FGA' no campo 'local'
-    with open('./csvDadosColetados.csv', 'a', newline='') as csvDadosColetados:
+    with open('./csvDadosColetados.csv', 'a', newline='', encoding="utf-8") as csvDadosColetados:
         for indice, _ in enumerate(dados):
             if 'FGA' in dados[indice][9]:
                 csv.writer(csvDadosColetados, delimiter=';').writerow(
@@ -168,12 +190,35 @@ if __name__ == '__main__':
     csvDadosColetados.close()
 
     # salva disciplinas que nao tem 'FGA' no campo 'local' apenas para checar depois
-    with open('./csvDadosDesprezados.csv', 'a', newline='') as csvDadosDesprezados:
+    with open('./csvDadosDesprezados.csv', 'a', newline='', encoding="utf-8") as csvDadosDesprezados:
         for indice, _ in enumerate(dados):
             if 'FGA' not in dados[indice][9]:
                 csv.writer(csvDadosDesprezados, delimiter=';').writerow(
                     dados[indice])
     csvDadosDesprezados.close()
+    
+    # salva dados do arquivo csv em um dataframe dfSigaa
+    dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",   sep=';')
+    # Cria novas colunas em um dataframe:
+    dfSigaa['horarioSeparado'] = ''
+    dfSigaa['percDisciplina'] = 0
+    dfSigaa['salaSeparada'] = ''
+    dfSigaa['predio'] = ''
+    dfSigaa['lotacao'] = 0
+    dfSigaa['percOcupacaoReal'] = 0
+    dfSigaa['percOcupacaoTotal'] = 0
+    # renomeia a coluna index que o dataframe incluiu
+    dfSigaa.index.name = 'indexDados'
+
+    # chama as funcoes para preencher os dados dessas novas colunas
+    separaSalasCompostas(dfSigaa)
+    preencheLotacaoSalas(dfSigaa)
+    separaHorario(dfSigaa)
+    calculaPorcentagens(dfSigaa)
+
+    # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
+    dfSigaa.to_csv('csvDadosAtualizados.csv', encoding="utf-8",   sep=';')
 
     # imprime a hora de fim para checar o tempo de coleta
     print(datetime.now())
+    
