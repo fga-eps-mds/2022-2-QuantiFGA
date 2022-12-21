@@ -1,4 +1,8 @@
+# ==========================================================================================
+# area dos import - bibliotecas e funcoes
+# ==========================================================================================
 import csv  # biblioteca utilizada para ler e escrever arquivos csv
+#from  lotacaoSalas import preencherLotacaoSalas
 import pandas as pd  # biblioteca utilizada para arquivos em dataframe
 from datetime import datetime
 import time
@@ -7,21 +11,37 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
+# ==========================================================================================
+# variaveis globais
+# ==========================================================================================
 # lista que vai receber todos os dados coletados para serem gravados no csv
 dados = []
 
+# ==========================================================================================
+# criacao dos arquivos csv que receberao os dados coletados e desprezados
+# ==========================================================================================
 # csv com dados da FGA
 with open('./csvDadosColetados.csv', 'w', newline='', encoding="utf-8") as csvDadosColetados:
-    csv.writer(csvDadosColetados, delimiter=';').writerow(['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
-                                                           'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local'])
+    csv.writer(csvDadosColetados, delimiter=';').writerow(
+        ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+        'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local',
+        'horarioSeparado','percDisciplina','salaSeparada','predio','lotacao',
+        'percOcupacaoReal','percOcupacaoTotal'])
     csvDadosColetados.close()
 # csv com dados que nao sao da FGA - so para conferencia
 with open('./csvDadosDesprezados.csv', 'w', newline='', encoding="utf-8") as csvDadosDesprezados:
-    csv.writer(csvDadosDesprezados, delimiter=';').writerow(['codigoNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
-                                                             'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local'])
+    csv.writer(csvDadosDesprezados, delimiter=';').writerow(
+        ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+        'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local',
+        'horarioSeparado','percDisciplina','salaSeparada','predio','lotacao',
+        'percOcupacaoReal','percOcupacaoTotal'])
     csvDadosDesprezados.close()
-
-
+ 
+# ==========================================================================================
+# metodo gerarConsulta
+# =====================
+# funcao que preeenche os campos da pagina Sigaa para fazer a consulta
+# ==========================================================================================
 def gerarConsulta(nivel, depto, ano, periodo):
 
     # Configuração do navegador (Chrome)
@@ -51,7 +71,11 @@ def gerarConsulta(nivel, depto, ano, periodo):
     # imprime a hora para checar o tempo de coleta
     print(datetime.now())
 
-
+# ==========================================================================================
+# metodo capturarDados
+# ====================
+# funcao que captura os dados da pagina Sigaa e armazena em uma lista
+# ==========================================================================================
 def capturarDados(navegador):
 
     # encontra os elementos da pagina e
@@ -140,28 +164,36 @@ def capturarDados(navegador):
 
     return dados
 
-def separaSalasCompostas(dfSigaa):
+# ==========================================================================================
+# metodos que serao implementados
+# ===============================
+# manipulacao dos valores coletados para alimentar o banco de dados
+# ==========================================================================================
+def separaSalasCompostas(dataframe):
 	# comandos
 	# retorna para a main
-    return(dfSigaa)
+    return(dataframe)
 
-def preencheLotacaoSalas(dfSigaa):
+def preencheLotacaoSalas(dataframe):
 	# comandos
 	# retorna para a main
-    return (dfSigaa)
+    return (dataframe)
 
-def separaHorario(dfSigaa):
+def separaHorario(dataframe):
 	# comandos
 	# retorna para a main
-    return (dfSigaa)
+    return (dataframe)
 
-def calculaPorcentagens(dfSigaa):
+def calculaPorcentagens(dataframe):
 	# comandos
 	# retorna para a main
-    return (dfSigaa)
+    return (dataframe)
 
-
+# ==========================================================================================
 # main
+# ====
+# funcao principal que chama todos os metodos
+# ==========================================================================================
 if __name__ == '__main__':
 
     # imprime a hora de inicio para checar o tempo de coleta
@@ -182,6 +214,7 @@ if __name__ == '__main__':
 
     # salva no arquivo csv verificando se sao disciplinas da FGA ou nao
     # salva somente as que tem 'FGA' no campo 'local'
+    # campo 'local' = dados[inidice][9]
     with open('./csvDadosColetados.csv', 'a', newline='', encoding="utf-8") as csvDadosColetados:
         for indice, _ in enumerate(dados):
             if 'FGA' in dados[indice][9]:
@@ -190,6 +223,7 @@ if __name__ == '__main__':
     csvDadosColetados.close()
 
     # salva disciplinas que nao tem 'FGA' no campo 'local' apenas para checar depois
+    # campo 'local' = dados[inidice][9]
     with open('./csvDadosDesprezados.csv', 'a', newline='', encoding="utf-8") as csvDadosDesprezados:
         for indice, _ in enumerate(dados):
             if 'FGA' not in dados[indice][9]:
@@ -199,14 +233,6 @@ if __name__ == '__main__':
     
     # salva dados do arquivo csv em um dataframe dfSigaa
     dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",   sep=';')
-    # Cria novas colunas em um dataframe:
-    dfSigaa['horarioSeparado'] = ''
-    dfSigaa['percDisciplina'] = 0
-    dfSigaa['salaSeparada'] = ''
-    dfSigaa['predio'] = ''
-    dfSigaa['lotacao'] = 0
-    dfSigaa['percOcupacaoReal'] = 0
-    dfSigaa['percOcupacaoTotal'] = 0
     # renomeia a coluna index que o dataframe incluiu
     dfSigaa.index.name = 'indexDados'
 
@@ -221,4 +247,3 @@ if __name__ == '__main__':
 
     # imprime a hora de fim para checar o tempo de coleta
     print(datetime.now())
-    
