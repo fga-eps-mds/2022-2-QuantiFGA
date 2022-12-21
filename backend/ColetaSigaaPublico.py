@@ -179,10 +179,30 @@ def preencheLotacaoSalas(dataframe):
 	# retorna para a main
     return (dataframe)
 
-def separaHorario(dataframe):
-	# comandos
-	# retorna para a main
-    return (dataframe)
+def separaHorario(horario):
+    # Dado uma string horario no padrão [DIAS_DA_SEMANA][PERIODO][HORARIO] é retornado uma lista do horario separado por hora 
+    # [DIAS_DA_SEMANA] 2-7
+    # [PERIODO] manha = M, tarde = T, e noite = N
+    # [HORARIO] to do
+    # exemplo Horario = 26T12 retorno = [[2, "tarde", 1 ], [2, "tarde", 2 ], [6, "tarde", 1 ], [6, "tarde", 2 ]]
+    
+    horarios = horario.split() 
+    resultado = []
+    for h in horarios:
+        x = re.search("^(\d+)([M|T|N])(\d+)", h)
+        if x:
+            days = [int(x) for x in x.group(1)]
+            turno = x.group(2)
+            hours = [int(x) for x in x.group(3)]
+
+            for d in days:
+                for ho in hours:
+                    resultado.append(f'{d}{turno}{ho}')
+        
+        else:
+            print("No match", h)
+    return resultado
+
 
 def calculaPorcentagens(dataframe):
 	# comandos
