@@ -272,7 +272,7 @@ if __name__ == '__main__':
     # chama as funcoes para preencher os dados dessas novas colunas
     separaSalasCompostas(dfSigaa)
     preencheLotacaoSalas(dfSigaa)
-    separaHorario(dfSigaa)
+    dfSigaa  = adiciona_linhas_por_horario(dfSigaa)
     calculaPorcentagens(dfSigaa)
 
     # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
