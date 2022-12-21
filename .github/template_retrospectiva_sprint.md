@@ -1,4 +1,4 @@
-# Review da sprint x
+# Retrospectiva da sprint x
 
 ## Visão Geral
 
