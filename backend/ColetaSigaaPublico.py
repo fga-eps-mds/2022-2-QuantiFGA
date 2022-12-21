@@ -4,6 +4,7 @@
 import csv  # biblioteca utilizada para ler e escrever arquivos csv
 #from  lotacaoSalas import preencherLotacaoSalas
 import pandas as pd  # biblioteca utilizada para arquivos em dataframe
+import re
 from datetime import datetime
 import time
 from selenium import webdriver
@@ -178,6 +179,18 @@ def preencheLotacaoSalas(dataframe):
 	# comandos
 	# retorna para a main
     return (dataframe)
+
+def adiciona_linhas_por_horario(dataframe):
+    # Percore o dataframe e adiciona linhas de materias que tem mais de 1 horario, especificando cada horario por linha.
+    new_df = pd.DataFrame()
+    for index, row in dataframe.iterrows():
+        horarios = separaHorario(row["horario"])
+        for horario in horarios:
+            row_copy = row.copy()
+            row_copy["horarioSeparado"] = horario
+            new_df = new_df.append(row_copy, ignore_index=True)
+
+    return new_df
 
 def separaHorario(horario):
     # Dado uma string horario no padrão [DIAS_DA_SEMANA][PERIODO][HORARIO] é retornado uma lista do horario separado por hora 
