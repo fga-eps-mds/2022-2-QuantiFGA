@@ -4,6 +4,7 @@
 import csv  # biblioteca utilizada para ler e escrever arquivos csv
 #from  lotacaoSalas import preencherLotacaoSalas
 import pandas as pd  # biblioteca utilizada para arquivos em dataframe
+import re
 from datetime import datetime
 import time
 from selenium import webdriver
@@ -179,10 +180,42 @@ def preencheLotacaoSalas(dataframe):
 	# retorna para a main
     return (dataframe)
 
-def separaHorario(dataframe):
-	# comandos
-	# retorna para a main
-    return (dataframe)
+def adiciona_linhas_por_horario(dataframe):
+    # Percore o dataframe e adiciona linhas de materias que tem mais de 1 horario, especificando cada horario por linha.
+    new_df = pd.DataFrame()
+    for index, row in dataframe.iterrows():
+        horarios = separaHorario(row["horario"])
+        for horario in horarios:
+            row_copy = row.copy()
+            row_copy["horarioSeparado"] = horario
+            new_df = new_df.append(row_copy, ignore_index=True)
+
+    return new_df
+
+def separaHorario(horario):
+    # Dado uma string horario no padrão [DIAS_DA_SEMANA][PERIODO][HORARIO] é retornado uma lista do horario separado por hora 
+    # [DIAS_DA_SEMANA] 2-7
+    # [PERIODO] manha = M, tarde = T, e noite = N
+    # [HORARIO] to do
+    # exemplo Horario = 26T12 retorno = [[2, "tarde", 1 ], [2, "tarde", 2 ], [6, "tarde", 1 ], [6, "tarde", 2 ]]
+    
+    horarios = horario.split() 
+    resultado = []
+    for h in horarios:
+        x = re.search("^(\d+)([M|T|N])(\d+)", h)
+        if x:
+            days = [int(x) for x in x.group(1)]
+            turno = x.group(2)
+            hours = [int(x) for x in x.group(3)]
+
+            for d in days:
+                for ho in hours:
+                    resultado.append(f'{d}{turno}{ho}')
+        
+        else:
+            print("No match", h)
+    return resultado
+
 
 def calculaPorcentagens(dataframe):
 	# comandos
@@ -239,7 +272,7 @@ if __name__ == '__main__':
     # chama as funcoes para preencher os dados dessas novas colunas
     separaSalasCompostas(dfSigaa)
     preencheLotacaoSalas(dfSigaa)
-    separaHorario(dfSigaa)
+    dfSigaa  = adiciona_linhas_por_horario(dfSigaa)
     calculaPorcentagens(dfSigaa)
 
     # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
