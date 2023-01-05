@@ -1,52 +1,74 @@
+# ==============================================================================================================
+# area dos imports - bibliotecas e funcoes
+# ==============================================================================================================
 import pandas as pd    # biblioteca utilizada para arquivos em dataframe
+from separarSalasCompostas import separarSalasCompostas
 
-
-def preencherLotacaoPredio(dataframeSigaa, dataframeSalas):
+# ==============================================================================================================
+# metodo preencherLotacaoPredio
+# --------------------------------------------------------------------------------------------------------------
+# funcao que preenche a lotacao das salas e o nome do predio ao qual ela pertence
+# ==============================================================================================================
+def preencherLotacaoPredio(dataframeSigaa):
+    # ==========================================================================================================
+    # salva informacoes de lotacao e predio de cada sala do csv especifico em um dataframe prediosSalasLotacao
+    dataframeSalas = pd.read_csv('./csvPrediosSalasLotacao.csv', encoding="utf-8",   sep=';')
+    # ==========================================================================================================
+    # cria listas com os valores dos campos salaSeparada para comparacao
     listaSalaSeparadaSigaa = dataframeSigaa['salaSeparada'].to_list()
     listaSalaSeparada = dataframeSalas['salaSeparada'].to_list()
-    i=0
-    j=0
+    # ==========================================================================================================
+    # inicializa os contadores que percorrem as duas listas
+    i=0 # listaSalaSeparadaSigaa
+    j=0 # listaSalaSeparada
+    # ==========================================================================================================
+    # seta o flag que verifica se a variante da sala nao esta na matriz de comparacao como false
+    encontrou_info_sala = False
+    # ==========================================================================================================
+    # percorre a lista das salas de todas as disciplinas procurando a sala na lista que contem 
+    # as informacoes de lotacao e predio
     for i in range(len(listaSalaSeparadaSigaa)):
         for j in range(len(listaSalaSeparada)):
             if (dataframeSigaa['salaSeparada'][i] == dataframeSalas['salaSeparada'][j]):
                 dataframeSigaa['lotacao'][i] = dataframeSalas['lotacao'][j]
                 dataframeSigaa['predio'][i] = dataframeSalas['predio'][j]
-    dataframeSigaa.to_csv('csvDadosAtualizadosLotacao.csv', encoding="utf-8",   sep=';')
+                encontrou_info_sala = True
+                break
+        # ======================================================================================================
+        # se nao encontrou a sala na lista de informacoes de lotacao e predio, preeenche
+        # uma mensagem para verificacao e futura correcao do arquivo csv
+        if encontrou_info_sala == False:
+            dataframeSigaa['lotacao'][i] = 0
+            dataframeSigaa['predio'][i] = 'sala nao encontrada' + dataframeSigaa['salaSeparada'][i]
+    
+    return dataframeSigaa
 
-""" if __name__ == '__main__':
- 
-    # salva dados do arquivo csv em um dataframe dfSigaa
-    dfSigaa = pd.read_csv('backend\csvDadosAtualizados.csv', encoding="utf-8",   sep=';')
-    # salva dados do arquivo csv em um dataframe dfSigaa
-    prediosSalasLotacao = pd.read_csv('backend\csvPrediosSalasLotacao.csv', encoding="utf-8",   sep=';')
-    
-    # cria uma lista com as salas separadas do dfSigaa
-    listaSalaSeparadaSigaa = dfSigaa['salaSeparada'].to_list()
-    # cria uma lista com as salas separadas de prediosSalasLotacao
-    listaSalaSeparada = prediosSalasLotacao['salaSeparada'].to_list()
-    
-    # TESTE ----------------
-    #nomesColunas = list(dfSigaa.columns)
-    #print(prediosSalasLotacao['salaSeparada'][1])
-    #print('\n')
-    #print(nomesColunas)
-    # TESTE ----------------
-    
-    i=0
-    j=0
-    for i in range(len(listaSalaSeparadaSigaa)):
-        for j in range(len(listaSalaSeparada)):
-            if (dfSigaa['salaSeparada'][i] == prediosSalasLotacao['salaSeparada'][j]):
-                dfSigaa['lotacao'][i] = prediosSalasLotacao['lotacao'][j]
-                dfSigaa['predio'][i] = prediosSalasLotacao['predio'][j]
-    
-    dfSigaa.to_csv('csvDadosAtualizadosLotacao.csv', encoding="utf-8",   sep=';')
 
-    
-    # TESTE -------------------
-    # inseri I7 na sala separada do dfSigaa na linha 4 e vi se modificava
-    #print(dfSigaa['lotacao'][2:5])
-    #print(dfSigaa['salaSeparada'][2:5])
-    #print(dfSigaa['predio'][2:5])
-    # TESTE ---------------------- """
+# ==============================================================================================================
+# main
+# --------------------------------------------------------------------------------------------------------------
+# funcao principal que chama todos os metodos
+# ==============================================================================================================
+if __name__ == '__main__':
+    # ==========================================================================================================
+    # le os dados do arquivo csv em um dataframe dfSigaa 
+    dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",  sep=';') 
+    # ==========================================================================================================
+    # renomeia a coluna index que o dataframe incluiu 
+    dfSigaa.index.name = 'indexDados'
+    # ==========================================================================================================
+    # chama o metodo que separa as salas compostas
+    dfSigaa = separarSalasCompostas(dfSigaa)
+    # ==========================================================================================================
+    # chama a funcao que preenche a lotacao e o predio de cada sala
+    dfSigaa = preencherLotacaoPredio(dfSigaa)
+    # ==========================================================================================================
+    # renomeia a coluna index que o dataframe incluiu 
+    dfSigaa.index.name = 'indexDados'
+    # ==========================================================================================================
+    # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
+    dfSigaa.to_csv('./testes/csvTesteLotacaoPredio.csv', encoding="utf-8",   sep=';')
 
+# ==============================================================================================================
+# fim main
+# ==============================================================================================================
