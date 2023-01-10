@@ -1,4 +1,4 @@
-;codigNomeMateria;codigoTurma;ano;semestre;professor;cargahoraria;horario;vagasOfertadas;vagasOcupadas;local;horarioSeparado;percDisciplina;salaSeparada;predio;lotacao;percOcupacaoReal;percOcupacaoTotal
+indexDados;codigNomeMateria;codigoTurma;ano;semestre;professor;cargahoraria;horario;vagasOfertadas;vagasOcupadas;local;horarioSeparado;percDisciplina;salaSeparada;predio;lotacao;percOcupacaoReal;percOcupacaoTotal
 0;FGA0003 - COMPILADORES 1;1;2022;2;EDSON ALVES DA COSTA JUNIOR;60h;46T23;85;84;FGA - SALA S-4 e I-3;4T2;0.9882352941176471;S4;UAC;130.0;0.6461538461538462;0.6538461538461539
 1;FGA0003 - COMPILADORES 1;1;2022;2;EDSON ALVES DA COSTA JUNIOR;60h;46T23;85;84;FGA - SALA S-4 e I-3;4T3;0.9882352941176471;S4;UAC;130.0;0.6461538461538462;0.6538461538461539
 2;FGA0003 - COMPILADORES 1;1;2022;2;EDSON ALVES DA COSTA JUNIOR;60h;46T23;85;84;FGA - SALA S-4 e I-3;6T2;0.9882352941176471;S4;UAC;130.0;0.6461538461538462;0.6538461538461539

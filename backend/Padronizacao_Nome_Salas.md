@@ -36,7 +36,7 @@
 |	Lab.Termodin. |	La termodinamica       	|	UED	      |	25	    |
 |	Lab.LDS	      |	Lab LDS Ued	            |	UED	      |	15	    |
 |	Cont-4	      |	Container nº 4	        |	Container	|	1	      |
-|	Cont-8	      |	Container nº 8 Lab SHP	|	Container	|	1	      |
+|	Cont-8-SHP	      |	Container nº 8 Lab SHP	|	Container	|	1	      |
 |	Cont-17	      |	Container nº 17        	|	Container	|	1	      |
 |	LD.Reun-1	    |	Sala de reunião 1 LDTEA	|	LDTEA    	|	1	      |
 |	LD.Sala-2	    |	Sala 2 LDTEA	          |	LDTEA    	|	1	      |
