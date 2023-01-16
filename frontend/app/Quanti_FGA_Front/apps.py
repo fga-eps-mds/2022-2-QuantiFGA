@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class QuantiApiConfig(AppConfig):
+class QuantiFgaFrontConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "quanti_api"
+    name = "Quanti_FGA_Front"
