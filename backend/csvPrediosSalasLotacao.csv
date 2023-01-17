@@ -29,13 +29,13 @@ Lab.SS;Lab SS;UED;45
 Lab.Fis-1;Lab Fisica 1;UED;25
 Lab.Ond;Lab Fisica 2;UED;25
 Lab.Eletr.;Lab Eletr.;UED;20
-Lab.Mater.;Lab Materiais;UED;20
+Lab.Mater.;Lab Materiais;UED;15
 Mocap;Lab Mocap;UED;60
 Lab.Termoflui.;Lab termofluidos;UED;25
 Lab.Termodin.;La termodinamica;UED;25
 Lab.LDS;Lab LDS Ued;UED;15
-Cont-4;Container nº 4;Container;16
-Cont-8-SHP;Container nº 8;Container;30
-Cont-17;Container nº 17;Container;10
+Cont-4;Container nº 4;Container;45
+Cont-8-SHP;Container nº 8;Container;16
+Cont-17;Container nº 17;Container;30
 LD.Sala-2;Sala 2 LDTEA;LDTEA;20
 LD.Sala-3;Sala 3 LDTEA;LDTEA;30
