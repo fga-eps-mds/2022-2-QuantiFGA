@@ -10,7 +10,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-
 # ==============================================================================================================
 # metodo gerarCsv
 # ---------------
@@ -24,8 +23,8 @@ def gerarCsv():
     with open('./csvDadosColetados.csv', 'w', newline='', encoding="utf-8") as csvDadosColetados:
         csv.writer(csvDadosColetados, delimiter=';').writerow(
             ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
-            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local',
-            'horarioSeparado','percDisciplina','salaSeparada','predio','lotacao',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
             'percOcupacaoReal','percOcupacaoTotal'])
         csvDadosColetados.close()
     # ==========================================================================================================
@@ -33,11 +32,11 @@ def gerarCsv():
     with open('./csvDadosDesprezados.csv', 'w', newline='', encoding="utf-8") as csvDadosDesprezados:
         csv.writer(csvDadosDesprezados, delimiter=';').writerow(
             ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
-            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local',
-            'horarioSeparado','percDisciplina','salaSeparada','predio','lotacao',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
             'percOcupacaoReal','percOcupacaoTotal'])
         csvDadosDesprezados.close()
-
+    
 # ==============================================================================================================
 # fim metodo gerarCsv
 # ==============================================================================================================
@@ -195,6 +194,33 @@ def salvarDadosCsv(dados):
                 csv.writer(csvDadosDesprezados, delimiter=';').writerow(
                     dados[indice])
     csvDadosDesprezados.close()
+
+    # ==========================================================================================================
+    # le os dados do arquivo csv em um dataframe dfSigaa
+    dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",   sep=';')
+    # ==========================================================================================================
+    # cria um dataframe temporario que vai receber todas as linhas novas
+    new_df = pd.DataFrame()
+    new_df = pd.DataFrame(columns=    
+            ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
+            'percOcupacaoReal','percOcupacaoTotal'])
+    for i, row in dfSigaa.iterrows(): 
+        row_copy = row.copy()  
+        new_df.loc[len(new_df)] = row_copy
+    # ==========================================================================================================
+    # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
+    new_df.to_csv('csvDadosColetados.csv', encoding="utf-8", sep=';', index = False)
+    # ==========================================================================================================
+    # teste
+    new_df.to_csv('./testesUnitarios/csvTesteUnitDadosColetados.csv', encoding="utf-8", sep=';', index = False)
+
+    print('# ===========================================================================')
+    print('total de turmas coletadas: ')
+    print(len(new_df))
+    print('# ===========================================================================')
+
 # ==============================================================================================================
 # fim metodo salvarDadosCsv
 # ==============================================================================================================
@@ -227,6 +253,12 @@ if __name__ == '__main__':
     # ==========================================================================================================
     # salva os dados coletados no arquivo csv
     salvarDadosCsv(dados)
+    # ==========================================================================================================
+    # le os dados do arquivo csv em um dataframe dfSigaa
+    dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",   sep=';')
+    # ==========================================================================================================
+    # teste
+    dfSigaa.to_csv('./testesUnitarios/csvTesteUnitDadosColetados.csv', encoding="utf-8", sep=';', index = False)
     # ==========================================================================================================
     # imprime a hora de fim para checar o tempo de coleta
     print(datetime.now())

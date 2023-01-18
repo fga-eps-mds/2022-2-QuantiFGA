@@ -18,6 +18,11 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
     # ==========================================================================================================
     # cria um dataframe temporario que vai receber todas as linhas novas
     new_df = pd.DataFrame()
+    new_df = pd.DataFrame(columns=    
+             ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
+            'percOcupacaoReal','percOcupacaoTotal'])
     # tratamento para salas compostas que sera feito em versoes posteriores
     qtdd_disciplinas_ignoradas = 0
     qtdd_disciplinas_uma_sala = 0
@@ -39,32 +44,38 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
                 row_copy = row.copy()
                 row_copy["horarioSeparado"] = horario
                 row_copy["salaSeparada"] = localSeparado[0]
-                new_df = new_df.append(row_copy, ignore_index=True)
+                #new_df = new_df.append(row_copy, ignore_index=True)
+                new_df.loc[len(new_df)] = row_copy
 
         if qtde_salas_ocupadas == 2 and qtde_horarios == 4:
             qtdd_disciplinas_duas_salas_quatro_creditos = qtdd_disciplinas_duas_salas_quatro_creditos + 1
             row_copy = row.copy()
             row_copy["horarioSeparado"] = horarios[0]
             row_copy["salaSeparada"] = localSeparado[0]
-            new_df = new_df.append(row_copy, ignore_index=True)
+            #new_df = new_df.append(row_copy, ignore_index=True)
+            new_df.loc[len(new_df)] = row_copy
             row_copy = row.copy()
             row_copy["horarioSeparado"] = horarios[1]
             row_copy["salaSeparada"] = localSeparado[0]
-            new_df = new_df.append(row_copy, ignore_index=True)
+            #new_df = new_df.append(row_copy, ignore_index=True)
+            new_df.loc[len(new_df)] = row_copy
             row_copy = row.copy()
             row_copy["horarioSeparado"] = horarios[2]
             row_copy["salaSeparada"] = localSeparado[1]
-            new_df = new_df.append(row_copy, ignore_index=True)
+            #new_df = new_df.append(row_copy, ignore_index=True)
+            new_df.loc[len(new_df)] = row_copy
             row_copy = row.copy()
             row_copy["horarioSeparado"] = horarios[3]
             row_copy["salaSeparada"] = localSeparado[1]
-            new_df = new_df.append(row_copy, ignore_index=True)
+            #new_df = new_df.append(row_copy, ignore_index=True)
+            new_df.loc[len(new_df)] = row_copy
+            
         # ===================================================================================
         if qtde_salas_ocupadas == 2 and qtde_horarios != 4:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            print(qtdd_disciplinas_ignoradas)
-            print(' - ' + row["local"] + ' - duas salas - diferente de 4 creditos - IGNORADA')
+            #print(qtdd_disciplinas_ignoradas)
+            #print(' - ' + row["local"] + ' - duas salas - diferente de 4 creditos - IGNORADA')
             '''
             for horario in horarios:
                 for sala in localSeparado:
@@ -77,8 +88,8 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
         if qtde_salas_ocupadas == 3 and qtde_horarios == 6:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            print(qtdd_disciplinas_ignoradas)
-            print(' - ' + row["local"] + ' - tres salas - 6 creditos - IGNORADA')
+            #print(qtdd_disciplinas_ignoradas)
+            #print(' - ' + row["local"] + ' - ' + row["horario"] + ' - tres salas - 6 creditos - IGNORADA')
             '''
             row_copy = row.copy()
             row_copy["horarioSeparado"] = horarios[0]
@@ -109,8 +120,8 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
         if qtde_salas_ocupadas == 3 and qtde_horarios != 6:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            print(qtdd_disciplinas_ignoradas)
-            print(' - ' + row["local"] + ' - tres salas - diferente de 6 creditos - IGNORADA')
+            #print(qtdd_disciplinas_ignoradas)
+            #print(' - ' + row["local"] + ' - ' + row["horario"] + ' - tres salas - diferente de 6 creditos - IGNORADA')
             '''
             for horario in horarios:
                 for sala in localSeparado:
@@ -123,8 +134,8 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
         if qtde_salas_ocupadas > 3:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            print(qtdd_disciplinas_ignoradas)
-            print(' - ' + row["local"] + ' - mais de tres salas - IGNORADA')
+            #print(qtdd_disciplinas_ignoradas)
+            #print(' - ' + row["local"] + ' - ' + row["horario"] + ' - mais de tres salas - IGNORADA')
             '''
             for horario in horarios:
                 for sala in localSeparado:
@@ -139,6 +150,7 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
     print('total de turmas e horarios separados - uma linha por credito: ')
     print(len(new_df))
     print('# ===========================================================================')
+    '''
     print('turmas tratadas e separadas - total: ')
     print(qtdd_disciplinas_uma_sala + qtdd_disciplinas_duas_salas_quatro_creditos)
     print('# ============================================')
@@ -151,8 +163,11 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
     print(qtdd_disciplinas_ignoradas)
     print('tratamento para salas compostas ignoradas sera feito em versoes posteriores')
     print('# ===========================================================================')
-    
-    
+    '''
+    # ===================================================================================
+    # teste
+    new_df.to_csv('./testesUnitarios/csvTesteUnitSalasHorariosSeparadas.csv', encoding="utf-8", sep=';', index = False)
+       
 
     return new_df
 # ==============================================================================================================
@@ -268,20 +283,14 @@ def separaSala(local):
 if __name__ == '__main__':
     # ==========================================================================================================
     # le os dados do arquivo csv em um dataframe dfSigaa 
-    dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",  sep=',') 
-    # ==========================================================================================================
-    # renomeia a coluna index que o dataframe incluiu 
-    # dfSigaa.index.name = 'indexDados'
+    dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",  sep=';') 
     # ==========================================================================================================
     # chama o metodo que separa as salas compostas
-    dfSigaa_temporario = adicionarLinhasPorHorarioSalasSeparadas(dfSigaa)
-    # ==========================================================================================================
-    # renomeia a coluna index que o dataframe incluiu 
-    # dfSigaa_temporario.index.name = 'indexDados'
+    dfSigaa = adicionarLinhasPorHorarioSalasSeparadas(dfSigaa)
     # ==========================================================================================================
     # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
-    dfSigaa_temporario.to_csv('./testes/csvTesteSalasHorariosSeparadas.csv', encoding="utf-8", sep=',', index = False)
-
+    dfSigaa.to_csv('./testes/csvTesteSalasHorariosSeparadas.csv', encoding="utf-8", sep=';', index = False)
+    
 # ==============================================================================================================
 # fim main
 # ==============================================================================================================

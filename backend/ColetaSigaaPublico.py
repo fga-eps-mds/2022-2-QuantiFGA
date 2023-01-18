@@ -5,9 +5,8 @@ from datetime import datetime
 from carregarDados import gerarCsv
 from carregarDados import gerarConsulta
 from carregarDados import salvarDadosCsv
-from separarSalasCompostas import separarSalasCompostas
+from separarSalasCompostasEHorarios import adicionarLinhasPorHorarioSalasSeparadas
 from preencherLotacaoSalas import preencherLotacaoPredio
-from separarHorarios import adicionarLinhasPorHorario
 from calcularPercentuais import calcularPorcentagens
 import pandas as pd
 
@@ -20,6 +19,7 @@ if __name__ == '__main__':
     # ==========================================================================================================
     # imprime a hora de inicio para checar o tempo de coleta
     print(datetime.now())
+    
     # ==========================================================================================================
     # lista que vai receber todos os dados coletados para serem gravados no csv
     dados = []
@@ -38,24 +38,21 @@ if __name__ == '__main__':
     # ==========================================================================================================
     # salva os dados coletados no arquivo csv
     salvarDadosCsv(dados)
+    
     # ==========================================================================================================
     # le os dados do arquivo csv em um dataframe dfSigaa
     dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",   sep=';')
-    # renomeia a coluna index que o dataframe incluiu
-    dfSigaa.index.name = 'indexDados'
     # ==========================================================================================================
     # chama as funcoes para preencher os dados dessas novas colunas
     # ==========================================================================================================
-    dfSigaa = separarSalasCompostas(dfSigaa)
+    dfSigaa = adicionarLinhasPorHorarioSalasSeparadas(dfSigaa)
     # ==========================================================================================================
     dfSigaa = preencherLotacaoPredio(dfSigaa)
-    # ==========================================================================================================
-    dfSigaa = adicionarLinhasPorHorario(dfSigaa)
     # ==========================================================================================================
     dfSigaa = calcularPorcentagens(dfSigaa)
     # ==========================================================================================================
     # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
-    dfSigaa.to_csv('csvDadosAtualizados.csv', encoding="utf-8",   sep=';')
+    dfSigaa.to_csv('csvDadosAtualizados.csv', encoding="utf-8", sep=';', index = False)
     # ==========================================================================================================
     # imprime a hora de fim para checar o tempo de coleta
     print(datetime.now())

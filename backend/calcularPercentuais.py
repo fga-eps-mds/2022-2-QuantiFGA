@@ -2,9 +2,8 @@
 # area dos imports - bibliotecas e funcoes
 # ==============================================================================================================
 import pandas as pd  # biblioteca utilizada para arquivos em dataframe
-from separarSalasCompostas import separarSalasCompostas
+from separarSalasCompostasEHorarios import adicionarLinhasPorHorarioSalasSeparadas
 from preencherLotacaoSalas import preencherLotacaoPredio
-from separarHorarios import adicionarLinhasPorHorario
 
 # ==============================================================================================================
 # metodo calcularPorcentagens
@@ -13,15 +12,33 @@ from separarHorarios import adicionarLinhasPorHorario
 # ==============================================================================================================
 def calcularPorcentagens(dataframe):
     # ==========================================================================================================
-    # gera uma lista com a coluna lotacao
-    listaLotacao = dataframe['lotacao'].to_list()
+    # cria um dataframe temporario que vai receber todas as linhas novas
+    new_df = pd.DataFrame()
+    new_df = pd.DataFrame(columns=    
+            ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
+            'percOcupacaoReal','percOcupacaoTotal'])
+    # ==========================================================================================================
     # percorre toda a lista calculando e preenchendo as porcentagens
-    for i in range(len(listaLotacao)):
-        dataframe['percDisciplina'][i] = dataframe['vagasOcupadas'][i] / dataframe['vagasOfertadas'][i]
-        dataframe['percOcupacaoReal'][i] = dataframe['vagasOcupadas'][i] / dataframe['lotacao'][i]
-        dataframe['percOcupacaoTotal'][i] = dataframe['vagasOfertadas'][i] / dataframe['lotacao'][i]
+    for i, row in dataframe.iterrows():
+        row_copy = row.copy()  
+        row_copy["percDisciplina"] = (dataframe['vagasOcupadas'][i] / dataframe['vagasOfertadas'][i])*100
+        row_copy["percOcupacaoReal"] = (dataframe['vagasOcupadas'][i] / dataframe['lotacao'][i])*100
+        row_copy["percOcupacaoTotal"] = (dataframe['vagasOfertadas'][i] / dataframe['lotacao'][i])*100
+        new_df.loc[len(new_df)] = row_copy
 
-    return dataframe
+    print('# ===========================================================================')
+    print('total de turmas com o percentual calculado')
+    print(len(new_df))
+    print('# ===========================================================================')
+
+    # ==========================================================================================================
+    # teste
+    new_df.to_csv('./testesUnitarios/csvTesteUnitPorcentagens.csv', encoding="utf-8", sep=';', index = False)
+    
+    return new_df
+
 # ==============================================================================================================
 # fim metodo calcularPorcentagens
 # ==============================================================================================================
@@ -37,27 +54,18 @@ if __name__ == '__main__':
     # le os dados do arquivo csv em um dataframe dfSigaa 
     dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",  sep=';') 
     # ==========================================================================================================
-    # renomeia a coluna index que o dataframe incluiu 
-    dfSigaa.index.name = 'indexDados'
-    # ==========================================================================================================
-    # chama o metodo que separa as salas compostas
-    dfSigaa = separarSalasCompostas(dfSigaa)
+    # chama o metodo que separa os horarios por credito
+    dfSigaa = adicionarLinhasPorHorarioSalasSeparadas(dfSigaa)
     # ==========================================================================================================
     # chama o metodo que separa as salas compostas
     dfSigaa = preencherLotacaoPredio(dfSigaa)
     # ==========================================================================================================
     # chama o metodo que separa os horarios por credito
-    dfSigaa = adicionarLinhasPorHorario(dfSigaa)
-    # ==========================================================================================================
-    # chama o metodo que separa os horarios por credito
     dfSigaa  = calcularPorcentagens(dfSigaa)
     # ==========================================================================================================
-    # renomeia a coluna index que o dataframe incluiu 
-    dfSigaa.index.name = 'indexDados'
-    # ==========================================================================================================
     # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
-    dfSigaa.to_csv('./testes/csvTestePorcentagens.csv', encoding="utf-8",   sep=';')
-
+    dfSigaa.to_csv('./testes/csvTestePorcentagens.csv', encoding="utf-8", sep=';', index = False)
+    
 # ==============================================================================================================
 # fim main
 # ==============================================================================================================
