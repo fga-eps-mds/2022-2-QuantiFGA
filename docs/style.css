@@ -5,7 +5,7 @@ body {
 
 .container-conteudo {
   margin: auto;
-  max-width: 1000px;
+  max-width: 1120px;
 }
 
 header {
@@ -19,6 +19,9 @@ header {
 .imagemLogo {
   width: 249px;
   height: 64px;
+}
+.imagemlogo img{
+  width: 100%;
 }
 
 ul {
@@ -53,7 +56,7 @@ a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 61px;
   color: #35432f;
 }
@@ -357,22 +360,11 @@ h4 {
   padding: 50px;
 }
 
-.git{
-  
-  width: 109px;
-  height: 44px;
-  left: 510px;
-  top:3248px;
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
-
-.unb{
- 
-  width: 56px;
-  height: 32px;
-  left: 799px;
-  top:3252px;
-}
-
 
 
 
