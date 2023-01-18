@@ -1,400 +1,203 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 * {
-  box-sizing: border-box;
-  font-family: "Inter";
-  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
 body {
-  background-color: #f8f8f8;
-}
-/*-----Tudo do header-----*/
-header {
-  width: 100%;
-  height: auto;
-  margin-bottom: 80px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/fundo.png");
+  background-size: 110%;
+  background-repeat: no-repeat;
 }
 
+.ret1 {
+  position: absolute;
+  width: 200px;
+  height: 805px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 
-.louros {
-  height: auto; 
-  margin: 25px 15px;
-}
-.rotacionarLouro{
-  rotate: 180deg;
-}
-.quantiFGA {
-  width: 600px;
-  height: auto;
-  margin-top: 25px; 
+  background-color: #2f5034;
 }
 
-/*-----Tudo do main-----*/
-main {
-  display: flex;
-  justify-content: space-around;
+.ret2 {
+  position: absolute;
+  width: 158px;
+  height: 740px;
+  left: 19px;
+  top: 20px;
+
+  background: #6d9364;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.56);
+  border-radius: 30px;
+  z-index: 2;
 }
 
-/*-----Tudo do article -----*/
-article {
-  width: 65%;
-  height: auto;
+.topo {
+  position: absolute;
+  width: 1100px;
+  height: 40px;
+  left: 216px;
+  top: 26px;
+
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
 }
 
-article div {
-  border-radius: 10px;
+.fundo {
+  position: absolute;
+  width: 1130px;
+  height: 780px;
+  left: 200px;
+  top: 26px;
+
+  background: #e9f5e4;
+  opacity: 0.65;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.dptoOrdenacao {
-  width: 100%;
-  height: 35px;
-  background: #d9d9d9;
-  border: 1px solid #c4c1c1;
-  margin-bottom: 27px;
+.barra1 {
+  position: absolute;
+  width: 270px;
+  height: 101px;
+  left: 216px;
+  top: 85px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background: #447a4d;
+  border-radius: 22px;
 }
 
-.buscaDpto {
-  width: 96%;
-  height: 100%;
-  background-color: #d9d9d9;
+.barra2 {
+  position: absolute;
+  width: 270px;
+  height: 101px;
+  left: 494px;
+  top: 85px;
 
-  box-shadow: 0 0 0 0;
-  border: 0 none;
-  outline: 0;
-
-  margin-left: 10px;
-  border-radius: 10px 0 0 10px;
-  font-size: 20px;
+  background: #447a4d;
+  border-radius: 22px;
 }
 
-.lupinha {
-  width: 6%;
-  height: 100%;
-  background-color: #4f7344;
-  border-radius: 0px 10px 10px 0;
+.barra3 {
+  position: absolute;
+  width: 270px;
+  height: 101px;
+  left: 769px;
+  top: 85px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: #f8f8f8;
+  background: #447a4d;
+  border-radius: 22px;
 }
 
-.buscaDpto::placeholder {
-  color: rgba(42, 55, 36, 0.5);
+.barra4 {
+  position: absolute;
+  width: 270px;
+  height: 101px;
+  left: 1044px;
+  top: 85px;
+
+  background: #447a4d;
+  border-radius: 22px;
 }
 
-.Ordenacao {
-  width: 21%;
-  height: 100%;
-  font-size: 20px;
-  color: #ffffff;
-  background-color: #4f7344;
-  border-radius: 10px 0px 0px 10px;
+.grafic_bar {
+  position: absolute;
+  width: 1100px;
+  height: 263px;
+  left: 216px;
+  top: 200px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #ffffff;
+  border-radius: 15px;
 }
 
-.filtros {
-  width: 74%;
-  height: 95%;
-  background: #d9d9d9;
-  border-radius: 0;
+.uac {
+  position: absolute;
+  width: 490px;
+  height: 280px;
+  left: 223px;
+  top: 480px;
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 10px;
-  gap: 10px;
+  background: #ffffff;
+  border-radius: 15px;
 }
 
-.filtro {
-  height: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 5px;
+.ued {
+  position: absolute;
+  width: 590px;
+  height: 134px;
+  left: 728px;
+  top: 480px;
 
-  background-color: #acd1a1;
-}
-.nomeFiltro {
-  margin-left: 10px;
-  font-size: 15px;
-  color: #2b3725;
+  background: #ffffff;
+  border-radius: 15px;
 }
 
-.espacamento {
-  width: 15px;
-  height: 100%;
-}
-.divisaoFiltro {
-  width: 0.5px;
-  height: 100%;
-  background: #000000;
-}
+.ldtea {
+  position: absolute;
+  width: 290px;
+  height: 134px;
+  left: 728px;
+  top: 630px;
 
-.removerFiltro {
-  width: 20px;
-  height: 100%;
-  font-size: 20px;
-  color: #2b3725;
-  padding-left: 5px;
-
-  display: flex;
-  align-items: center;
+  background: #ffffff;
+  border-radius: 15px;
 }
 
-.adicionarFiltro {
-  width: 30px;
-  height: 30px;
+.containers {
+  position: absolute;
+  width: 290px;
+  height: 134px;
+  left: 1028px;
+  top: 630px;
 
-  background: #acd1a1;
-  border-radius: 10px;
-
-  font-size: 25px;
-  color: #2b3926;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  margin-right: 5px;
+  background: #ffffff;
+  border-radius: 15px;
 }
 
-.predio {
-  height: auto;
-  background: #d9d9d9;
-  border-radius: 10px;
-  margin-bottom: 39px;
-}
-
-.tituloPredio {
-  width: 195px;
-  height: 39px;
-  margin-bottom: 13px;
+.uac_bar {
+  position: absolute;
+  width: 137px;
+  height: 22px;
+  left: 223px;
+  top: 480px;
 
   background: #878787;
-  border-radius: 10px;
-
-  font-size: 28px;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  border-radius: 10px 0px;
 }
 
-.salasAulas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
- background: #d9d9d9; 
-}
-
-.sala {
-  width: 70px;
-  height: 230px;
-  margin-bottom: 50px;
-  background: #d9d9d9; 
-  margin-right: calc((3% - 5px) / 2);
-  margin-left: calc((3% - 5px) / 2);
-}
-
-.numSala {
-  height: 49px;
-  margin-bottom: 5px;
-  background: #d9d9d9;
-  font-size: 20px;
-  color: black;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.capacidadeSala{
-    font-family:sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.porta {
-  height: 150px;
-  background: #616060;
-
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5px;
-}
-.meiaPorta {
-  height: 50%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  color: #ffffff;
-  text-align: center;
-  font-weight: 700;
-  font-size: 25px;
-}
-.meiaPorta.superior {
-  background: #3cde75;
-  border-radius: 10px 10px 0px 0px;
-}
-.meiaPorta.superior.sup_azul {
-  background: #686bde;
-}
-.meiaPorta.inferior {
-  background: #de413c;
-  border-radius: 0px 0px 10px 10px;
-}
-
-section{
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-section.sala{
-    width: 70px;
-    height: 258px;    
-    border-radius: 10px;
-
-    justify-content: space-around;
-
-    margin-right: calc((3% - 5px) / 2);
-    margin-left: calc((3% - 5px) / 2);
-}
-
-
-.horario {
-  width: 146%;
-  height: 400px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-
-  background: #d9d9d9;
-}
-
-/*-----Tudo do asside -----*/
-aside {
-  width: 25%;
-  height: 997px;
-}
-
-.horario_asside {
-  width: 100%;
-  height: 800px;
-
-  background: #d9d9d9;
-  border-radius: 10px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  text-align: center;
-
-  margin-bottom: 30px;
-}
-
-.simulacaoMudancaHorario {
-  width: 100%;
-  height: 100px;
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: #acd1a1;
-}
-
-.linhaSimulacao {
-  width: 87%;
-  height: 0.5px;
-  background: #000000;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/*----Botão Login-----*/
-.loginButton {
-  width: 80px;
-  height: 30px;
-
-  border: 1px solid #000000;
-  border-radius: 10px;
-
-  color: #505050;
-  font-size: 16px;
-
+.ued_bar {
   position: absolute;
-  margin-top: -60px;
-  right: 2.5%;
+  width: 137px;
+  height: 22px;
+  left: 728px;
+  top: 480px;
 
-  overflow: hidden;
-
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
+  background: #878787;
+  border-radius: 10px 0px;
 }
 
-.loginButton button {
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
+.ldtea_bar {
+  position: absolute;
+  width: 137px;
+  height: 22px;
+  left: 728px;
+  top: 630px;
+
+  background: #878787;
+  border-radius: 10px 0px;
 }
 
-.loginButton:hover {
-  border-radius: 25px;
-  background: #d9d9d9;
+.containers_bar {
+  position: absolute;
+  width: 137px;
+  height: 22px;
+  left: 1028px;
+  top: 630px;
 
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-/*-----Tudo do footer -----*/
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: #de413c;
-  margin-top: 80px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 76px;
-
-  font-family: "Inter";
-  font-style: normal;
-}
-
-
-.sala-selecionada .meiaPorta.superior{
-  background: #000000;
+  background: #878787;
+  border-radius: 10px 0px;
 }
