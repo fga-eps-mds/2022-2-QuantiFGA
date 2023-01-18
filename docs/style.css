@@ -119,3 +119,89 @@ h4 {
   width: 1120px;
   height: 100px;
 }
+
+.img-fga{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-section {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+}
+
+.imgLogo{
+  position: absolute;
+  width: 492px;
+  height: 145px;
+  left: 451px;
+  top: 1058px;
+ }
+
+.title-sobre {
+  margin-top: 0;
+  width: 537px;
+  height: 43px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #35432f;
+}
+
+.text-sobre {
+  width: 455px;
+  height: 155px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157.4%;
+  color: #35432f;
+}
+
+.btn-sobre2 {
+  padding: 15px 140px;
+  background: #35432f;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 168.4%;
+  color: #ffffff;
+}
+
+.stars {
+  display: block;
+  margin-bottom: 85px;
+  margin-right: 46px;
+}
+
+.funcionalidade p {
+  margin-bottom: 65px;
+  width: 409px;
+  height: 54px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 132.9%;
+  color: #35432f;
+}
+
+.funcionalidade h3 {
+  margin-top: 0;
+  margin-bottom: -20px;
+  width: 409px;
+  height: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #35432f;
+}
