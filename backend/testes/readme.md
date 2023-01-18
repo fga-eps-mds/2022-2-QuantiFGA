@@ -3,7 +3,6 @@ Arquivos csv criados nos testes que foram feitos para validar os novos metodos i
     gerarCsv()
     gerarConsulta(nivel, depto, ano, periodo, dados)
     salvarDadosCsv(dados)
-    separarSalasCompostas(dataframe)
+    adicionarLinhasPorHorarioSalasSeparadas(dataframe)
     preencherLotacaoPredio(dataframe)
-    adicionarLinhasPorHorario(dataframe)
     calcularPorcentagens(dataframe)
