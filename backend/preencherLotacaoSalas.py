@@ -2,7 +2,7 @@
 # area dos imports - bibliotecas e funcoes
 # ==============================================================================================================
 import pandas as pd    # biblioteca utilizada para arquivos em dataframe
-from separarSalasCompostas import separarSalasCompostas
+from separarSalasCompostasEHorarios import adicionarLinhasPorHorarioSalasSeparadas
 
 # ==============================================================================================================
 # metodo preencherLotacaoPredio
@@ -14,34 +14,54 @@ def preencherLotacaoPredio(dataframeSigaa):
     # salva informacoes de lotacao e predio de cada sala do csv especifico em um dataframe prediosSalasLotacao
     dataframeSalas = pd.read_csv('./csvPrediosSalasLotacao.csv', encoding="utf-8",   sep=';')
     # ==========================================================================================================
+    # cria um dataframe temporario que vai receber todas as linhas novas
+    new_df = pd.DataFrame()
+    new_df = pd.DataFrame(columns=    
+            ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
+            'percOcupacaoReal','percOcupacaoTotal'])
+    # ==========================================================================================================
     # cria listas com os valores dos campos salaSeparada para comparacao
-    listaSalaSeparadaSigaa = dataframeSigaa['salaSeparada'].to_list()
+    #listaSalaSeparadaSigaa = dataframeSigaa['salaSeparada'].to_list()
     listaSalaSeparada = dataframeSalas['salaSeparada'].to_list()
     # ==========================================================================================================
     # inicializa os contadores que percorrem as duas listas
     i=0 # listaSalaSeparadaSigaa
     j=0 # listaSalaSeparada
     # ==========================================================================================================
-    # seta o flag que verifica se a variante da sala nao esta na matriz de comparacao como false
-    encontrou_info_sala = False
     # ==========================================================================================================
     # percorre a lista das salas de todas as disciplinas procurando a sala na lista que contem 
     # as informacoes de lotacao e predio
-    for i in range(len(listaSalaSeparadaSigaa)):
+    for i, row in dataframeSigaa.iterrows(): 
+        row_copy = row.copy()  
+        # seta o flag que verifica se a variante da sala nao esta na matriz de comparacao como false
+        encontrou_info_sala = False
         for j in range(len(listaSalaSeparada)):
             if (dataframeSigaa['salaSeparada'][i] == dataframeSalas['salaSeparada'][j]):
-                dataframeSigaa['lotacao'][i] = dataframeSalas['lotacao'][j]
-                dataframeSigaa['predio'][i] = dataframeSalas['predio'][j]
+                row_copy["lotacao"] = dataframeSalas['lotacao'][j]
+                row_copy["predio"] = dataframeSalas['predio'][j]
+                new_df.loc[len(new_df)] = row_copy
                 encontrou_info_sala = True
                 break
         # ======================================================================================================
         # se nao encontrou a sala na lista de informacoes de lotacao e predio, preeenche
         # uma mensagem para verificacao e futura correcao do arquivo csv
         if encontrou_info_sala == False:
-            dataframeSigaa['lotacao'][i] = 0
-            dataframeSigaa['predio'][i] = 'sala nao encontrada' + dataframeSigaa['salaSeparada'][i]
+            row_copy["lotacao"] = 1
+            row_copy["predio"] = 'sala nao encontrada' + dataframeSigaa['salaSeparada'][i]
+            new_df.loc[len(new_df)] = row_copy
     
-    return dataframeSigaa
+    print('# ===========================================================================')
+    print('total de turmas com lotacao e predio preenchidos - uma linha por credito: ')
+    print(len(new_df))
+    print('# ===========================================================================')
+    
+    # ==========================================================================================================
+    # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
+    new_df.to_csv('./testesUnitarios/csvTesteUnitLotacaoPredio.csv', encoding="utf-8", sep=';', index = False)
+    
+    return new_df
 
 
 # ==============================================================================================================
@@ -54,21 +74,14 @@ if __name__ == '__main__':
     # le os dados do arquivo csv em um dataframe dfSigaa 
     dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",  sep=';') 
     # ==========================================================================================================
-    # renomeia a coluna index que o dataframe incluiu 
-    dfSigaa.index.name = 'indexDados'
-    # ==========================================================================================================
-    # chama o metodo que separa as salas compostas
-    dfSigaa = separarSalasCompostas(dfSigaa)
+    dfSigaa = adicionarLinhasPorHorarioSalasSeparadas(dfSigaa)
     # ==========================================================================================================
     # chama a funcao que preenche a lotacao e o predio de cada sala
     dfSigaa = preencherLotacaoPredio(dfSigaa)
     # ==========================================================================================================
-    # renomeia a coluna index que o dataframe incluiu 
-    dfSigaa.index.name = 'indexDados'
-    # ==========================================================================================================
     # cria um novo csv com o dataframe preenchido e atualizado com as novas informacoes
-    dfSigaa.to_csv('./testes/csvTesteLotacaoPredio.csv', encoding="utf-8",   sep=';')
-
+    dfSigaa.to_csv('./testes/csvTesteLotacaoPredio.csv', encoding="utf-8", sep=';', index = False)
+    
 # ==============================================================================================================
 # fim main
 # ==============================================================================================================
