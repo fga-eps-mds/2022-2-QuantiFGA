@@ -205,3 +205,149 @@ h4 {
   line-height: 24px;
   color: #35432f;
 }
+
+.info-integrantes {
+  display: block;
+  margin-top: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #35432f
+}
+.container-quadrado {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: -350px;
+}
+.quadrado {
+  margin-bottom: 76px;
+  left: 160px;
+  width: 265px;
+  height: 188px;
+  background: rgba(172, 209, 161, 0.6);
+  border-radius: 24px;
+  z-index: 0;
+}
+
+.container-circulo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  gap: 165px;
+}
+.circulo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #c8c8c8;
+  z-index: 1;
+  
+}
+
+.fulano{
+  margin-top: 70px;
+  line-height: 168.4%;
+  text-align: center;
+}
+
+.fulano a{
+  color: #000000;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.fulano a:hover{
+  color: royalblue;
+  font-size: 21px;
+}
+
+.p-fulano {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 109.4%;
+  text-align: center;
+  color: #000000;
+}
+
+.textearea {
+  position: absolute;
+  width: 757px;
+  height: 393px;
+  left: 341px;
+  top: 2649px; 
+  background: linear-gradient(256.16deg, rgba(19, 63, 0, 0.84) 2.02%, rgba(45, 197, 0, 0.25) 100%);
+  border-radius: 43px;
+}
+
+.container-descricao {
+  position: absolute;
+  margin-left: 800px;
+}
+
+.container-descricao a {
+  color: black;
+}
+
+.circle-image { 
+  display: inline block; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  width: 120px; 
+  height: 150px; 
+} 
+
+.circle-image img { 
+  width: 50%; 
+  height: 50%;  
+}
+
+.edi{
+  background-image: url(img/Edi.png);
+  background-size: cover;  
+}
+
+.felipe{
+  background-image: url(img/Felipe.png);
+  background-size: cover ;
+}
+
+.julia{
+  background-image: url(img/Julia.png);
+  background-size: cover;
+}
+
+.gabriel{
+  background-image: url(img/Gabriel.png);
+  background-size: cover;
+}
+
+.pedro{
+  background-image: url(img/Pedro.png);
+  background-size: cover;
+}
+
+.raquel{
+  background-image: url(img/Raquel.png);
+  background-size: cover;
+}
+
+.vera{
+ background-image: url(img/Vera.png);
+  background-size: cover;
+}
+
+.zenilda{
+  background-image: url(img/Zenilda.png);
+  background-size: cover;
+}
+
