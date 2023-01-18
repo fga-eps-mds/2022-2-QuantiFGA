@@ -74,8 +74,8 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
         if qtde_salas_ocupadas == 2 and qtde_horarios != 4:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            #print(qtdd_disciplinas_ignoradas)
-            #print(' - ' + row["local"] + ' - duas salas - diferente de 4 creditos - IGNORADA')
+            print(' | ', qtdd_disciplinas_ignoradas, ' | ',row["codigNomeMateria"], ' | ',row["codigoTurma"], 
+                ' | ',row["local"], ' | ',row["horario"], ' | duas salas - diferente de 4 creditos | IGNORADA |')
             '''
             for horario in horarios:
                 for sala in localSeparado:
@@ -88,8 +88,8 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
         if qtde_salas_ocupadas == 3 and qtde_horarios == 6:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            #print(qtdd_disciplinas_ignoradas)
-            #print(' - ' + row["local"] + ' - ' + row["horario"] + ' - tres salas - 6 creditos - IGNORADA')
+            print(' | ', qtdd_disciplinas_ignoradas, ' | ',row["codigNomeMateria"], ' | ',row["codigoTurma"], 
+                ' | ',row["local"], ' | ',row["horario"], ' | tres salas - 6 creditos | IGNORADA |')
             '''
             row_copy = row.copy()
             row_copy["horarioSeparado"] = horarios[0]
@@ -120,8 +120,8 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
         if qtde_salas_ocupadas == 3 and qtde_horarios != 6:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            #print(qtdd_disciplinas_ignoradas)
-            #print(' - ' + row["local"] + ' - ' + row["horario"] + ' - tres salas - diferente de 6 creditos - IGNORADA')
+            print(' | ', qtdd_disciplinas_ignoradas, ' | ',row["codigNomeMateria"], ' | ',row["codigoTurma"], 
+                ' | ',row["local"], ' | ',row["horario"], ' | tres salas - diferente de 6 creditos | IGNORADA |')
             '''
             for horario in horarios:
                 for sala in localSeparado:
@@ -134,8 +134,8 @@ def adicionarLinhasPorHorarioSalasSeparadas(dataframe):
         if qtde_salas_ocupadas > 3:
             # tratamento para salas compostas que sera feito em versoes posteriores
             qtdd_disciplinas_ignoradas = qtdd_disciplinas_ignoradas + 1
-            #print(qtdd_disciplinas_ignoradas)
-            #print(' - ' + row["local"] + ' - ' + row["horario"] + ' - mais de tres salas - IGNORADA')
+            print(' | ', qtdd_disciplinas_ignoradas, ' | ',row["codigNomeMateria"], ' | ',row["codigoTurma"], 
+                ' | ',row["local"], ' | ',row["horario"], ' | mais de tres salas | IGNORADA |')
             '''
             for horario in horarios:
                 for sala in localSeparado:
