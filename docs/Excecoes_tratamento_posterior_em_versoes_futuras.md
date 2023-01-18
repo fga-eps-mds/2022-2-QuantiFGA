@@ -33,10 +33,8 @@
 |  18  |  FGA0250 - PROJETO INTEGRADOR DE ENGENHARIA 2  |  3  |  FGA - SALA S-1 e ANFITEATRO  |  4T45 6T2345  | duas salas - diferente de 4 creditos | IGNORADA |
 |  19  |  FGA0250 - PROJETO INTEGRADOR DE ENGENHARIA 2  |  4  |  FGA - SALA S-1 e ANFITEATRO  |  4T45 6T2345  | duas salas - diferente de 4 creditos | IGNORADA |
 |  20  |  FGA0250 - PROJETO INTEGRADOR DE ENGENHARIA 2  |  5  |  FGA - SALA S-1 e ANFITEATRO  |  4T45 6T2345  | duas salas - diferente de 4 creditos | IGNORADA |
-|  21  |  FGA0252 - SISTEMAS HIDROELÉTRICOS  |  1  |  FGA - LAB TERMODINÂMICA/ LAB TERMOFLUIDOS  |  46M12 2T5  | duas salas - diferente de 4 creditos 
-| IGNORADA |
-|  22  |  FGA0252 - SISTEMAS HIDROELÉTRICOS  |  1  |  FGA - LAB TERMODINÂMICA/ LAB TERMOFLUIDOS  |  46M12 2T5  | duas salas - diferente de 4 creditos 
-| IGNORADA |
+|  21  |  FGA0252 - SISTEMAS HIDROELÉTRICOS  |  1  |  FGA - LAB TERMODINÂMICA/ LAB TERMOFLUIDOS  |  46M12 2T5  | duas salas - diferente de 4 creditos | IGNORADA |
+|  22  |  FGA0252 - SISTEMAS HIDROELÉTRICOS  |  1  |  FGA - LAB TERMODINÂMICA/ LAB TERMOFLUIDOS  |  46M12 2T5  | duas salas - diferente de 4 creditos | IGNORADA |
 |  23  |  FGA0262 - TRANSMISSÃO E DISTRIBUIÇÃO DE ENERGIA ELÉTRICA  |  1  |  FGA - SALA I3 / SALA S6 / LAB ELETR  |  4M345 6M34  | tres salas - diferente de 6 creditos | IGNORADA |
 |  24  |  CIC0004 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES  |  8  |  46M34(I-10/FGA) 2T23(I-9/FGA)  |  46M34 2T23  | duas salas - diferente de 4 creditos | IGNORADA |
 |  25  |  CIC0004 - ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES  |  9  |  35M12(I-10/FGA) 2T45(I-9/FGA)  |  35M12 2T45  | duas salas - diferente de 4 creditos | IGNORADA |
