@@ -1,6 +1,15 @@
+============================================================================================
 # Algumas turmas não foram tratadas nessa primeira versão do projeto
+- total de disciplinas/turmas: 324
+- total de turmas e horarios separados - uma linha por credito: 1040
+- turmas tratadas e separadas - total: 285
+  - turmas com so uma sala: 244
+  - turmas com duas salas e quatro creditos: 41
+- turmas ignoradas - duas salas (diferente de 4 creditos) ou mais salas: 39
 
-## É necessário mapear os horários corretamente para cada sala para depois incluí-las no scrapping
+============================================================================================
+## É necessário mapear os horários e as salas corretamente para depois incluí-las no scrapping
+============================================================================================
 
 |Numero	|Disciplina	|Turma	|Local	|Horario	|Descrição	| Status	|
 | :--------: | :--------: | :--------: | :--------: | :---------: | :--------: | :--------: | 
@@ -45,21 +54,4 @@
 |39 	| FGA 	| SALA S5 E S9 	| duas salas 	| diferente de 4 creditos 	| IGNORADA |
 
 
-===================================================
 
-- total de turmas e horarios separados - uma linha por credito: 1040
-
-===================================================
-
-turmas tratadas e separadas - total: 285
-
-===================================================
-- turmas com so uma sala: 244
-
-- turmas com duas salas e quatro creditos: 41
-
-===================================================
-
-- turmas ignoradas - duas salas (diferente de 4 creditos) ou mais salas: 39
-
-===================================================
