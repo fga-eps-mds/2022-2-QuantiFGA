@@ -20,6 +20,7 @@ header {
   width: 249px;
   height: 64px;
 }
+
 .imagemlogo img{
   width: 100%;
 }
@@ -222,6 +223,7 @@ h4 {
   text-align: center;
   color: #35432f
 }
+
 .container-quadrado {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -229,6 +231,7 @@ h4 {
   gap: 20px;
   margin-top: -350px;
 }
+
 .quadrado {
   margin-bottom: 76px;
   left: 160px;
@@ -252,11 +255,13 @@ h4 {
   margin-left: 90px;
   z-index: 1;
   }
+
 .fulano{
   margin-top: 70px;
   line-height: 168.4%;
   text-align: center;
 }
+
 .fulano a{
   color: #000000;
   font-family: "Montserrat";
@@ -269,6 +274,7 @@ h4 {
   color: royalblue;
   font-size: 21px;
 }
+
 .p-fulano {
   font-family: "Montserrat";
   font-style: normal;
