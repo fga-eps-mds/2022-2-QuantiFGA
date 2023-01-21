@@ -31,8 +31,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip freeze > requirements.txt
     
     - name: Run Tests
       run: |
-        python TestesUnitarios.py test
+        python TestesUnitarios.py 
