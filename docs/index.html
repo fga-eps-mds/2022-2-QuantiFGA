@@ -1,57 +1,193 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1, initial-scale=1.0">
-
-     <!---Relizando o resset-->
-     <link rel="stylesheet" href="reset.css" />
-   
-     <!-- Invoca para que possa editar o css em outra "aba" dentro do projeto -->
-    <link rel="stylesheet" href="style.css" />
-   
-    <!--Importando as fontes-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
-    <!--Coloca o ícone na aba-->
-    <link rel="icon" href="img/engrenagem.png" />
-
     <title>QuantiFGA</title>
-</head>
-<body>
-
-<header>
-    <div class="cantoDireito">
-        <img class="curvas" src="img/curvas.png" alt="curvas"/>
-        <!-- <img class="louros" src="img/louros.png" alt="louros"/> -->
-    </div>   
-            <img class="quantiFGA" src="img/quantiFGA.png" alt="logo do projeto"/>
-    <div class="cantoEsquerdo"> 
-        <img class="curvas rotacionarCurvas" src="img/curvas.png" alt="borda dos louros"/>    
-        <!-- <img class="louros rotacionarCurvas" src="img/louros.png" alt="louros"/> -->
-    </div>
-</header>
-
-
-
-<main>
-
-    <div class="infoDireita">
-        <div class="infoTexto">QuantiFGA é um projeto web que tem como objetivo auxiliar os coordenadores da FGA com o problema de alocação das salas em relação às vagas das disciplinas ofertadas. O projeto apresenta visualmente a ocupação das turmas em relação à quantidade de vagas ofertadas e um segundo gráfico que ilustra a capacidade de ocupação da sala (espaço físico) em relação ao número de matriculas em determinada disciplina. </div>
-            <a class="repositorio" href="https://github.com/fga-eps-mds/2022-2-QuantiFGA/tree/main" target="_blank">Repositório GitHub</a>
-    </div>
-
-    <div class="infoEsquerda">
-        <div class="infoImg">
-            <img src="img/panfleto.png"/>
+  </head>
+  
+  <body>
+    <section class="container-conteudo">
+      <header>
+        <div class="imagemLogo">
+          <img src="img/QuantiFGA 1.png"  alt=""/>
         </div>
+        <div>
+            <ul>
+                <li>
+                    <a  class= " menu" href="#sobre"> Sobre</a>
+                </li>
+        
+                <li>
+                    <a class=" menu" href="#integrantes">Integrantes</a>
+                </li>
+        
+                <li>
+                    <a class=" menu" href="https://github.com/fga-eps-mds/2022-2-QuantiFGA" target="_blank">
+                    Repositório
+                    </a>
+                </li>
+            </ul>
+        </div>  
+      </header>
+      <section class="info">
+        <div>
+          <h1 class="info-titulo">Gerencie e analise as salas da FGA</h1>
+          <p class=" info-text">A forma mais fácil e visual de observar a distribuição das turmas, com base no SIGAA </p>
+          <div>
+            <a href="" class="btn-site">Site</a>
+            <a href="" class="btn-sobre">Sobre</a>
+          </div>
+        </div>
+        <div class="grafico">
+          <img src="img/Grafico.png" alt="grafico">
+        </div>
+      </section>
+  
+      <section class="container-arqui">
+  
+        <div class="h4">
+          <h4>Arquitetura</h1>
+            
+        </div>
+        <div class="img-arqui">
+          <img src="img/arquitetura.png" alt="arquitetura">
+        </div>
+      </section>
+      <div class="img-fga" >
+        <img src="img/QuantiFGA 1.png" alt="" >
+      </div>
+      <section class="container-section">
+        <div class="container-sobre">
+        <h3 class="title-sobre" id="sobre">Sobre o QuantiFGA</h3>
+        <p class="text-sobre">Pensando nas grandes listas de espera para uma disciplina, desenvolvemos uma aplicação web que permita contabilizar e analisar a distribuição das turmas nas salas da Faculdade do Gama.</p>
+        <a href="./" class="btn-sobre2">Site</a>
+      </div>
+
+      <div class="ims-stars">
+        <img src="img/Star 1.png" alt="" class="stars">
+        <img src="img/Star 1.png" alt="" class="stars">
+        <img src="img/Star 1.png" alt="" class="stars">
+      </div>
+
+      <div class="funcionalidade">
+        <h3>Funcionaliade  </h3>
+        <p>O QuantiFGA ira permitir que o coordenado visualize a ocupação das salas.</p>
+        <h3>Funcionaliade </h3>
+        <p>Vai ser possivel filtrar a ocupação das salas pelos horarios</p>
+        <h3>Funcionaliade  </h3>
+        <p>O QuantiFGA ira mostar as porccntagens de ocupação de todas as salas da FGA</p>
+      
+      </div>
+    </section>
+    <div class="info-integrantes">
+      <h1 id="integrantes"> Integrantes </h1>
     </div>
-
-</main>
-
-<footer>
-    <img src="img/logo_fga.png" alt="logo da fga"/>    
-</footer>
-</body>
-</html>
+    <div class="container-circulo">
+      
+      <div class="circulo edi">
+      </div>
+      <div class="circulo felipe">
+      </div>
+      <div class="circulo gabriel">
+      </div>
+      <div class="circulo julia">
+      </div>
+      <div class="circulo pedro">
+      </div>
+      <div class="circulo raquel">
+      </div>
+      <div class="circulo vera">
+      </div>
+      <div class="circulo zenilda">
+        
+      </div>
+    </div>
+    <div class="container-quadrado">
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/edilbertocantuaria" target="_blank">
+            Edilberto</h3>
+            </a>
+        <p class="p-fulano">Engenharia de software </p>
+      </div>
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/FelipeNunesdM" target="_blank">
+            Felipe Nunes
+            </a>        
+        </h3>
+        <p class="p-fulano">Engenharia de software</p>
+        
+      </div>
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/GabrielMS00" target="_blank">
+            Gabriel Marques 
+            </a>
+        </h3>
+        <p class="p-fulano">Engenharia de software</p>
+      </div>
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/JuliaDaYo" target="_blank">
+            Júlia Lopes
+            </a>
+        </h3>
+        <p class="p-fulano">Engenharia de software</p>
+      </div>
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/pedrobarbosaocb" target="_blank">
+            Pedro Barbosa
+            </a>
+        </h3>
+        <p class="p-fulano">Engenharia de software</p>
+      </div>
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/raqueleucaria" target="_blank">
+            Raquel Eucaria 
+            </a>
+        </h3>
+        <p class="p-fulano">Engenharia de software</p>
+      </div>
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/verabelucia" target="_blank">
+            Vera Lucia
+            </a>
+        </h3>
+        <p class="p-fulano">Engenharia de software</p>
+      </div>
+      <div class="quadrado">
+        <h3 class="fulano">
+            <a href="https://github.com/ZenildaVieira">
+            Zenilda Vieira
+            </a>
+        </h3>
+        <p class="p-fulano">Engenharia de software</p>
+      </div>
+    </div>
+    <div class="video"> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rr3tahk3CNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <div class="footer">
+            <a href="https://github.com/fga-eps-mds/2022-2-QuantiFGA" target="_blank">
+                <img src="img/image 19.png" alt="" class="git"/>
+            </a>
+            <a href="https://www.unb.br/" target="_blank">
+                <img src="img/image 20.png" alt="" class="unb"/>
+            </a>
+            <a href="https://fga.unb.br/" target="_blank">
+                <img src="img/image 22.png" alt="" class="fga"/>
+            </a>
+            
+            
+            
+        </div>
+    </footer>
+    
+    
