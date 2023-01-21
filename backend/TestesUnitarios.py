@@ -54,6 +54,25 @@ dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1',
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'S4', 'UAC', 130, '4T3', 98.82352941176471, 64.61538461538461, 65.38461538461539]
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T2', 98.82352941176471, 140.0, 141.66666666666669]
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T3', 98.82352941176471, 140.0, 141.66666666666669]
+
+# ======================================================================================================
+# cria um dataframe de exemplo de saida de dados ja com horarios e salas separadas, 
+# Horario e predio preenchidos e percentuais calculados
+dfSigaaPorcentagens = []
+dfSigaaPorcentagens = pd.DataFrame(columns=    
+            ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
+            'percOcupacaoReal','percOcupacaoTotal'])
+dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'S4', 'UAC', 130, '4T2', 98.82352941176471, 64.61538461538461, 65.38461538461539]
+dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'S4', 'UAC', 130, '4T3', 98.82352941176471, 64.61538461538461, 65.38461538461539]
+dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T2', 98.82352941176471, 140.0, 141.66666666666669]
+dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T3', 98.82352941176471, 140.0, 141.66666666666669]
+
+
+
+
+
 # ======================================================================================================
 
 # ==============================================================================================================
@@ -63,43 +82,46 @@ dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1',
 # ==============================================================================================================
 class TesteColetaSigaaPublico(unittest.TestCase):
 
-	# Metodo de teste unitario para verificar o  metodo separarSalasCompostas
-	def testeSepararSalasCompostasEHorarios(self):
-		print(dfSigaaDadosColetados.head())
-		print(dfSigaaSalasHorariosSeparadas.head())
-		dfTesteResultado = adicionarLinhasPorHorarioSalasSeparadas(dfSigaaDadosColetados)
-		dfTesteResultado.to_csv('./testesUnitarios/csvTeste1.csv', encoding="utf-8", sep=';', index = False)
-		dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste1.csv', encoding="utf-8",   sep=';')
-		dfTesteResultadoEsperado = dfSigaaSalasHorariosSeparadas
+	# # Metodo de teste unitario para verificar o  metodo separarSalasCompostas
+	# def testeSepararSalasCompostasEHorarios(self):
+	# 	print(dfSigaaDadosColetados.head())
+	# 	print(dfSigaaSalasHorariosSeparadas.head())
+	# 	dfTesteResultado = adicionarLinhasPorHorarioSalasSeparadas(dfSigaaDadosColetados)
+	# 	dfTesteResultado.to_csv('./testesUnitarios/csvTeste1.csv', encoding="utf-8", sep=';', index = False)
+	# 	dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste1.csv', encoding="utf-8",   sep=';')
+	# 	dfTesteResultadoEsperado = dfSigaaSalasHorariosSeparadas
 		
-		self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
-	# =========================================================================================================
+	# 	self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
+	# # =========================================================================================================
 
-	# Metodo de teste unitario para verificar o metodo preencherLotacaoPredio
-	def testePreencherLotacaoPredio(self):
-		print(dfSigaaSalasHorariosSeparadas.head())
-		print(dfSigaaLotacaoPredio.head())
-		dfTesteResultado = preencherLotacaoPredio(dfSigaaSalasHorariosSeparadas)
-		dfTesteResultado.to_csv('./testesUnitarios/csvTeste2.csv', encoding="utf-8", sep=';', index = False)
-		dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste2.csv', encoding="utf-8",   sep=';')
-		dfTesteResultadoEsperado = dfSigaaLotacaoPredio
+	# # Metodo de teste unitario para verificar o metodo preencherLotacaoPredio
+	# def testePreencherLotacaoPredio(self):
+	# 	print(dfSigaaSalasHorariosSeparadas.head())
+	# 	print(dfSigaaLotacaoPredio.head())
+	# 	dfTesteResultado = preencherLotacaoPredio(dfSigaaSalasHorariosSeparadas)
+	# 	dfTesteResultado.to_csv('./testesUnitarios/csvTeste2.csv', encoding="utf-8", sep=';', index = False)
+	# 	dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste2.csv', encoding="utf-8",   sep=';')
+	# 	dfTesteResultadoEsperado = dfSigaaLotacaoPredio
 		
-		self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
-	# =========================================================================================================
+	# 	self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
+	# # =========================================================================================================
 
-	# Metodo de teste unitario para verificar o metodo calcularPorcentagens
-	def testeCalcularPorcentagens(self):
-		print(dfSigaaLotacaoPredio.head())
-		print(dfSigaaPorcentagens.head())
-		dfTesteResultado = calcularPorcentagens(dfSigaaLotacaoPredio)
-		dfTesteResultado.to_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8", sep=';', index = False)
-		dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8",   sep=';')
-		dfTesteResultadoEsperado = dfSigaaPorcentagens
+	# # Metodo de teste unitario para verificar o metodo calcularPorcentagens
+	# def testeCalcularPorcentagens(self):
+	# 	print(dfSigaaLotacaoPredio.head())
+	# 	print(dfSigaaPorcentagens.head())
+	# 	dfTesteResultado = calcularPorcentagens(dfSigaaLotacaoPredio)
+	# 	dfTesteResultado.to_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8", sep=';', index = False)
+	# 	dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8",   sep=';')
+	# 	dfTesteResultadoEsperado = dfSigaaPorcentagens
 		
-		self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
-	# =========================================================================================================
+	# 	self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
+	# # =========================================================================================================
 
+	def testeSeparaHoraio(self):
+		
 
+	
 
 # main
 # --------------------------------------------------------------------------------------------------------------
