@@ -6,7 +6,7 @@ import pandas as pd
 from pandas.testing import assert_frame_equal
 from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
-from separarSalasCompostasEHorarios import adicionarLinhasPorHorarioSalasSeparadas
+from separarSalasCompostasEHorarios import * # importa todas as funções (adicionarLinhasPorHorarioSalasSeparadas, separaHorario)
 
 # ======================================================================================================
 # cria um dataframe de exemplo de entrada de dados coletados
@@ -17,6 +17,8 @@ dfSigaaDadosColetados = pd.DataFrame(columns=
             'predio','lotacao', 'horarioSeparado', 'percDisciplina',
             'percOcupacaoReal','percOcupacaoTotal'])
 dfSigaaDadosColetados.loc[len(dfSigaaDadosColetados)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', '-', '-', 0, '-', 0, 0, 0]
+
+listaSigaaDadosColetadosHoraio = dfSigaaDadosColetados['horario'].to_list() # entrada de testeSepararHorario
 # ======================================================================================================
 # cria um dataframe de exemplo de saida de dados ja com horarios separados
 dfSigaaSalasHorariosSeparadas = []
@@ -56,23 +58,15 @@ dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1',
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T3', 98.82352941176471, 140.0, 141.66666666666669]
 
 # ======================================================================================================
-# cria um dataframe de exemplo de saida de dados ja com horarios e salas separadas, 
-# Horario e predio preenchidos e percentuais calculados
-dfSigaaPorcentagens = []
-dfSigaaPorcentagens = pd.DataFrame(columns=    
-            ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
-            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
-            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
-            'percOcupacaoReal','percOcupacaoTotal'])
-dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'S4', 'UAC', 130, '4T2', 98.82352941176471, 64.61538461538461, 65.38461538461539]
-dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'S4', 'UAC', 130, '4T3', 98.82352941176471, 64.61538461538461, 65.38461538461539]
-dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T2', 98.82352941176471, 140.0, 141.66666666666669]
-dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T3', 98.82352941176471, 140.0, 141.66666666666669]
-
-
-
-
-
+# cria uma lista/vetor com exemplos de horários separados
+# 26T12 = [[2, "tarde", 1 ], [2, "tarde", 2 ], [6, "tarde", 1 ], [6, "tarde", 2 ]]
+listaSigaaHorario = [
+					[[2, "tarde", 2 ], [2, "tarde", 3 ], [6, "tarde", 2 ], [6, "tarde", 3 ]],
+					[[2, "manha", 1 ], [2, "manha", 2 ], [4, "manha", 1 ], [4, "manha", 2 ]],
+					[[3, "manha", 3 ], [3, "manha", 4 ], [5, "manha", 3 ], [5, "manha", 4 ]],
+					[[3, "tarde", 4 ], [3, "tarde", 5 ], [5, "tarde", 4 ], [6, "tarde", 5 ]],
+					[[4, "tarde", 2 ], [4, "tarde", 3 ], [6, "tarde", 2 ], [6, "tarde", 3 ]]
+                ]
 # ======================================================================================================
 
 # ==============================================================================================================
@@ -106,19 +100,31 @@ class TesteColetaSigaaPublico(unittest.TestCase):
 	# 	self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
 	# # =========================================================================================================
 
-	# # Metodo de teste unitario para verificar o metodo calcularPorcentagens
-	# def testeCalcularPorcentagens(self):
-	# 	print(dfSigaaLotacaoPredio.head())
-	# 	print(dfSigaaPorcentagens.head())
-	# 	dfTesteResultado = calcularPorcentagens(dfSigaaLotacaoPredio)
-	# 	dfTesteResultado.to_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8", sep=';', index = False)
-	# 	dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8",   sep=';')
-	# 	dfTesteResultadoEsperado = dfSigaaPorcentagens
+	# Metodo de teste unitario para verificar o metodo calcularPorcentagens
+	def testeCalcularPorcentagens(self):
+		print(dfSigaaLotacaoPredio.head())
+		print(dfSigaaPorcentagens.head())
+		dfTesteResultado = calcularPorcentagens(dfSigaaLotacaoPredio)
+		dfTesteResultado.to_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8", sep=';', index = False)
+		dfTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste3.csv', encoding="utf-8",   sep=';')
+		dfTesteResultadoEsperado = dfSigaaPorcentagens
 		
-	# 	self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
-	# # =========================================================================================================
+		self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
+	# =========================================================================================================
 
-	def testeSeparaHoraio(self):
+	# Metodo de teste unitario para verificar o metodo separarHorario
+		# 26T12 = [[2, "tarde", 1 ], [2, "tarde", 2 ], [6, "tarde", 1 ], [6, "tarde", 2 ]]
+
+	def testeSepararHoraio(self):
+		print(listaSigaaDadosColetadosHoraio)
+		print(listaSigaaHorario)
+		listaTesteResultado = separaHorario(listaSigaaDadosColetadosHoraio)
+		listaTesteResultado.to_csv('./testesUnitarios/csvTeste4.csv', encoding="utf-8", sep=';', index = False)
+		listaTesteResultadoObtido = pd.read_csv('./testesUnitarios/csvTeste4.csv', encoding="utf-8",   sep=';')
+		listaTesteResultadoEsperado = listaSigaaHorario
+
+		self.assertIsNone(assert_frame_equal(listaTesteResultadoEsperado, listaTesteResultadoEsperado))
+	# =========================================================================================================
 		
 
 	
