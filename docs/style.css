@@ -85,6 +85,8 @@ a {
   margin-top: 56px;
   font-size: 20px;
   margin-right: 22px;
+  color: #000000;
+  font-family: "Montserrat";
 }
 
 .btn-sobre {
@@ -241,24 +243,20 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-wrap: wrap;
-  margin-left: 70px;
-  gap: 165px;
 }
+
 .circulo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #c8c8c8;
+  margin-left: 90px;
   z-index: 1;
-  
-}
-
+  }
 .fulano{
   margin-top: 70px;
   line-height: 168.4%;
   text-align: center;
 }
-
 .fulano a{
   color: #000000;
   font-family: "Montserrat";
@@ -271,7 +269,6 @@ h4 {
   color: royalblue;
   font-size: 21px;
 }
-
 .p-fulano {
   font-family: "Montserrat";
   font-style: normal;
@@ -317,11 +314,14 @@ h4 {
 .edi{
   background-image: url(img/Edi.png);
   background-size: cover;  
+  margin-bottom: 160px;
+  margin-left: 70px;
 }
 
 .felipe{
   background-image: url(img/Felipe.png);
   background-size: cover ;
+  margin-left: 80px;
 }
 
 .julia{
@@ -337,6 +337,7 @@ h4 {
 .pedro{
   background-image: url(img/Pedro.png);
   background-size: cover;
+  margin-left: 80;
 }
 
 .raquel{
