@@ -2,18 +2,32 @@ import csv
 from pymongo import MongoClient
 
 
-mongoClient = MongoClient('mongodb+srv://quanti_fga:projeto-sigaa@cluster0.fnaahap.mongodb.net/test') 
-db = mongoClient.disciplinas
-db.segment.drop()
+#seleciona a string de conexão
+def alimentarBanco():
 
-header = ['codigNomeMateria','codigoTurma','ano','semestre','professor','cargahoraria','horario','vagasOfertadas','vagasOcupadas','local','horarioSeparado','percDisciplina','salaSeparada','predio','lotacao','percOcupacaoReal','percOcupacaoTotal']
-csvfile = open('csvDadosAtualizados.csv', 'r', encoding="utf8")
-reader = csv.DictReader(csvfile, delimiter=";")
+    #conectando ao banco pela string de conexão
+    mongoClient = MongoClient('mongodb+srv://quanti_fga:projeto-sigaa@cluster0.fnaahap.mongodb.net/test') 
+    #seleciona a tabela
+    db = mongoClient.disciplinas
+    #remove as informações passadas do banco
+    db.segment.drop()
 
-for each in reader:
-    row={}
-    for field in header:
-        row[field]=each[field]
-        
-    print (row)
-    db.segment.insert(row)
+    header = ['codigNomeMateria','codigoTurma','ano','semestre','professor','cargahoraria','horario','vagasOfertadas','vagasOcupadas','local','horarioSeparado','percDisciplina','salaSeparada','predio','lotacao','percOcupacaoReal','percOcupacaoTotal']
+    csvfile = open('csvDadosAtualizados.csv', 'r', encoding="utf8")
+    #lendo o csv separando por semicolon
+    reader = csv.DictReader(csvfile, delimiter=";")
+
+    #adicionando ao banco linha por linha
+    for each in reader:
+        row={}
+        for field in header:
+            row[field]=each[field]
+            
+        #print (row)
+        db.segment.insert(row)
+
+    print("Banco de dados atualizado com sucesso")
+
+
+#main
+alimentarBanco()
