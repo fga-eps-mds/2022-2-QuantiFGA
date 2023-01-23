@@ -8,7 +8,17 @@ from carregarDados import salvarDadosCsv
 from separarSalasCompostasEHorarios import adicionarLinhasPorHorarioSalasSeparadas
 from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
+from pymongo import MongoClient
 import pandas as pd
+
+# Função para gerar o database 
+def get_database():
+    #  URL do mongodb atlas para conectar ao banco pela string de conexão
+    CONNECTION_STRING = 'mongodb+srv://vera_test:vera_test@cluster-quantifga.b6tob2c.mongodb.net' 
+    # Cria uma conexão usando o MongoClient 
+    client = MongoClient(CONNECTION_STRING, tlsInsecure=True)
+    # Cria o bando de dados Quanti_FGA_DB
+    return client['Quanti_FGA_DB']
 
 # ==============================================================================================================
 # main
@@ -38,7 +48,6 @@ if __name__ == '__main__':
     # ==========================================================================================================
     # salva os dados coletados no arquivo csv
     salvarDadosCsv(dados)
-    
     # ==========================================================================================================
     # le os dados do arquivo csv em um dataframe dfSigaa
     dfSigaa = pd.read_csv('csvDadosColetados.csv', encoding="utf-8",   sep=';')
@@ -56,6 +65,7 @@ if __name__ == '__main__':
     # ==========================================================================================================
     # imprime a hora de fim para checar o tempo de coleta
     print(datetime.now())
+    # ==========================================================================================================
 
 # ==============================================================================================================
 # fim main
