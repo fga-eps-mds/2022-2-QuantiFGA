@@ -20,6 +20,15 @@ def get_database():
     # Cria o bando de dados Quanti_FGA_DB
     return client['Quanti_FGA_DB']
 
+
+# função para savar os daods no banco de dados 
+def save_dataset_to_database(dataset):
+    data_dict = dataset.to_dict("records")
+    mongo_client = get_database()
+    m = mongo_client["Disciplinas"]
+    m.drop()
+    m.insert_many(data_dict)
+
 # ==============================================================================================================
 # main
 # --------------------------------------------------------------------------------------------------------------
