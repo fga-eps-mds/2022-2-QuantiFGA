@@ -8,6 +8,7 @@ from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
 from separarSalasCompostasEHorarios import adicionarLinhasPorHorarioSalasSeparadas
 
+
 # ======================================================================================================
 # cria um dataframe de exemplo de entrada de dados coletados
 dfSigaaDadosColetados = []
@@ -54,8 +55,6 @@ dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1',
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'S4', 'UAC', 130, '4T3', 98.82352941176471, 64.61538461538461, 65.38461538461539]
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T2', 98.82352941176471, 140.0, 141.66666666666669]
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T3', 98.82352941176471, 140.0, 141.66666666666669]
-# ======================================================================================================
-
 # ==============================================================================================================
 # classe TesteColetaSigaaPublico
 # --------------------------------------------------------------------------------------------------------------
@@ -98,7 +97,16 @@ class TesteColetaSigaaPublico(unittest.TestCase):
 		
 		self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
 	# =========================================================================================================
+	
+	def testeSepararHoraio(self):
+		resultadoEsperado = listaSaidaLocais
+		resultado0 =separaSala(listaEntradaLocais[0])
+		resultado1 =separaSala(listaEntradaLocais[1])
+		resultado2 =separaSala(listaEntradaLocais[2])
+		resultado3 =separaSala(listaEntradaLocais[3])
+		resultadoObtido = [resultado0,resultado1,resultado2,resultado3]
 
+		self.assertEqual(resultadoEsperado, resultadoObtido)
 
 
 # main
