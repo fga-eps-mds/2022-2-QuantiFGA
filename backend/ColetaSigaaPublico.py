@@ -14,7 +14,7 @@ import pandas as pd
 # Função para gerar o database 
 def get_database():
     #  URL do mongodb atlas para conectar ao banco pela string de conexão
-    CONNECTION_STRING = 'mongodb+srv://vera_test:vera_test@cluster-quantifga.b6tob2c.mongodb.net' 
+    CONNECTION_STRING = 'mongodb+srv://<username>:<password>@cluster-quantifga.b6tob2c.mongodb.net/test' 
     # Cria uma conexão usando o MongoClient 
     client = MongoClient(CONNECTION_STRING, tlsInsecure=True)
     # Cria o bando de dados Quanti_FGA_DB
