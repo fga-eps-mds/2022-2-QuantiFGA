@@ -6,8 +6,7 @@ import pandas as pd
 from pandas.testing import assert_frame_equal
 from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
-from separarSalasCompostasEHorarios import adicionarLinhasPorHorarioSalasSeparadas
-
+from separarSalasCompostasEHorarios import *
 
 # ======================================================================================================
 # cria um dataframe de exemplo de entrada de dados coletados
@@ -18,6 +17,12 @@ dfSigaaDadosColetados = pd.DataFrame(columns=
             'predio','lotacao', 'horarioSeparado', 'percDisciplina',
             'percOcupacaoReal','percOcupacaoTotal'])
 dfSigaaDadosColetados.loc[len(dfSigaaDadosColetados)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', '-', '-', 0, '-', 0, 0, 0]
+
+
+# ======================================================================================================
+# cria uma lista com exemplos de horários
+listaEntradaHorarios = ["46T23","24M12","24M34","2T12"]
+
 # ======================================================================================================
 # cria um dataframe de exemplo de saida de dados ja com horarios separados
 dfSigaaSalasHorariosSeparadas = []
@@ -55,6 +60,12 @@ dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1',
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'S4', 'UAC', 130, '4T3', 98.82352941176471, 64.61538461538461, 65.38461538461539]
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T2', 98.82352941176471, 140.0, 141.66666666666669]
 dfSigaaPorcentagens.loc[len(dfSigaaPorcentagens)] = ['FGA0003 - COMPILADORES 1', 1, 2022, 2, 'EDSON ALVES DA COSTA JUNIOR', '60h', '46T23', 85, 84, 'FGA - SALA S-4 e I-3', 'I3', 'UAC', 60, '6T3', 98.82352941176471, 140.0, 141.66666666666669]
+# ======================================================================================================
+# cria uma lista com exemplos de horarios separados de saida
+# separaHoraio
+
+listaSaidaHorarios = [['4T2','4T3','6T2','6T3'],['2M1','2M2','4M1','4M2'] ,['2M3','2M4','4M3','4M4'] ,['2T1','2T2']]
+
 # ==============================================================================================================
 # classe TesteColetaSigaaPublico
 # --------------------------------------------------------------------------------------------------------------
@@ -97,17 +108,19 @@ class TesteColetaSigaaPublico(unittest.TestCase):
 		
 		self.assertIsNone(assert_frame_equal(dfTesteResultadoObtido, dfTesteResultadoEsperado))
 	# =========================================================================================================
-	
+	# Metodo de teste unitario para verificar o metodo separarHorario
+
 	def testeSepararHoraio(self):
-		resultadoEsperado = listaSaidaLocais
-		resultado0 =separaSala(listaEntradaLocais[0])
-		resultado1 =separaSala(listaEntradaLocais[1])
-		resultado2 =separaSala(listaEntradaLocais[2])
-		resultado3 =separaSala(listaEntradaLocais[3])
+		resultadoEsperado = listaSaidaHorarios
+		resultado0 = separaHorario(listaEntradaHorarios[0])
+		resultado1 = separaHorario(listaEntradaHorarios[1])
+		resultado2 = separaHorario(listaEntradaHorarios[2])
+		resultado3 = separaHorario(listaEntradaHorarios[3])
 		resultadoObtido = [resultado0,resultado1,resultado2,resultado3]
 
 		self.assertEqual(resultadoEsperado, resultadoObtido)
-
+	# =========================================================================================================
+		
 
 # main
 # --------------------------------------------------------------------------------------------------------------
