@@ -7,6 +7,7 @@ from pandas.testing import assert_frame_equal
 from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
 from separarSalasCompostasEHorarios import *
+from ColetaSigaaPublico import get_database
 
 # ======================================================================================================
 # cria um dataframe de exemplo de entrada de dados coletados
