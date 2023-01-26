@@ -10,11 +10,12 @@ from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
 from pymongo import MongoClient
 import pandas as pd
+import urllib
 
 # Função para gerar o database 
 def get_database():
     #  URL do mongodb atlas para conectar ao banco pela string de conexão
-    CONNECTION_STRING = 'mongodb+srv://<username>:<password>@cluster-quantifga.b6tob2c.mongodb.net/test' 
+    CONNECTION_STRING = 'mongodb+srv://'+urllib.parse.quote("<username>")+':<password>@cluster-quantifga.b6tob2c.mongodb.net/test'
     # Cria uma conexão usando o MongoClient 
     client = MongoClient(CONNECTION_STRING, tlsInsecure=True)
     # Cria o bando de dados Quanti_FGA_DB
