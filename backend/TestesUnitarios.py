@@ -138,6 +138,13 @@ class TesteColetaSigaaPublico(unittest.TestCase):
 		resultadoObtido = [resultado0,resultado1,resultado2,resultado3]
 		
 		self.assertEqual(resultadoEsperado, resultadoObtido)
+	
+	# =========================================================================================================
+	# Metodo de teste unitario para verificar conexão com o banco de dados
+	def testeGetDatabase(self):
+		db = get_database()
+        	# Testa se o banco de dados correto é retornado
+		self.assertEqual(db.name, 'Quanti_FGA_DB')
 		
 
 # main
