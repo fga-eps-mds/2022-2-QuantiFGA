@@ -1,3 +1,6 @@
+
+<br>
+
 <p align="center">
   <img max-height="100px" src="https://i.imgur.com/ffRw0Ns.png" alt="QuantiFGA">
 </p>
@@ -8,7 +11,6 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 <br>
@@ -19,34 +21,30 @@
 
 <br>
 
-# 🟢 Status do Projeto
-
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
-
-<br>
-
 # 🔨 Funcionalidades
 
 <p align="justify"> &emsp;&emsp;O software possibilita disponibiliza olhar a grade de horários de uma sala, o departamento, professor e ocupação da sala, disponibilizar gráficos com esses dados,  além de ter a opção de troca em relação as aulas, salas e horários por partedo coordenador além de ter a opção de login.
 
-<!-- <p align="center">
-  <img max-height="400px" src="https://github.com/pedrobarbosaocb/RepositorioTeste/raw/main/docs/img/prototipo_alta.png?raw=true" alt="QuantiFGA">
-</p> -->
+<p align="center">
+  <img max-height="400px" src="https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/documenta%C3%A7%C3%A3o/Prot%C3%B3tipo/git%2Bdash.png" alt="QuantiFGA">
+</p>
 
 <br>
 
 # 🛠️ Guia de Instalação
 
 
-### **Pré-Requisitos**
+- Pré-Requisitos
 
 Para rodar o projeto é necessário ter o [Metabase](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/docs/Metabase%20-%20Getting%20Started.md) e o [Mongo](https://www.mongodb.com/try/download/community) instalado, é importante ter o java para rodar o Metabase e o [ChromeDriver](https://chromedriver.chromium.org/downloads) para funcionar o Selenium no Google Chrome, e o [Selenium](https://www.selenium.dev/downloads/) com o [Python](https://www.python.org/downloads/) para poder pegar os dados presentes no SIGAA. 
 O tutorial de como instalar o Mongo e o Metabase e fazê-los funcionarem juntos está no seguinte [vídeo](https://www.youtube.com/watch?v=H5GFGJrVnqQ&t=371s).
 
 
-###  Acesso ao Projeto
+- Acesso ao Projeto
 
 Para acessar o código fonte do projeto está anexado o [frontend](https://github.com/fga-eps-mds/2022-2-QuantiFGA/tree/main/frontend) e o [backend](https://github.com/fga-eps-mds/2022-2-QuantiFGA/tree/main/backend) do projeto.
+
+<br>
 
 ```
 $ git clone https://github.com/fga-eps-mds/2022-2-QuantiFGA.git 
@@ -78,26 +76,30 @@ $ git clone https://github.com/fga-eps-mds/2022-2-QuantiFGA.git
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/edilbertocantuaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69125218?v=4" width="100px;" alt="foto"/><br /><sub><b>Edilberto <br> Cantuaria</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/FelipeNunesdM"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107002722?v=4" width="100px;" alt="foto"/><br /><sub><b>Felipe <br> Nunes</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/GabrielMS00"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88348513?v=4" width="100px;" alt="foto"/><br /><sub><b>Gabriel <br> Marques</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/JuliaDaYo"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112433653?v=4" width="100px;" alt="foto"/><br /><sub><b>Júlia <br> Lopes</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/pedrobarbosaob"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78980796?v=4" width="100px;" alt="foto"/><br /><sub><b>Pedro <br> Barbosa</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/raqueleucaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81540491?v=4" width="100px;" alt="foto"/><br /><sub><b>Raquel <br> Eucaria</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/verabelucia"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78658486?v=4" width="100px;" alt="foto"/><br /><sub><b>Vera <br> Lúcia</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/ZenildaVieira"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/101183963?v=4" width="100px;" alt="foto"/><br /><sub><b>Zenilda Vieira</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/edilbertocantuaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69125218?v=4" width="100px;" alt="foto"/><br /><sub><b>Edilberto <br> Cantuaria</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/FelipeNunesdM"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107002722?v=4" width="100px;" alt="foto"/><br /><sub><b>Felipe <br> Nunes</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/GabrielMS00"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88348513?v=4" width="100px;" alt="foto"/><br /><sub><b>Gabriel <br> Marques</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/JuliaDaYo"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112433653?v=4" width="100px;" alt="foto"/><br /><sub><b>Júlia <br> Lopes</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/pedrobarbosaob"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78980796?v=4" width="100px;" alt="foto"/><br /><sub><b>Pedro <br> Barbosa</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/raqueleucaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81540491?v=4" width="100px;" alt="foto"/><br /><sub><b>Raquel <br> Eucaria</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/verabelucia"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78658486?v=4" width="100px;" alt="foto"/><br /><sub><b>Vera <br> Lúcia</b></sub></a><br /></td>
+    <td align="center" style="vertical-align:top"><a href="https://github.com/ZenildaVieira"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/101183963?v=4" width="100px;" alt="foto"/><br /><sub><b>Zenilda <br> Vieira</b></sub></a><br /></td>
   </tr>
 </table>
 
+<br>
 
 # 📋 Código de Conduta
 
 Esse projeto possui um código de conduta, Veja o arquivo [Código_de_Conduta](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/código%20de%20conduta.md) para ver mais informações.
 
+<br>
+
 # Contribuição
 
 Sua ajuda é mais que bem-vinda em nosso projeto, se atente ao nosso [_Guia de Contribuição_](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/docs/guia_de_contribui%C3%A7%C3%B5es.md). Leia atentamente cada tópico para que possamos fazer um bom trabalho juntos!
 
+<br>
 
 # 📝 Licença
 
