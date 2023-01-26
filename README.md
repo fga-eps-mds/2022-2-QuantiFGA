@@ -55,12 +55,10 @@ $ git clone https://github.com/fga-eps-mds/2022-2-QuantiFGA.git
 <br>
 
 # 💻 Tecnologias
-  
-<img src="https://img.shields.io/badge/Html3-E34F26?style=for-the-badge&logo=html3&logoColor=white" /> 
-<img src="https://img.shields.io/badge/Css3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> 
-<img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Selenium-14354C?style=for-the-badge&logo=selenium&logoColor=white" />
-<img src="https://img.shields.io/badge/mongodb-14354C?style=for-the-badge&logo=mongodb&logoColor=white" />
+
+|![](https://img.shields.io/badge/Html3-E34F26?style=for-the-badge&logo=html3&logoColor=white)|![](https://img.shields.io/badge/Css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)|![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)|![](https://img.shields.io/badge/Selenium-14354C?style=for-the-badge&logo=selenium&logoColor=white)|![](https://img.shields.io/badge/mongodb-14354C?style=for-the-badge&logo=mongodb&logoColor=white)|
+|----|----|----|----|----|
+
 
 
 <!-- <table>
@@ -80,13 +78,13 @@ $ git clone https://github.com/fga-eps-mds/2022-2-QuantiFGA.git
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/edilbertocantuaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69125218?v=4" width="100px;" alt="foto"/><br /><sub><b>Edilberto Cantuaria</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/FelipeNunesdM"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107002722?v=4" width="100px;" alt="foto"/><br /><sub><b>Felipe Nunes</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/GabrielMS00"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88348513?v=4" width="100px;" alt="foto"/><br /><sub><b>Gabriel Marques</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/JuliaDaYo"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112433653?v=4" width="100px;" alt="foto"/><br /><sub><b>Júlia Lopes</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/pedrobarbosaob"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78980796?v=4" width="100px;" alt="foto"/><br /><sub><b>Pedro Barbosa</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/raqueleucaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81540491?v=4" width="100px;" alt="foto"/><br /><sub><b>Raquel Eucaria</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/verabelucia"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78658486?v=4" width="100px;" alt="foto"/><br /><sub><b>Vera Lúcia</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/edilbertocantuaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69125218?v=4" width="100px;" alt="foto"/><br /><sub><b>Edilberto <br> Cantuaria</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/FelipeNunesdM"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/107002722?v=4" width="100px;" alt="foto"/><br /><sub><b>Felipe <br> Nunes</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/GabrielMS00"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88348513?v=4" width="100px;" alt="foto"/><br /><sub><b>Gabriel <br> Marques</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/JuliaDaYo"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112433653?v=4" width="100px;" alt="foto"/><br /><sub><b>Júlia <br> Lopes</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/pedrobarbosaob"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78980796?v=4" width="100px;" alt="foto"/><br /><sub><b>Pedro <br> Barbosa</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/raqueleucaria"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81540491?v=4" width="100px;" alt="foto"/><br /><sub><b>Raquel <br> Eucaria</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/verabelucia"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/78658486?v=4" width="100px;" alt="foto"/><br /><sub><b>Vera <br> Lúcia</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/ZenildaVieira"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/101183963?v=4" width="100px;" alt="foto"/><br /><sub><b>Zenilda Vieira</b></sub></a><br /></td>
   </tr>
 </table>
