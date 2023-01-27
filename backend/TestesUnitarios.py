@@ -7,6 +7,7 @@ from pandas.testing import assert_frame_equal
 from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
 from separarSalasCompostasEHorarios import *
+from carregarDados import gerarConsulta
 
 # ======================================================================================================
 # cria um dataframe de exemplo de entrada de dados coletados
@@ -139,7 +140,14 @@ class TesteColetaSigaaPublico(unittest.TestCase):
 		
 		self.assertEqual(resultadoEsperado, resultadoObtido)
 		
+	def testeGerarConsultas(self):
+		dados = []
+		dadosEsperados = []
+		dadosEsperados.append (['CDT1101 - TECNOLOGIA SOCIAL E INOVAÇÃO',' 01','2022','2','TANIA CRISTINA DA SILVA CRUZ','30h','6T1234 (25/10/2022 - 18/02/2023)','40','16','CDT - Sala Interação'])
+		dadosEsperados.append (['CDT1101 - TECNOLOGIA SOCIAL E INOVAÇÃO',' 01','2022','2','JONATHAS FELIPE AIRES FERREIRA','30h','6T1234 (25/10/2022 - 18/02/2023)','40','16','CDT - Sala Interação'])
+		resultadoObtido = gerarConsulta('GRADUAÇÃO', 'CENTRO DE APOIO AO DESENVOLVIMENTO TECNOLÓGICO - BRASÍLIA', '2022', '2', dados)
 
+		self.assertEqual(dadosEsperados, resultadoObtido)
 # main
 # --------------------------------------------------------------------------------------------------------------
 # funcao principal que chama todos os metodos
