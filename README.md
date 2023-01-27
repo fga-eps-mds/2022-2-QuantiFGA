@@ -60,7 +60,7 @@ O tutorial de como instalar o Mongo e o Metabase e fazê-los funcionarem juntos 
 
 # 💻 Tecnologias
 
-|![](https://img.shields.io/badge/Html3-E34F26?style=for-the-badge&logo=html3&logoColor=white)|![](https://img.shields.io/badge/Css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)|![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)|![](https://img.shields.io/badge/Selenium-14354C?style=for-the-badge&logo=selenium&logoColor=white)|![](https://img.shields.io/badge/mongodb-14354C?style=for-the-badge&logo=mongodb&logoColor=white)|
+|![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)|![](https://img.shields.io/badge/Css3-1572B6?style=for-the-badge&logo=css3&logoColor=white)|![](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)|![](https://img.shields.io/badge/Selenium-14354C?style=for-the-badge&logo=selenium&logoColor=white)|![](https://img.shields.io/badge/mongodb-14354C?style=for-the-badge&logo=mongodb&logoColor=white)|
 |----|----|----|----|----|
 
 
