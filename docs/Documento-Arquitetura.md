@@ -35,7 +35,7 @@
 
 # Representação da arquitetura
 
-![Reperesentação da arquitetura](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/Neutral%20Simple%20Business%20Process%20Flow%20Graph.png?raw=true)
+![Reperesentação da arquitetura](./img/arquitetura_canva.png)
 
 
 ## Front-end
