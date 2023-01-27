@@ -6,6 +6,7 @@
 | :----------: | :------: | :------: | :------: |
 | 09/12/2022 | 1.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
 | 13/12/2022 | 2.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
+| 27/01/2023 | 3.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
 
 
 
@@ -34,8 +35,7 @@
 
 # Representação da arquitetura
 
-![Reperesentação da arquitetura](https://user-images.githubusercontent.com/78980796/207649786-bb807fd4-0a20-49a5-93f6-6d3dadf088d1.png)
-
+![Reperesentação da arquitetura](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/Neutral%20Simple%20Business%20Process%20Flow%20Graph.png?raw=true)
 
 
 ## Front-end
