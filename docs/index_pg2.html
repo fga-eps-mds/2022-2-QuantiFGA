@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+
+    <!---Relizando o resset-->
+    <link rel="stylesheet" href="reset.css" />
+
+    <!-- Invoca para que possa editar o css em outra "aba" dentro do projeto -->
+    <link rel="stylesheet" href="style_pg2.css" />
+
+    <!--Importando as fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!--Importando as mediaquerry-->
+    <link rel="stylesheet" href="querry.css" />
+
+    <!--Coloca o ícone na aba-->
+    <link rel="icon" href="img_gitpage/engrenagem.png" />
+
+    <title>QuantiFGA</title>
+  </head>
+  <body>
+    <header id="inicio">
+      <div class="quantiFGA">
+        <div class="animacao">
+          <a href="index.html">
+            Início
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="https://github.com/fga-eps-mds/2022-2-QuantiFGA"
+            target="_blank"
+          >
+            <img class="animacao" src="img_gitpage/github_logo.png" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="quantiFGA_main">
+        <img src="img_gitpage/quantiFGA_logo.png" />
+      </div>
+
+      <section>
+        <article class="escolhaAnalise">
+          <div class="texto-escolhaAnalise">
+            <h1>Escolha como quer analisar a FGA</h1>
+            <p>E Visualize a ocupação das salas de forma fácil e prática!</p>
+          </div>
+          <div class="botoes-escolhaAnalise">
+            <button class="metabaseRedirect animacao3">
+              <a
+                href="https://quanti-fga-metabase.werberson.dev/public/dashboard/85917141-c9de-4430-b42e-bc97b217e5ad"
+                target="_blank"
+              >
+                <div class="btn-metabase">
+                  <div class="metabaseLogo">
+                    <img src="img_gitpage/metabase_logo.png" />
+                  </div>
+                  <h2>Acessar Metabase</h2>
+                </div>
+              </a>
+            </button>
+            
+              <a href="index.html"><button class="btn-voltar animacao3">Voltar</button></a>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <article class="dashboard">
+          <iframe
+            class="graficos"
+            src="https://quanti-fga-metabase.werberson.dev/public/dashboard/85917141-c9de-4430-b42e-bc97b217e5ad"
+            allowtransparency="allowtransparency"
+          >
+          </iframe>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="quantiFGA">
+        <div class ="quantiFGA_footer">
+          <a href="#inicio">
+          <img src="img_gitpage/quantiFGA_logo.png"/>
+          </a>
+        </div>
+      
+      <div class="faculdadeUnBGama">
+
+        <img class="faculdade-gama" src="img_gitpage/faculdade_gama.png"/>
+        <img class="unb_logo"  src="img_gitpage/unb_logo.png"/>
+      
+      </div>
+      
+      </div>
+    </footer>
+  </body>
+</html>
