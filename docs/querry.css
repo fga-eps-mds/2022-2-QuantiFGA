@@ -1,0 +1,81 @@
+/*Quando a tela ficar com tamanho menor ou igual a 995px ou menos, isso deve acontecer:*/
+@media (max-width: 995px) {
+    body{
+        min-width: 400px;
+    }
+    section{
+        justify-content: flex-start;
+        height: 100%;
+      }
+    article.gerencie-analise, article.escolhaAnalise {
+        flex-direction: column;
+    }
+    .texto-gerencie-analise, .texto-escolhaAnalise {
+        width: 100%;
+        text-align: center;
+    }
+    .botoes-gerencie-analise, .botoes-escolhaAnalise {
+        margin-top: 20px;
+        width: 80%;
+    }
+    button{
+        width: 400px;
+    }
+    article.arquitetura {
+        align-items: center;
+
+    }
+    .arquiteturaResponsiva{
+        display: block;
+    }
+    .arquiteturaMaior{
+        display: none;
+    }
+    article.sobre {
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .texto-sobre {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .icones-sobre {
+        width: 100%;
+        text-align: left;
+        min-height: 300px;
+    }
+    iframe {
+        width: 100%;
+        /* height: 356px; */
+    }
+    article.integrante{
+        height: 100% ;
+      }
+    .fulano{
+        gap: 0 50px;
+    }
+
+
+  }
+  /*Quando a tela ficar com tamanho menor ou igual a 750px ou menos, isso deve acontecer:*/
+@media (max-width: 750px) {
+    .lourosAoRedor{
+        opacity: 0;
+    }
+}
+
+  /*Quando a tela ficar com tamanho menor ou igual a 515px ou menos, isso deve acontecer:*/
+  @media (max-width: 515px) {
+    .lourosAoRedor{
+        opacity: 1;
+    }
+    .linha{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    button{
+        width: 206px;
+    }
+}

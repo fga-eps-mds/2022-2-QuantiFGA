@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+  font-style: normal;
+}
+
+body {
+  background-color: #ffffff; 
+  /* background-image: url(img_gitpage/page_transparent.svg);
+  background-size: auto;
+  background-repeat: repeat; */
+} 
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*-----Tudo do header-----*/
+header {
+  width: 100%;
+  /* height: 160px; */
+  height: 80px;
+  /* margin-bottom: 50px; */
+    margin-bottom: 30px;
+
+  font-size: 20px;
+  color: #35432f;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantiFGA {
+  width: 70%;
+  height: auto;
+
+  display: flex;
+  align-content: center;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+/*-----Tudo da main-----*/
+main{
+  background-image: url(img_gitpage/main_background.svg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.quantiFGA_main{
+  width: 35%;
+  height: 108px;
+  /* margin-bottom: 96px; */
+  margin-bottom: 50px
+}
+.quantiFGA_main img{
+  width: 100%;
+}
+
+
+section{
+  width: 78%;
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article.gerencie-analise{
+  width: 95%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto-gerencie-analise{
+  width: 68%;
+}
+.texto-gerencie-analise h1 {
+  width: 100%;
+  font-weight: 700;
+  /* font-size: 64px; */
+  font-size: 60px;
+  line-height: 78px;
+  color: #35432F;
+}
+.texto-gerencie-analise  p{
+  width: 98%;
+  font-weight: 400;
+  /* font-size: 32px; */
+  font-size: 30px;
+  line-height: 131.9%;
+  color: #35432F;
+  
+}
+.botoes-gerencie-analise{
+  /* width: 27.5%; */
+  width: 295px;
+  height: 167px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  text-align: center;
+  justify-content: space-around;
+
+
+}
+button{
+  border: none;
+  width: 295px;
+  /* height: 71px; */
+  height: 50px;
+}
+.explorar{
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 168.4%; */
+  color: #FFFFFF;
+  
+  background: #4F7344;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 44px;
+}
+.btn-sobre{
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 168.4%;
+  or 34px */
+  color: #2B3825;
+
+  background: rgba(255, 255, 255, 0.81);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 44px;
+}
+
+article.arquitetura{
+  width: 95%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.arquitetura  h1{
+  font-weight: 400;
+  font-size: 30px;
+  /* line-height: 168.4%; */
+  color: #35432F;
+}
+.arquitetura img{
+  margin-left: -6px;
+  width: 100.55%;
+}
+.arquiteturaResponsiva{
+  display: none;
+}
+
+article.sobre{
+  width: 95%;
+  height: 270px;
+  /* height: 100%; */
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.texto-sobre{
+
+  width:46%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sobre h1{
+  margin-top: -3px;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: #35432F;
+}
+.sobre p{
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157.4%;
+  /* or 31px */
+  color: #35432F
+/* text-align: center; */
+}
+
+.icones-sobre{
+  width:46%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: space-between;
+}
+.info-icone{
+  width: 100%;
+  height: 77px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.icone{
+  width: 15%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icone img{ 
+  width: 100%;
+}
+.texto-info-icone{
+  width: 80%;
+}
+.tituloH1-sobre{
+  font-weight: 700;
+  /* font-size: 32px; */
+  font-size: 20px;
+  /* line-height: 24px;  */
+  /* identical to box height */
+  color: #35432F;
+}
+.descricaoP-sobre{
+  font-weight: 400;
+  /* font-size: 20px; */
+  font-size: 18px;
+  /* line-height: 132.9%;  */
+  /* or 24px */
+  color: #35432F;
+}
+
+article.video-apresentacao{
+  width: 95%;
+  height: 450px ;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.video-apresentacao h1{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 168.4%;
+  text-align: center;
+  color: #35432F;
+}
+.video-apresentacao p{
+  margin-top: -30px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #35432F;
+}
+iframe{
+  width: 626px;
+  height: 356px;
+}
+
+section.integrantes{
+  margin-bottom: 100px;
+}
+article.integrante{
+  width: 95%;
+  height: 372px ;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.integrantes h1{
+  margin-top: 27.5px;
+  font-weight: 700;
+  font-size: 32px;
+  /* line-height: 39px; */
+  color: #35432F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fotosIntegrantes{
+  width: 100%;
+  height: 300%;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; 
+}
+.linha{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; 
+
+} 
+.fulano{
+  width: 20%;
+  height: 129px;
+  /* margin-right: calc((100% - 983px) / 2);
+  margin-left: calc((100% - 983px) / 2);  */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.louros{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fotoLaureada{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.lourosAoRedor{
+
+  margin-left: -27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: inherit;
+}
+.fotoFulano{
+  width: 92.9px;
+  height: 92.2px;
+  margin-left: -135px;
+  border-radius: 45px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nomefulano{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0; 
+  /* or 22px */
+  color: #000000;
+
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+}
+
+/*-----Tudo do footer----*/
+footer {
+  /* position: fixed;
+  bottom: 0;
+  left: 0; */
+
+  width: 100%;
+  /* height: 160px; */
+  height: 80px;
+  /* margin-top: 50px; */
+  margin-top: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.faculdadeUnBGama{
+  width: 40%;
+  /* width: 341px;  */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.quantiFGA_footer{
+width: 20%; 
+}
+.quantiFGA_footer img{
+width: 100%;
+}
+.faculdade-gama {
+width: 72%; 
+
+}
+.unb_logo{
+  width:16%;
+}
+
+
+/*-----Tudo sobre animações----*/
+.animacao:hover {
+  /*Para aumentar a "janelinha", ao passar o cursor*/
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  transition-duration: 1s, 1s;
+  text-decoration: underline;
+}
+img.animacao:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.animacao2:hover {
+  /*Para aumentar a "janelinha", ao passar o cursor*/
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition-duration: 0.25s, 0.25s;
+  font-weight: bold;
+  color: #5E9AD0;
+}
+
+.animacao3:hover {
+  /*Para aumentar a "janelinha", ao passar o cursor*/
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 0.5s, 0.5s;
+}
