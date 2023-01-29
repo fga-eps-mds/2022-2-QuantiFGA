@@ -17,8 +17,7 @@
    1. [Finalidade](#Finalidade)
    2. [Escopo](#Escopo)
    4. [Representação da arquitetura](#Representação)
-   6. [Diagrama de Classes](#Classes)
-   7. [Diagrama de Pacotes](#Pacotes)
+   6. [Diagrama de Pacotes](#Pacotes)
 
 <div id='Finalidade'/>
 
@@ -55,13 +54,6 @@
 
 ### Selenium 
 - Selenium é um conjunto de ferramentas de código aberto multiplataforma, usado para testar aplicações web pelo browser de forma automatizada. Ele executa testes de funcionalidades da aplicação web e testes de compatibilidade entre browser e plataformas diferentes. O Selenium suporta diversas linguagens de programação. A linguagem escolhida para utilizar foi o python e também será utilizado o selenium webdriver que usa o próprio driver do navegador para a automação.
-
-<div id='Classes'/>
-
-## Diagrama de Classes
-
-![Diagrama de classes](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/Diagrama%20de%20classes.jpeg)
-
 
 <div id='Pacotes'/>
 
