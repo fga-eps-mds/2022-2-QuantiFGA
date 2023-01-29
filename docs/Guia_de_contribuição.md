@@ -1,6 +1,6 @@
 # Guia de contribuição
 
-É com um enorme prazer que preparamos este guia de contribuições, para que 
+<p align="justify"> &emsp;&emsp;É com um enorme prazer que preparamos este guia de contribuições, para que 
 pessoas como você possam nos ajudar a desenvolver um software de qualidade.
 
 ## Reportando bugs
@@ -17,7 +17,7 @@ Você achou um bug no nosso projeto?
 
 ## Sugerindo Melhorias
 
-Contamos com a sua colaboração para que possamos melhorar a cada dia. Por esse motivo
+<p align="justify"> &emsp;&emsp;Contamos com a sua colaboração para que possamos melhorar a cada dia. Por esse motivo
 você é mais que bem-vindo(a) para mandar sugestões de melhorias!
 Pedimos apenas que você seja o mais objetivo possível em suas descrições e que se atente as
 issues e aos Pull Requests abertos, para que não haja informações repetidas.
@@ -45,5 +45,5 @@ e não _"Criada funcionalidade nova"_.
 
 ## Considerações finais
 
-Obriado por ler até aqui, esperamos sua colaboração em breve, a equipe do QuantiFGA agradece a sua atenção. 😄
+Obrigado por ler até aqui, esperamos sua colaboração em breve, a equipe do QuantiFGA agradece a sua atenção. 😄
 

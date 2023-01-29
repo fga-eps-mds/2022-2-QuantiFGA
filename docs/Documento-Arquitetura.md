@@ -6,6 +6,7 @@
 | :----------: | :------: | :------: | :------: |
 | 09/12/2022 | 1.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
 | 13/12/2022 | 2.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
+| 27/01/2023 | 3.0    | Abertura do documento de Arquitetura | [Pedro](https://github.com/pedrobarbosaocb) e [ Vera ](https://github.com/verabelucia)
 
 
 
@@ -16,8 +17,7 @@
    1. [Finalidade](#Finalidade)
    2. [Escopo](#Escopo)
    4. [Representação da arquitetura](#Representação)
-   6. [Diagrama de Classes](#Classes)
-   7. [Diagrama de Pacotes](#Pacotes)
+   6. [Diagrama de Pacotes](#Pacotes)
 
 <div id='Finalidade'/>
 
@@ -34,8 +34,7 @@
 
 # Representação da arquitetura
 
-![Reperesentação da arquitetura](https://user-images.githubusercontent.com/78980796/207649786-bb807fd4-0a20-49a5-93f6-6d3dadf088d1.png)
-
+![Reperesentação da arquitetura](./img/arquitetura_canva.png)
 
 
 ## Front-end
@@ -55,13 +54,6 @@
 
 ### Selenium 
 - Selenium é um conjunto de ferramentas de código aberto multiplataforma, usado para testar aplicações web pelo browser de forma automatizada. Ele executa testes de funcionalidades da aplicação web e testes de compatibilidade entre browser e plataformas diferentes. O Selenium suporta diversas linguagens de programação. A linguagem escolhida para utilizar foi o python e também será utilizado o selenium webdriver que usa o próprio driver do navegador para a automação.
-
-<div id='Classes'/>
-
-## Diagrama de Classes
-
-![Diagrama de classes](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/Diagrama%20de%20classes.jpeg)
-
 
 <div id='Pacotes'/>
 
