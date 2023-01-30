@@ -3,11 +3,21 @@
 # ==========================================================================================
 import unittest
 import pandas as pd
+import os
 from pandas.testing import assert_frame_equal
 from preencherLotacaoSalas import preencherLotacaoPredio
 from calcularPercentuais import calcularPorcentagens
 from separarSalasCompostasEHorarios import *
 from carregarDados import gerarConsulta
+from carregarDados import salvarDadosCsv, gerarCsv
+
+
+#Dataframe vazio de exemplo de saida
+dataframeCsv = pd.DataFrame(columns=    
+            ['codigNomeMateria', 'codigoTurma', 'ano', 'semestre', 'professor',
+            'cargahoraria', 'horario', 'vagasOfertadas', 'vagasOcupadas', 'local','salaSeparada',
+            'predio','lotacao', 'horarioSeparado', 'percDisciplina',
+            'percOcupacaoReal','percOcupacaoTotal'])
 
 # ======================================================================================================
 # cria um dataframe de exemplo de entrada de dados coletados
@@ -148,6 +158,27 @@ class TesteColetaSigaaPublico(unittest.TestCase):
 		resultadoObtido = gerarConsulta('GRADUAÇÃO', 'CENTRO DE APOIO AO DESENVOLVIMENTO TECNOLÓGICO - BRASÍLIA', '2022', '2', dados)
 
 		self.assertEqual(dadosEsperados, resultadoObtido)
+
+	#Metodo unit test para verificar se os dados estao sendo separados nos arquivos corretos
+	def testSalvarDados(self):
+		dadosColetados = pd.read_csv("./csvDadosColetados.csv", sep=';')
+		dadosDesprezados = pd.read_csv("./csvDadosDesprezados.csv", sep=';')
+		self.assertEqual(all('FGA' in dadosColetados['local'].iloc[i] for i in range(len(dadosColetados))), True)
+		self.assertEqual(all('FGA' not in dadosDesprezados['local'].iloc[i] for i in range(len(dadosDesprezados))), True)
+
+   
+
+    #Metodo unit test para verificar se foi gerado um arquivo csv vazio
+	def testgerarcsv(self):
+		gerarCsv()
+		dadosColetados = pd.read_csv("./csvDadosColetados.csv", sep=';')
+		dadosDesprezados = pd.read_csv("./csvDadosDesprezados.csv", sep=';')  
+		self.assertEqual(dataframeCsv.empty, dadosColetados.empty)
+		self.assertEqual(dataframeCsv.empty, dadosDesprezados.empty)
+		self.assertEqual(os.path.exists('./csvDadosColetados.csv'), True)
+		self.assertEqual(os.path.exists('./csvDadosDesprezados.csv'), True)
+  
+    
 # main
 # --------------------------------------------------------------------------------------------------------------
 # funcao principal que chama todos os metodos
