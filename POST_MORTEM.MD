@@ -1,6 +1,6 @@
 ## <a name="1">Introdução</a>
 
-<p align="justify"> &emsp;&emsp;Este documento tem por finalidade [...]</p>
+<p align="justify"> &emsp;&emsp;Este documento tem por finalidade fornecer uma avaliação crítica quanto ao projeto, realizado na etapa final, é de suma importância sua leitura, pois ele contém informações cruciais para auxiliar no desenvolvimento de projetos futuros</p>
 
 ## <a name="2">Pontos do Projeto</a>
 ### Positivos
