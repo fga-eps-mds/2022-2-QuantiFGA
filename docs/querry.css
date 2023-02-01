@@ -19,6 +19,7 @@
         width: 80%;
     }
     button{
+        cursor:pointer;
         width: 400px;
     }
     article.arquitetura {
@@ -76,6 +77,7 @@
         flex-wrap: wrap;
     }
     button{
+        cursor:pointer;
         width: 206px;
     }
 }
