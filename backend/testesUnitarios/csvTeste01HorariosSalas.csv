@@ -1,0 +1,5 @@
+codigNomeMateria;codigoTurma;ano;semestre;professor;cargahoraria;horario;vagasOfertadas;vagasOcupadas;local;salaSeparada;predio;lotacao;horarioSeparado;percDisciplina;percOcupacaoReal;percOcupacaoTotal
+FGA0003 - COMPILADORES 1;1;2022;2;EDSON ALVES DA COSTA JUNIOR;60h;46T23;85;84;FGA - SALA S-4 e I-3;S04;-;0;4T2 - Quarta 14h;0;0;0
+FGA0003 - COMPILADORES 1;1;2022;2;EDSON ALVES DA COSTA JUNIOR;60h;46T23;85;84;FGA - SALA S-4 e I-3;S04;-;0;4T3 - Quarta 15h;0;0;0
+FGA0003 - COMPILADORES 1;1;2022;2;EDSON ALVES DA COSTA JUNIOR;60h;46T23;85;84;FGA - SALA S-4 e I-3;I03;-;0;6T2 - Sexta 14h;0;0;0
+FGA0003 - COMPILADORES 1;1;2022;2;EDSON ALVES DA COSTA JUNIOR;60h;46T23;85;84;FGA - SALA S-4 e I-3;I03;-;0;6T3 - Sexta 15h;0;0;0
