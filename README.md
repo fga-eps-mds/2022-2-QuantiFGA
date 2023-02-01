@@ -29,7 +29,7 @@
 >Visão geral do QuantiFGA
 
 <p align="center">
-  <img max-height="400px" src="https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/documenta%C3%A7%C3%A3o/Prot%C3%B3tipo/git%2Bdash.png" alt="QuantiFGA">
+  <img max-height="400px" src="https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/documenta%C3%A7%C3%A3o/Prot%C3%B3tipo/Atualizacao-Prototipo.png" alt="QuantiFGA">
 </p>
 
 
