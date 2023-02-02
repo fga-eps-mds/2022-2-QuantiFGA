@@ -52,7 +52,7 @@ header {
 
 /*-----Tudo da main-----*/
 main{
-  background-image: url(img_gitpage/main_background.svg);
+  background-image: url(img/main_background.svg);
   background-size: 100%;
   background-repeat: repeat-y;
   
