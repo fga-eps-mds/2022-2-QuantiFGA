@@ -34,6 +34,7 @@
 
 
 
+
 <br>
 
 # 🛠️ Guia de Instalação
@@ -48,14 +49,26 @@ O código fonte do projeto está anexado no repositório pelos diretórios [fron
 
 - Pré-Requisitos
 
-Para rodar o projeto é necessário ter o [Metabase](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/docs/Metabase%20-%20Getting%20Started.md) e o [Mongo](https://www.mongodb.com/try/download/community) instalado, é importante ter o java para rodar o Metabase e o [ChromeDriver](https://chromedriver.chromium.org/downloads) para funcionar o Selenium no Google Chrome, e o [Selenium](https://www.selenium.dev/downloads/) com o [Python](https://www.python.org/downloads/) para poder pegar os dados presentes no SIGAA. 
-O tutorial de como instalar o Mongo e o Metabase e fazê-los funcionarem juntos está no seguinte [vídeo](https://www.youtube.com/watch?v=H5GFGJrVnqQ&t=371s).
+- Para rodar o projeto é necessário ter o [Metabase](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/docs/Metabase%20-%20Getting%20Started.md) e o [Mongo](https://www.mongodb.com/try/download/community) instalado. O tutorial de como instalar o Mongo e o Metabase e fazê-los funcionarem juntos está no seguinte [vídeo](https://www.youtube.com/watch?v=H5GFGJrVnqQ&t=371s).
+- Java para rodar o Metabase 
+- Python
 
+## Instalando e execultando: 
 <br>
 
 >Para ter uma visão mais específica das funcionalidades e estruturação do projeto clone o nosso repositório.
 
     $ git clone https://github.com/fga-eps-mds/2022-2-QuantiFGA.git 
+
+  - Abra o projeto e no terminal digite
+    
+        pip install selenium 
+        pip install webdriver-manager
+        pip install pandas 
+        pip install pymongo
+
+  - Para execultar o webscrapping basra rodar o diretorio [carregardados](C:\Users\Vera\Desktop\mds\2022-2-QuantiFGA\backend\carregarDados.py)
+  - Acione o banco de dados localmente e altere a sring de conexão que está na função [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py) para a string local. 
 
 <br>
 
