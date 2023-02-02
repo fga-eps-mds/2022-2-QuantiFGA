@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+  CODECOV_TOKEN: e46f5345-2031-4076-98c1-d64af961a123
 
 jobs:
   build:
