@@ -53,7 +53,7 @@ O código fonte do projeto está anexado no repositório pelos diretórios [fron
 - Java para rodar o Metabase 
 - Python
 
-## Instalando e execultando: 
+## Instalando e executando: 
 <br>
 
 >Para ter uma visão mais específica das funcionalidades e estruturação do projeto clone o nosso repositório.
@@ -67,7 +67,7 @@ O código fonte do projeto está anexado no repositório pelos diretórios [fron
         pip install pandas 
         pip install pymongo
 
-  - Para execultar o webscrapping basra rodar o diretorio [carregardados](C:\Users\Vera\Desktop\mds\2022-2-QuantiFGA\backend\carregarDados.py)
+  - Para executar o webscrapping basra rodar o diretorio [carregardados](C:\Users\Vera\Desktop\mds\2022-2-QuantiFGA\backend\carregarDados.py)
   - Acione o banco de dados localmente e altere a sring de conexão que está na função [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py) para a string local. 
 
 <br>
