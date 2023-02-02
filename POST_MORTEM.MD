@@ -81,8 +81,15 @@
 * **Zenilda Vieira**
 
 <p align="justify">&emsp;&emsp;
-  
-  LOREM IPSUM
-  
+  A experiência na disciplina MDS é única. A metodologia de ensino é provocativa e nos faz descruzar os braços, sair da atitude passiva de recebimento de conhecimento e agir ativamente na busca de soluções e ferramentas para atender os objetivos propostos do projeto.
+</p>
+<p align="justify">&emsp;&emsp;
+  No começo, me senti um pouco incomodada com essa chamada “sala invertida”, apesar de ter aprendido a ser autodidata já há muitos anos. O que me incomodava era não ter tempo hábil para poder estudar o necessário para – depois - poder colocar em prática. Não sei se foi porque meu grupo entrou com um mês de atraso na disciplina (novas vagas na matrícula extraordinária), mas entramos direto no olho do furacão e fomos “obrigados” a alcançar o resto da turma em velocidade 3.0x. Aprender ao mesmo tempo que colocávamos em prática e éramos cobrados por resultados me rendeu ansiedade e alguns dias incertos, mas isso foi só uma amostra do que vamos viver no mercado de trabalho.
+</p>
+<p align="justify">&emsp;&emsp;
+  Tivemos muitos desafios também, todos normais, para trabalhar em grupo. No início, éramos ilhas de produção tentando fazer funcionar o todo. Mas devagar e aos poucos, a maioria do grupo percebeu que trabalhar em equipe precisa de dois quesitos principais: comunicação constante com os demais membros e assumir compromissos que se consiga cumprir. O primeiro quesito não se resume a falar o que se está fazendo ou o que não se está. Não, é muito mais que isso, é realmente “dar satisfação ao grupo” dos assuntos relacionados ao projeto. É preciso, além de falar o que se está fazendo, compartilhar o como está sendo feito, as dificuldades encontradas, as soluções encontradas, todo o processo, desde o aprendizado até o resultado final. Com isso, o grupo cresce tecnicamente de forma homogênea e a qualidade do produto final melhora significativamente. E o segundo quesito está diretamente relacionado com o compromisso individual em relação ao projeto. Se a equipe tem em mente que o importante é que o projeto dê certo e que para isso é preciso que todos se esforcem ao máximo, então no final o objetivo será alcançado de forma satisfatória.
+</p>
+<p align="justify">&emsp;&emsp;
+  E, no final, conseguimos!!!
 </p>
 
