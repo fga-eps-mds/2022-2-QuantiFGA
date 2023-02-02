@@ -25,8 +25,7 @@
 
 <p align="justify"> &emsp;&emsp;No final eu aprendi muito com essa experiência. Aprendi a importância da comunicação e do trabalho em equipe, bem como a importância de sair da minha zona de conforto e aprender coisas novas e até mesmo como usar o GitHub de forma mais profissional. Eu estou ansioso para aplicar esses aprendizados em futuros projetos e continuar a evoluir como profissional.
 
-## Epitáfio:
-<p align="justify"> &emsp;&emsp; Se jogue! Brinque! Desfrute do processo. Seu rendimento não será linear, mas nada na natureza é uma linha reta e constante. Não tenha medo de apagar o banco de dados sem querer, do código não rodar de forma adequada no início. Antes de você aprender a andar, você caiu. E cair faz parte do processo, do amadurecimento da sua carreira. Permita-se cair às vezes 🌹
+<p align="justify"> &emsp;&emsp;Epitáfio: Se jogue! Brinque! Desfrute do processo. Seu rendimento não será linear, mas nada na natureza é uma linha reta e constante. Não tenha medo de apagar o banco de dados sem querer, do código não rodar de forma adequada no início. Antes de você aprender a andar, você caiu. E cair faz parte do processo, do amadurecimento da sua carreira. Permita-se cair às vezes 🌹
   
 </p>
 
