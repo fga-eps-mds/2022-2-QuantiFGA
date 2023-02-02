@@ -40,3 +40,9 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         token: ${{ env.CODECOV_TOKEN }}
+        
+    - name: Upload coverage report to Codecov
+      run:
+        curl -Os https://uploader.codecov.io/latest/windows/codecov
+        chmod +x codecov
+        ./codecov -t ${{ env.CODECOV_TOKEN }}
