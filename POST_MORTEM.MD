@@ -56,9 +56,13 @@
 
 * **Pedro Barbosa**
 
-<p align="justify">&emsp;&emsp;
+<p align="justify">
   
-  LOREM IPSUM
+&emsp;&emsp;Minha experiência com a matéria de MDS foi um verdadeiro desafio, mas também uma grande oportunidade de aprendizado. Antes do início do semestre, eu já estava me preparando e adiantando alguns assuntos, pois sabia da importância da matéria para a minha formação como engenheiro de software. Não consegui ingressar logo no início das matrículas, com isso, eu e os outros membros do grupo não nos conhecíamos, o que foi um desafio inicial, mas com uma abertura maior para mais experiências.
+
+&emsp;&emsp;No entanto, ao longo da realização das atividades, tivemos algumas dificuldades para aprendermos a trabalhar juntos, mas aos poucos superamos partes dessas dificuldades. O projeto me permitiu aprender muito a como buscar meios de entender tecnologias que antes nem tinha ouvido falar. Como diz a Carla nós "aprendemos a aprender". E, também, a matéria abriu a "caixinha" de conhecimentos para a engenharia de software, podendo entender mais um pouco sobre a nossa comunidade em si. Além disso, a dinâmica do grupo foi fundamental para que eu pudesse aprimorar minhas habilidades em trabalhar em equipe, o que é crucial para o sucesso na carreira.
+
+&emsp;&emsp;Em resumo, minha experiência com a matéria foi uma jornada incrível, cheia de aprendizados e desafios superados. Mas, também algumas expectativas minhas, e do grupo, foram diminuidas, de forma positiva, pois no começo não tínhamos noção do trabalho que haveria na implementação do projeto. Com isso, tivemos que diminuir bastante, mas mesmo assim, estou muito satisfeito com o resultado. E, sei que aplicarei muito do que aprendi com esse projeto em minha carreira.
   
 </p>
 
