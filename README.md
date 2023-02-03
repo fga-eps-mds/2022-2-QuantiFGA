@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-  <img max-height="100px" src="https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/logo.png" alt="QuantiFGA">
+  <img max-height="100px" src="https://user-images.githubusercontent.com/78980796/216731522-a040a824-6a1c-43e0-a7ed-242e051bb814.svg" alt="QuantiFGA">
 </p>
 
 > Saiba o percentual de ocupação da sua disciplina ou sala, aplicando filtros por dia da semana ou horários. 
