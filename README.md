@@ -12,7 +12,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
-![codecov](https://img.shields.io/badge/codecov-81%25-yellow?style=for-the-badge)
+[![codecov](https://img.shields.io/badge/codecov-81%25-yellow?style=for-the-badge)](https://fga-eps-mds.github.io/2022-2-QuantiFGA/backend/htmlcov/index.html)
 
 <br>
 
