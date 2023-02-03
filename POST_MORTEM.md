@@ -1,16 +1,27 @@
 ## <a name="1">Introdução</a>
 
-<p align="justify"> &emsp;&emsp;Este documento tem por finalidade fornecer uma avaliação crítica quanto ao projeto, realizado na etapa final, é de suma importância sua leitura, pois ele contém informações cruciais para auxiliar no desenvolvimento de projetos futuros</p>
+<p align="justify"> &emsp;&emsp;O objetivo desse documento é, além de avaliar todo o processo de desenvolvimento do nosso produto, auxiliar os desenvolvedores de projetos futuros na disciplina de MDS. Não deixe de ler!</p>
 
-## <a name="2">Pontos do Projeto</a>
 ### Positivos
-* LOREM IPSUM
+* A ideia do nosso projeto era algo totalmente novo, nenhum projeto anterior já tinha analisado os dados do Sigaa Público da forma que propusemos fazer. Assim, tivemos que desenvolver tudo do zero, desde a coleta de dados, passando pelo armazenamento até o deploy final, o que nos fez aprender muito. 
+* Aprendemos também sobre metodologias ágeis como o Scrum e o XP. Colocamos em prática essas metodologias para trabalhar em grupo (um desafio!) e dividimos as funções de Scrum master, Product Owner, Devops...
+* Fomos autodidatas em diversas tecnologias e aprendemos e ensinamos sobre webscrapping em Python, mongoDB, Metabase, html/css, entre outras.
+* Tivemos contato com as definições de projetos Open Source, tais como política de commit e guia de contribuição.
+* Ampliamos o vocabulário de programador na disciplina descobrindo vários termos novos.
+* E, por fim, tivemos a oportunidade de usar o GitHub e aprender muito sobre várias funcionalidades que nem sequer imaginávamos que existiam.
 
 ### Negativos
-* LOREM IPSUM
+* Nosso squad era formado por 8 integrantes, alunos que entraram na matrícula extraordinária, quase um mês depois das aulas começarem. Isso fez com que nosso prazo de implementação tivesse 4 sprints a menos, o que nos gerou muito trabalho extra em pouco tempo disponível.
+* Como a equipe foi montada pelos que entraram depois, muitos não se conheciam, então demoramos um pouco para conseguir uma integração maior no grupo.  
+* Tivemos problemas de definição do escopo do projeto. Devido a nossa pouca experiência no assunto, nos propusemos a fazer muito, e verificamos que não teríamos tempo hábil para implementar todas as funcionalidades que imaginamos. Assim, tivemos que reduzir drasticamente o escopo, para ser atendido em uma disciplina de 4 créditos (que vale por 20!) em um semestre distorcido por conta da Copa do Mundo (2022) e do recesso de Natal e Ano Novo.
+* Demoramos também a conseguir definir issues menores passíveis de serem cumpridas em uma sprint. Assim, muitas issues passaram do prazo estabelecido.  
 
 ## <a name="3">Conselhos para projetos futuros</a>
-* LOREM IPSUM
+* O grupo precisa estar bem informado de tudo que está acontecendo. Então, cada um deve manter o grupo informado sobre sua issue em detalhes, e cada um no grupo deve procurar manter-se informado sobre a issue do outro. Os comentários são uma boa ferramenta de comunicação.
+* Não deixe de dar uma olhada no repositório do grupo ao lado ou nos dos semestres anteriores. Pode te fazer economizar tempo e aprendizado que talvez no fim, não seja necessário no momento.
+* Essa disciplina demanda muito tempo e dedicação, se for possível, não tente fazê-la com a grade muito cheia. Além dos 4 créditos de aula, você vai ter que se dedicar pelo menos mais umas 16 horas por semana a mais, acredite!
+* Dormir bem, se alimentar adequadamente e exercícios físicos também ajudam! Não deixe de cuidar de sua saúde mental e física.
+
 
 ## <a name="4">Feeling individual </a>
 
