@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-  <img max-height="100px" src="https://i.imgur.com/ffRw0Ns.png" alt="QuantiFGA">
+  <img max-height="100px" src="https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/logo.png" alt="QuantiFGA">
 </p>
 
 > Saiba o percentual de ocupação da sua disciplina ou sala, aplicando filtros por dia da semana ou horários. 
@@ -18,7 +18,7 @@
 
 # ✏️ Descrição do Projeto
 
-<p align="justify"> &emsp;&emsp;O projeto é um website que tem como objetivo fornecer uma maneira fácil e intuitiva de visualizar informações sobre salas de aula da FGA. Por meio de um dashboard, ele compila dados importantes como a taxa de ocupação, o professor da turma, o número de alunos matriculados, o horário e a comparação entre a ocupação das salas e o número de alunos cadastrados na disciplina ministrada nessa mesma sala. O software utiliza técnicas de web scraping para coletar esses dados do portal do SIGAA e apresentá-los de maneira organizada e facilitada a fim de auxiliar a coordenação da FGA.
+<p align="justify"> &emsp;&emsp;O projeto é um website que tem como objetivo fornecer uma maneira fácil e intuitiva de visualizar informações sobre salas de aula da FGA. Por meio de um dashboard, ele compila dados importantes como a taxa de ocupação, o número de alunos matriculados e o horário das aulas. O software utiliza técnicas de web scraping para coletar esses dados do portal do SIGAA e apresentá-los de maneira organizada e facilitada a fim de auxiliar a coordenação da FGA.
 
 <br>
 
@@ -62,13 +62,20 @@ O código fonte do projeto está anexado no repositório pelos diretórios [fron
 
   - Abra o projeto e no terminal digite
     
-        pip install selenium 
+        pip install selenium        
         pip install webdriver-manager
         pip install pandas 
         pip install pymongo
+        pip install unittest
+        pip install numpy
 
-  - Para executar o webscrapping basra rodar o diretorio [carregardados](C:\Users\Vera\Desktop\mds\2022-2-QuantiFGA\backend\carregarDados.py)
-  - Acione o banco de dados localmente e altere a sring de conexão que está na função [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py) para a string local. 
+
+
+
+
+  - Acione o banco de dados localmente e altere a sring de conexão que está na função [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py) para uma string local.
+  
+  - Para executar o webscrapping basta rodar o diretorio [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py). 
 
 <br>
 
