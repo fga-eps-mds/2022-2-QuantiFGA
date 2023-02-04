@@ -17,7 +17,7 @@ def calcularPercentuais(dataframe):
 
     return dfTempLinhasNovas
 # fim metodo calcularPercentuais
-
+'''
 if __name__ == '__main__':
 # main - para testes isolados de cada metodo
 
@@ -29,3 +29,4 @@ if __name__ == '__main__':
     
     dfTurmasColetadasFGA.to_csv('./testesUnitarios/csvTestePorcentagens.csv', encoding="utf-8", sep=';', index = False)
 # fim main
+'''
