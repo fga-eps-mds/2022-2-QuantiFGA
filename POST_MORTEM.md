@@ -89,6 +89,9 @@ Com certeza, terei uma perspectiva diferente para os próximos projetos em que p
 
 &emsp;&emsp;
 Acredito que foi uma disciplina na qual fomos apresentados a muitas informações. Ainda não sei exatamente em que quero seguir, mas tenho uma direção. Sei que todos estamos nos descobrindo e espero que eu e meus colegas possamos nos encontrar e ser grandes profissionais.
+
+&emsp;&emsp;
+Mas no final, agradeço a disciplina e a professora é maravilhosa! Obrigada aos amigos que criei e que seguraram o surto junto <3.
   
 </p>
 
