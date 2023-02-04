@@ -51,9 +51,12 @@
 
 * **Gabriel Marques**
 
-<p align="justify">&emsp;&emsp;
+<p align="justify">
   
-  LOREM IPSUM
+  &emsp;&emsp; A matéria de MDS foi realmente corrida para o nosso grupo, isso pelo fato de nos constituirmos majoritariamente por membros que entraram durante a matrícula extraordinária, no entanto, mesmo assim conseguimos entregar uma última versão do nosso projeto que é do agrado de todos do grupo, e isso acaba por ser muito gratificanete para todos nós.
+  
+  &emsp;&emsp; Ao longo da disciplina fomos inseridos em diversas novas tecnologia e em práticas que são totalmente necessárias para a nossa formação como futuros engenheiros de software, no entanto, o que é mais importante nessa disciplina, do meu ponto de vista, foi saber lidar com o projeto estando em um grupo de desenvolvimento... De fato não é fácil desenvolver essa habilidade de trabalhar em grupo, mas é de extrema importância para nós, e após terminar a disciplina, conseguimos sentir que progredimos em relação a isso; mesmo sendo complicado, acabamos alcançando resultados onde jamais iríamos conseguir alcançar se estivessemos sozinhos.
+  
   
 </p>
 
