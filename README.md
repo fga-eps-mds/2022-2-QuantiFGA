@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-  <img max-height="100px" src="https://i.imgur.com/ffRw0Ns.png" alt="QuantiFGA">
+  <img max-height="100px" src="https://user-images.githubusercontent.com/78980796/216731522-a040a824-6a1c-43e0-a7ed-242e051bb814.svg" alt="QuantiFGA">
 </p>
 
 > Saiba o percentual de ocupação da sua disciplina ou sala, aplicando filtros por dia da semana ou horários. 
@@ -12,13 +12,15 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/fga-eps-mds/2022-2-Squad9?style=for-the-badge)
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
-![codecov](https://img.shields.io/badge/codecov-88%25-yellowgreen?style=for-the-badge)
+
+[![codecov](https://img.shields.io/badge/codecov-98%25-yellow?style=for-the-badge)](https://fga-eps-mds.github.io/2022-2-QuantiFGA/backend/htmlcov/index.html)
+
 
 <br>
 
 # ✏️ Descrição do Projeto
 
-<p align="justify"> &emsp;&emsp;O projeto é um website que tem como objetivo fornecer uma maneira fácil e intuitiva de visualizar informações sobre salas de aula da FGA. Por meio de um dashboard, ele compila dados importantes como a taxa de ocupação, o professor da turma, o número de alunos matriculados, o horário e a comparação entre a ocupação das salas e o número de alunos cadastrados na disciplina ministrada nessa mesma sala. O software utiliza técnicas de web scraping para coletar esses dados do portal do SIGAA e apresentá-los de maneira organizada e facilitada a fim de auxiliar a coordenação da FGA.
+<p align="justify"> &emsp;&emsp;O projeto é um website que tem como objetivo fornecer uma maneira fácil e intuitiva de visualizar informações sobre salas de aula da FGA. Por meio de um dashboard, ele compila dados importantes como a taxa de ocupação, o número de alunos matriculados e o horário das aulas. O software utiliza técnicas de web scraping para coletar esses dados do portal do SIGAA e apresentá-los de maneira organizada e facilitada a fim de auxiliar a coordenação da FGA.
 
 <br>
 
@@ -29,8 +31,9 @@
 >Visão geral do QuantiFGA
 
 <p align="center">
-  <img max-height="400px" src="https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/documenta%C3%A7%C3%A3o/Prot%C3%B3tipo/git%2Bdash.png" alt="QuantiFGA">
+  <img max-height="400px" src="https://raw.githubusercontent.com/pedrobarbosaocb/RepositorioTeste/main/documenta%C3%A7%C3%A3o/Prot%C3%B3tipo/Atualizacao-Prototipo.png" alt="QuantiFGA">
 </p>
+
 
 
 
@@ -48,14 +51,32 @@ O código fonte do projeto está anexado no repositório pelos diretórios [fron
 
 - Pré-Requisitos
 
-Para rodar o projeto é necessário ter o [Metabase](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/docs/Metabase%20-%20Getting%20Started.md) e o [Mongo](https://www.mongodb.com/try/download/community) instalado, é importante ter o java para rodar o Metabase e o [ChromeDriver](https://chromedriver.chromium.org/downloads) para funcionar o Selenium no Google Chrome, e o [Selenium](https://www.selenium.dev/downloads/) com o [Python](https://www.python.org/downloads/) para poder pegar os dados presentes no SIGAA. 
-O tutorial de como instalar o Mongo e o Metabase e fazê-los funcionarem juntos está no seguinte [vídeo](https://www.youtube.com/watch?v=H5GFGJrVnqQ&t=371s).
+- Para rodar o projeto é necessário ter o [Metabase](https://github.com/pedrobarbosaocb/RepositorioTeste/blob/main/docs/Metabase%20-%20Getting%20Started.md) e o [Mongo](https://www.mongodb.com/try/download/community) instalado. O tutorial de como instalar o Mongo e o Metabase e fazê-los funcionarem juntos está no seguinte [vídeo](https://www.youtube.com/watch?v=H5GFGJrVnqQ&t=371s).
+- Java para rodar o Metabase 
+- Python
 
+## Instalando e executando: 
 <br>
 
 >Para ter uma visão mais específica das funcionalidades e estruturação do projeto clone o nosso repositório.
 
     $ git clone https://github.com/fga-eps-mds/2022-2-QuantiFGA.git 
+
+  - Abra o projeto e no terminal digite
+    
+        pip install selenium        
+        pip install webdriver-manager
+        pip install pandas 
+        pip install pymongo
+        pip install unittest
+        pip install numpy
+
+
+
+
+- Acione o banco de dados localmente e altere a sring de conexão que está na função obterBancoDeDados dentro do diretório  [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py) para uma string local.
+
+  - Para executar o webscrapping basta rodar o diretorio [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py). 
 
 <br>
 
