@@ -42,7 +42,8 @@
 
 * **Felipe Nunes**
 
-<p align="justify">&emsp;&emsp;
+<p align="justify">&emsp;&emsp;Minha experiência com a matéria foi bem diferente em relação as outars matérias, pela primeira vez tive um projeto que mais se parece com um trabalho real com o objetivo de mandar um projeto pronto e trabalhar em equipe para desenvolver um produto funcional, a matéria força o aluno sair da sua zona de conforto para pesquisar e ir atrás de conhecimento para poder desenvolver o projeto e entregá-lo na data devida.
+<p align="justify">&emsp;&emsp;Depois de fazer a matéria o aluno vai poder mudar sua visão em relação do sesenvolvimento de um software além de ter mais experiência e noção de comno funciona o mercado, uma ótima matéria para se desenvolver como pessoa e programador.
   
   LOREM IPSUM
   
