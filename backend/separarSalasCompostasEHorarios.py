@@ -136,7 +136,7 @@ def separarSalas(local):
         ['LAB SHP','Cont-8-SHP'], ['CONTAINER Nº 17','Cont-17'], ['LDTEA SALA 2','LD.Sala-2'], ['SALA 2','LD.Sala-2'], 
         ['LDTEA SALA 3','LD.Sala-3'], ['SALA 3','LD.Sala-3']) 
     
-    locaisContemSala = re.findall('[SI]\d+|[SI]-\d+|[SI]0\d+|[SI]-0\d+|ANTE SALA I10|LAB NEI 2|LAB NEI|LAB SS|Lab SS|LAB MAT|LAB SHP|LAB ELETR|LAB ELET|MOCAP|LAB OND|LAB FISICA|LAB QUI|LAB QUIMICA|LAB TERMOFLUIDOS|LAB TERMODI\w+|ANFITEATRO|MULTIUSO|CONTEINER \d+\d+|CONTAINER \d+\d+|CONTEINER Nº \d+\d+|CONTAINER Nº \d+\d+|SALA \d+',local)
+    locaisContemSala = re.findall('[SI]\d+|[SI]-\d+|[SI]0\d+|[SI]-0\d+|TESTE|ANTE SALA I10|LAB NEI 2|LAB NEI|LAB SS|Lab SS|LAB MAT|LAB SHP|LAB ELETR|LAB ELET|MOCAP|LAB OND|LAB FISICA|LAB QUI|LAB QUIMICA|LAB TERMOFLUIDOS|LAB TERMODI\w+|ANFITEATRO|MULTIUSO|CONTEINER \d+\d+|CONTAINER \d+\d+|CONTEINER Nº \d+\d+|CONTAINER Nº \d+\d+|SALA \d+',local)
     qtdeSalasOcupadas = len(locaisContemSala)
     
     encontrouNomePadraoSala = False
@@ -149,12 +149,12 @@ def separarSalas(local):
                 break
  
         if encontrouNomePadraoSala == False:
-            locaisContemSala[indiceQtdeSalas] = 'sala nao padronizada na matriz de comparacao - ' + locaisContemSala 
+            locaisContemSala[indiceQtdeSalas] = 'sala nao padronizada na matriz de comparacao - ' + locaisContemSala[indiceQtdeSalas] 
 
     return locaisContemSala
 # fim metodo separarSala
 
-
+'''
 if __name__ == '__main__':
 # main - para testes isolados de cada metodo
     
@@ -164,3 +164,4 @@ if __name__ == '__main__':
     
     dfTurmasColetadasFGA.to_csv('./testesUnitarios/csvTesteSalasHorariosSeparadas.csv', encoding="utf-8", sep=';', index = False)
 # fim main
+'''

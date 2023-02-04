@@ -71,7 +71,7 @@ def preencherLotacaoPredio(dataframe):
         
     return dfTempLinhasNovas
 # fim do metodo preencherLotacaoPredio
-    
+''' 
 if __name__ == '__main__':
 # main - para testes isolados de cada metodo
 
@@ -82,3 +82,4 @@ if __name__ == '__main__':
 
     dfTurmasColetadasFGA.to_csv('./testesUnitarios/csvTesteLotacaoPredio.csv', encoding="utf-8", sep=';', index = False)
 # fim main
+'''

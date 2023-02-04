@@ -101,7 +101,7 @@ def salvarTurmasColetadasNoCsvFiltrandoFGA(listaTurmasColetadas):
                     listaTurmasColetadas[indice])
     csvTurmasColetadasQueNaoSaoDaFGA.close()
 # fim metodo salvarTurmasColetadasNoCsvFiltrandoFGA
-
+'''
 if __name__ == '__main__':
 # main - para testes isolados de cada metodo
 
@@ -134,3 +134,4 @@ if __name__ == '__main__':
     dataHoraFimDoProcesso = datetime.now()
     print(f'\nDuração do processo de coleta e carregamento das turmas:  {dataHoraFimDoProcesso - dataHoraInicioDoProcesso}\n')
 # fim main
+'''

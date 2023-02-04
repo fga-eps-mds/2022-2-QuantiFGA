@@ -65,15 +65,19 @@ class TesteColetaSigaa(unittest.TestCase):
     # teste da funcao que troca o nome da sala coletado pelo nome tabelado (padronizado) e
     # separa as salas quando houver mais de uma sala na mesma turma (salas compostas)
 
-        listaExemploEntrada = ['FGA - SALA S-4 e I-3','FGA - SALAS S7 e I7','FGA - SALA I6 E I7', 'FGA - SALA S1 E S4']
+        listaExemploEntrada = ['FGA - SALA TESTE', 'FGA - SALA LAB SS', 'FGA - SALA S-4 e I-3','FGA - SALAS S7 e I7','FGA - SALA I6 E I7', 'FGA - SALA S1 E S4']
 
-        listaExemploSaida = [['S04','I03'], ['S07','I07'], ['I06','I07'], ['S01','S04']]
+        listaExemploSaida = [['sala nao padronizada na matriz de comparacao - TESTE'],
+                             ['Lab.SS'], ['S04','I03'], ['S07','I07'], ['I06','I07'], ['S01','S04']]
         
         listaTesteResultado0 = separarSalas(listaExemploEntrada[0])
         listaTesteResultado1 = separarSalas(listaExemploEntrada[1])
         listaTesteResultado2 = separarSalas(listaExemploEntrada[2])
         listaTesteResultado3 = separarSalas(listaExemploEntrada[3])
-        listaTesteResultado = [listaTesteResultado0, listaTesteResultado1, listaTesteResultado2, listaTesteResultado3]
+        listaTesteResultado4 = separarSalas(listaExemploEntrada[4])
+        listaTesteResultado5 = separarSalas(listaExemploEntrada[5])
+        listaTesteResultado = [listaTesteResultado0, listaTesteResultado1, listaTesteResultado2, 
+                               listaTesteResultado3, listaTesteResultado4, listaTesteResultado5]
         
         self.assertEqual(listaTesteResultado, listaExemploSaida)
     # fim do metodo testeSepararSalas
@@ -82,14 +86,18 @@ class TesteColetaSigaa(unittest.TestCase):
     def testeSepararHorarios(self):
     # teste da funcao que separa os horarios por credito
 
-        listaExemploEntrada = ['46T23','24M12','35M34','7M1234', '2N12', '28M51']
+        listaExemploEntrada = ['46T23','24M12','35M34','7M1234', '2N12', '28M51', '4T1', '2T45', '6N34','5T8']
         
         listaExemploSaida = [['4T2 - Quarta 14h','4T3 - Quarta 15h','6T2 - Sexta 14h','6T3 - Sexta 15h'],
-                             ['2M1 - Segunda 08h','2M2 - Segunda 09h','4M1 - Quarta 08h','4M2 - Quarta 09h'] ,
-                             ['3M3 - Terça 10h','3M4 - Terça 11h','5M3 - Quinta 10h','5M4 - Quinta 11h'] ,
-                             ['7M1 - Sábado 08h','7M2 - Sábado 09h','7M3 - Sábado 10h','7M4 - Sábado 11h'],
-                             ['2N1 - Segunda 19h','2N2 - Segunda 20h'],
-                             ['2M5 - Segunda 12h', '2M1 - Segunda 08h', '8M5 - dia 12h', '8M1 - dia 08h']]
+                            ['2M1 - Segunda 08h','2M2 - Segunda 09h','4M1 - Quarta 08h','4M2 - Quarta 09h'] ,
+                            ['3M3 - Terça 10h','3M4 - Terça 11h','5M3 - Quinta 10h','5M4 - Quinta 11h'] ,
+                            ['7M1 - Sábado 08h','7M2 - Sábado 09h','7M3 - Sábado 10h','7M4 - Sábado 11h'],
+                            ['2N1 - Segunda 19h','2N2 - Segunda 20h'],
+                            ['2M5 - Segunda 12h', '2M1 - Segunda 08h', '8M5 - dia 12h', '8M1 - dia 08h'],
+                            ['4T1 - Quarta 13h'],
+                            ['2T4 - Segunda 16h','2T5 - Segunda 17h'],
+                            ['6N3 - Sexta 21h','6N4 - Sexta 22h'],
+                            ['5T8 - Quinta hora']]
         
         listaTesteResultado0 = separarHorarios(listaExemploEntrada[0])
         listaTesteResultado1 = separarHorarios(listaExemploEntrada[1])
@@ -97,8 +105,13 @@ class TesteColetaSigaa(unittest.TestCase):
         listaTesteResultado3 = separarHorarios(listaExemploEntrada[3])
         listaTesteResultado4 = separarHorarios(listaExemploEntrada[4])
         listaTesteResultado5 = separarHorarios(listaExemploEntrada[5])
+        listaTesteResultado6 = separarHorarios(listaExemploEntrada[6])
+        listaTesteResultado7 = separarHorarios(listaExemploEntrada[7])
+        listaTesteResultado8 = separarHorarios(listaExemploEntrada[8])
+        listaTesteResultado9 = separarHorarios(listaExemploEntrada[9])
         listaTesteResultado = [listaTesteResultado0, listaTesteResultado1, listaTesteResultado2, 
-                                listaTesteResultado3, listaTesteResultado4, listaTesteResultado5]
+                                listaTesteResultado3, listaTesteResultado4, listaTesteResultado5,
+                                listaTesteResultado6, listaTesteResultado7, listaTesteResultado8, listaTesteResultado9]
 
         self.assertEqual(listaTesteResultado, listaExemploSaida)
     # fim do metodo testeSepararHorarios
