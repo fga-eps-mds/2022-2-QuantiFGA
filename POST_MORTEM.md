@@ -62,9 +62,9 @@
 <p align="justify">&emsp;&emsp;
   
   
-	A disciplina MDS é uma daquelas diciplinas que você faz com poucas outras matérias para poder dedicar o máximo possível de tempo nela, por que ela te ensina a criar uma certa disciplina e aprender a pesquisar novos conhecimentos por conta própria. Eu achava que ia ser o caso mas não achei que a dedicação seria tão alta assim.
-	Entretanto isso somente não é capaz de fazer você ir bem na matéria, você requer que o resto o seu grupo se comporte de maneira similar. Se você tiver sorte como eu tive, você talvez pegue um grupo com pessoar dedicadas e habilidosas como esse, mas se não for o caso, todos terão que se dedicar ainda mais para atender todos os requisitos da professora.
-	Esse trabalho foi uma montanha russa emocional, desde o estresse da falta de tempo com issues pra ontem até felicidade de ver o projeto criar forma. Mas como todo trabalho a melhor parte é quando acaba e vê o projeto funcionando.
+&emsp;&emsp;	A disciplina MDS é uma daquelas diciplinas que você faz com poucas outras matérias para poder dedicar o máximo possível de tempo nela, por que ela te ensina a criar uma certa disciplina e aprender a pesquisar novos conhecimentos por conta própria. Eu achava que ia ser o caso mas não achei que a dedicação seria tão alta assim.
+&emsp;&emsp;	Entretanto isso somente não é capaz de fazer você ir bem na matéria, você requer que o resto o seu grupo se comporte de maneira similar. Se você tiver sorte como eu tive, você talvez pegue um grupo com pessoar dedicadas e habilidosas como esse, mas se não for o caso, todos terão que se dedicar ainda mais para atender todos os requisitos da professora.
+&emsp;&emsp;	Esse trabalho foi uma montanha russa emocional, desde o estresse da falta de tempo com issues pra ontem até felicidade de ver o projeto criar forma. Mas como todo trabalho a melhor parte é quando acaba e vê o projeto funcionando.
   
 </p>
 
