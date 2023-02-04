@@ -79,9 +79,15 @@
 
 * **Raquel Eucaria**
 
-<p align="justify">&emsp;&emsp;
-  
-  LOREM IPSUM
+<p align="justify">
+&emsp;&emsp;
+Essa foi uma grande corrida contra o tempo. Eu percebi que é importante estabelecer prioridades nestes momentos e ser mais realista, concentrando-se no possível. Acredito que nosso trabalho ficou muito bom, considerando todos os desafios.
+
+&emsp;&emsp;
+Com certeza, terei uma perspectiva diferente para os próximos projetos em que participarei. Considerando as metodologias práticas, padronizações do projeto, organização, comunicação e gestão.
+
+&emsp;&emsp;
+Acredito que foi uma disciplina na qual fomos apresentados a muitas informações. Ainda não sei exatamente em que quero seguir, mas tenho uma direção. Sei que todos estamos nos descobrindo e espero que eu e meus colegas possamos nos encontrar e ser grandes profissionais.
   
 </p>
 
