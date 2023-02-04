@@ -46,8 +46,6 @@
 <p align="justify">&emsp;&emsp;Depois de fazer a matéria o aluno vai poder mudar sua visão em relação ao desenvolvimento de um software além de ter mais experiência e noção de como funciona o mercado, uma ótima matéria para se desenvolver como pessoa e programador.
 
   
-  LOREM IPSUM
-  
 </p>
 
 
