@@ -15,7 +15,6 @@
 
 [![codecov](https://img.shields.io/badge/codecov-98%25-yellow?style=for-the-badge)](https://fga-eps-mds.github.io/2022-2-QuantiFGA/backend/htmlcov/index.html)
 
-
 <br>
 
 # ✏️ Descrição do Projeto
