@@ -8,7 +8,7 @@
 * Fomos autodidatas em diversas tecnologias e aprendemos e ensinamos sobre webscrapping em Python, mongoDB, Metabase, html/css, entre outras.
 * Tivemos contato com as definições de projetos Open Source, tais como política de commit e guia de contribuição.
 * Ampliamos o vocabulário de programador na disciplina descobrindo vários termos novos.
-* E, por fim, tivemos a oportunidade de usar o GitHub e aprender muito sobre várias funcionalidades que nem sequer imaginávamos que existiam.
+* E, por fim, tivemos a oportunidade de usar o GitHub e aprender muito sobre várias funcionalidades que nem sequer imaginávamos existirem.
 
 ### Negativos
 * Nosso squad era formado por 8 integrantes, alunos que entraram na matrícula extraordinária, quase um mês depois das aulas começarem. Isso fez com que nosso prazo de implementação tivesse 4 sprints a menos, o que nos gerou muito trabalho extra em pouco tempo disponível.
@@ -43,7 +43,7 @@
 * **Felipe Nunes**
 
 <p align="justify">&emsp;&emsp;Minha experiência com a matéria foi bem diferente em relação às outras matérias, pela primeira vez tive um projeto que mais se parece com um trabalho real com o objetivo de mandar um projeto pronto e trabalhar em equipe para desenvolver um produto funcional, a matéria força o aluno sair da sua zona de conforto para pesquisar e ir atrás de conhecimento para poder desenvolver o projeto e entregá-lo na data devida.
-<p align="justify">&emsp;&emsp;Depois de fazer a matéria o aluno vai poder mudar sua visão em relação ao desenvolvimento de um software além de ter mais experiência e noção de como funciona o mercado, uma ótima matéria para se desenvolver como pessoa e programador.
+<p align="justify">&emsp;&emsp;Ápos fazer a matéria o aluno vai poder mudar sua visão em relação ao desenvolvimento de um software além de ter mais experiência e noção de como funciona o mercado, uma ótima matéria para se desenvolver como pessoa e programador.
 
   
 </p>
@@ -53,9 +53,9 @@
 
 <p align="justify">
   
-  &emsp;&emsp; A matéria de MDS foi realmente corrida para o nosso grupo, isso pelo fato de nos constituirmos majoritariamente por membros que entraram durante a matrícula extraordinária, no entanto, mesmo assim conseguimos entregar uma última versão do nosso projeto que é do agrado de todos do grupo, e isso acaba por ser muito gratificanete para todos nós.
+  &emsp;&emsp; A matéria de MDS foi realmente corrida para o nosso grupo, isso pelo fato de nos constituirmos majoritariamente por membros que entraram durante a matrícula extraordinária, no entanto, mesmo assim conseguimos entregar uma última versão do nosso projeto que é do agrado de todos do grupo, e isso acaba por ser muito gratificante para todos nós.
   
-  &emsp;&emsp; Ao longo da disciplina fomos inseridos em diversas novas tecnologia e em práticas que são totalmente necessárias para a nossa formação como futuros engenheiros de software, no entanto, o que é mais importante nessa disciplina, do meu ponto de vista, foi saber lidar com o projeto estando em um grupo de desenvolvimento... De fato não é fácil desenvolver essa habilidade de trabalhar em grupo, mas é de extrema importância para nós, e após terminar a disciplina, conseguimos sentir que progredimos em relação a isso; mesmo sendo complicado, acabamos alcançando resultados onde jamais iríamos conseguir alcançar se estivessemos sozinhos.
+  &emsp;&emsp; Ao longo da disciplina fomos inseridos em diversas novas tecnologia e em práticas que são totalmente necessárias para a nossa formação como futuros engenheiros de software, no entanto, o que é mais importante nessa disciplina, do meu ponto de vista, foi saber lidar com o projeto estando em um grupo de desenvolvimento... De fato não é fácil desenvolver essa habilidade de trabalhar em grupo, mas é de extrema importância para nós, e após terminar a disciplina, conseguimos sentir que progredimos em relação a isso; mesmo sendo complicado, acabamos alcançando resultados onde jamais iríamos conseguir alcançar se estivéssemos sozinhos.
   
   
 </p>
@@ -65,11 +65,11 @@
 <p align="justify">
   
   
-&emsp;&emsp;A disciplina MDS é uma daquelas diciplinas que você faz com poucas outras matérias para poder dedicar o máximo possível de tempo nela, por que ela te ensina a criar uma certa disciplina e aprender a pesquisar novos conhecimentos por conta própria. Eu achava que ia ser o caso mas não achei que a dedicação seria tão alta assim.
+&emsp;&emsp;A disciplina MDS é uma daquelas disciplinas que você faz com poucas outras matérias para poder dedicar o máximo possível de tempo nela, por que ela te ensina a criar uma certa disciplina e aprender a pesquisar novos conhecimentos por conta própria. Eu achava que ia ser o caso, mas não achei que a dedicação seria tão alta assim.
   
-&emsp;&emsp;Entretanto isso somente não é capaz de fazer você ir bem na matéria, você requer que o resto o seu grupo se comporte de maneira similar. Se você tiver sorte como eu tive, você talvez pegue um grupo com pessoar dedicadas e habilidosas como esse, mas se não for o caso, todos terão que se dedicar ainda mais para atender todos os requisitos da professora.
+&emsp;&emsp;Entretanto, isso somente não é capaz de fazer você ir bem na matéria, você requer que o resto o seu grupo se comporte de maneira similar. Se você tiver sorte como eu tive, você talvez pegue um grupo com pessoas dedicadas e habilidosas como esse, mas se não for o caso, todos terão que se dedicar ainda mais para atender todos os requisitos da professora.
   
-&emsp;&emsp;Esse trabalho foi uma montanha russa emocional, desde o estresse da falta de tempo com issues pra ontem até felicidade de ver o projeto criar forma. Mas como todo trabalho a melhor parte é quando acaba e vê o projeto funcionando.
+&emsp;&emsp;Esse trabalho foi uma montanha-russa emocional, desde o estresse da falta de tempo com issues para ontem até felicidade de ver o projeto criar forma. Mas como todo trabalho a melhor parte é quando acaba e vê o projeto funcionando.
   
 </p>
 
@@ -79,9 +79,9 @@
   
 &emsp;&emsp;Minha experiência com a matéria de MDS foi um verdadeiro desafio, mas também uma grande oportunidade de aprendizado. Antes do início do semestre, eu já estava me preparando e adiantando alguns assuntos, pois sabia da importância da matéria para a minha formação como engenheiro de software. Não consegui ingressar logo no início das matrículas, com isso, eu e os outros membros do grupo não nos conhecíamos, o que foi um desafio inicial, mas com uma abertura maior para mais experiências.
 
-&emsp;&emsp;No entanto, ao longo da realização das atividades, tivemos algumas dificuldades para aprendermos a trabalhar juntos, mas aos poucos superamos partes dessas dificuldades. O projeto me permitiu aprender muito a como buscar meios de entender tecnologias que antes nem tinha ouvido falar. Como diz a Carla nós "aprendemos a aprender". E, também, a matéria abriu a "caixinha" de conhecimentos para a engenharia de software, podendo entender mais um pouco sobre a nossa comunidade em si. Além disso, a dinâmica do grupo foi fundamental para que eu pudesse aprimorar minhas habilidades em trabalhar em equipe, o que é crucial para o sucesso na carreira.
+&emsp;&emsp;No entanto, ao longo da realização das atividades, tivemos algumas dificuldades para aprendermos a trabalhar juntos, mas aos poucos superamos partes dessas dificuldades. O projeto me permitiu aprender muito a como buscar meios de entender tecnologias que antes nem tinha ouvido falar. Como diz a Carla nós "aprendemos a aprender". E, também, a matéria abriu a "caixinha" de conhecimentos para a engenharia de software, podendo entender mais um pouco sobre a nossa comunidade em si. Além disso, a dinâmica do grupo foi fundamental para eu poder aprimorar minhas habilidades em trabalhar em equipe, o que é crucial para o sucesso na carreira.
 
-&emsp;&emsp;Em resumo, minha experiência com a matéria foi uma jornada incrível, cheia de aprendizados e desafios superados. Mas, também algumas expectativas minhas, e do grupo, foram diminuidas, de forma positiva, pois no começo não tínhamos noção do trabalho que haveria na implementação do projeto. Com isso, tivemos que diminuir bastante, mas mesmo assim, estou muito satisfeito com o resultado. E, sei que aplicarei muito do que aprendi com esse projeto em minha carreira.
+&emsp;&emsp;Em resumo, minha experiência com a matéria foi uma jornada incrível, cheia de aprendizados e desafios superados. Mas, também algumas expectativas minhas, e do grupo, foram diminuídas, de forma positiva, pois no começo não tínhamos noção do trabalho que haveria na implementação do projeto. Com isso, tivemos que diminuir bastante, mas mesmo assim, estou muito satisfeito com o resultado. E, sei que aplicarei muito do que aprendi com esse projeto em minha carreira.
   
 </p>
 
