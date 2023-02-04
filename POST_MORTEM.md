@@ -93,9 +93,12 @@ Acredito que foi uma disciplina na qual fomos apresentados a muitas informaçõe
 
 * **Vera Lúcia**
 
-<p align="justify">&emsp;&emsp;
-  
-  LOREM IPSUM
+<p align="justify">
+  &emsp;&emsp;
+ Minha experiencia na disciplina de MDS foi um grande desafio. Foi uma corrida contra o tempo para deixar o produto pronto a tempo, durante esse processo percebi que não devemos deixar para fazer as atividades em cima da hora pois a possibilidade de aparecer um erro é grande! 
+   
+ &emsp;&emsp;
+Tivemos que enfrentar muitos desafios durante o processo, mas tudo que ocorre ajuda a elevar nosso nível de sabedoria. Foi uma ótima experiência e acho que todos conseguimos entender bastante da disciplina, nós seguimos bem as práticas ágeis e tivemos ótimos scrum masters auxiliando da melhor forma possível. No final consegui aprender diversas ferramentas diferentes e gostei dessa experiencia nova. A disciplina MDS foi incrível principalmente por ter a professora Carla, ela é incrível. 
   
 </p>
 
