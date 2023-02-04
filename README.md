@@ -72,9 +72,8 @@ O código fonte do projeto está anexado no repositório pelos diretórios [fron
 
 
 
+- Acione o banco de dados localmente e altere a sring de conexão que está na função obterBancoDeDados dentro do diretório  [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py) para uma string local.
 
-  - Acione o banco de dados localmente e altere a sring de conexão que está na função [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py) para uma string local.
-  
   - Para executar o webscrapping basta rodar o diretorio [ColetaSigaaPublico.py](https://github.com/fga-eps-mds/2022-2-QuantiFGA/blob/main/backend/ColetaSigaaPublico.py). 
 
 <br>
